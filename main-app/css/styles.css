@@ -579,3 +579,12 @@ p:last-child { margin-bottom: 0; }
   flex-shrink: 0;
 }
 .logo .logo-mark { display: none; } /* prefer real logo image */
+
+.gallery-cat {
+  margin: 1.75rem 0 0.75rem;
+  font-size: 1.15rem;
+  color: #0b3a5b;
+}
+.gallery-cat:first-of-type {
+  margin-top: 0.5rem;
+}
