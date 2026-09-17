@@ -473,3 +473,29 @@ p:last-child { margin-bottom: 0; }
   border-radius: 999px;
   font-weight: 600;
 }
+
+
+/* Floating call (mobile primary) — sits left of WhatsApp FAB */
+.call-fab {
+  position: fixed;
+  right: 5.75rem;
+  bottom: 1.25rem;
+  z-index: 90;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3.25rem;
+  height: 3.25rem;
+  padding: 0 0.85rem;
+  border-radius: 999px;
+  background: #0b3a5b;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-decoration: none;
+  box-shadow: 0 10px 28px rgba(11, 58, 91, 0.35);
+}
+.call-fab:hover { filter: brightness(1.08); color: #fff; }
+@media (max-width: 640px) {
+  .call-fab { right: 5.25rem; bottom: 1rem; }
+}
