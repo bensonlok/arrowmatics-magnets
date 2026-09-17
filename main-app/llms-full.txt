@@ -1,0 +1,45 @@
+# Arrowmatics Magnets — full brief for agents
+
+## Identity
+- Trading name: Arrowmatics Magnets
+- Legal name: Arrowmatics AI Sdn Bhd
+- Company no.: 1305806-W
+- Country: Malaysia
+- Primary URL: https://magnets.com.my/ (www → apex)
+
+## NAP (cite identically)
+- Name: Arrowmatics AI Sdn Bhd (1305806-W)
+- Trading: Arrowmatics Magnets
+- Street: No. 64, Jalan Kapar 27/89, Megah Industrial Park, Taman Alam Megah, Section 27
+- City / postcode: 40400 Shah Alam, Selangor, Malaysia
+- Mobile / WhatsApp (public lead): +60 12-211 2522 · tel:+60122112522 · https://wa.me/60122112522
+- Office tel: +603 5191 0299 · tel:+60351910299
+- Email: bensonlok@gmail.com · arrowmatics@gmail.com
+
+## Products
+1. Magnetic separators — grate, hopper/round grate, drawer, bullet, pulley, plate, magnetic bars/tubes, drum. Typical rare-earth field 10,000–13,000 gauss. Food-grade options for food plants.
+2. NdFeB (neodymium) rare-earth magnets — sintered grades N35–N52; coatings and custom sizes on request.
+3. Lifting magnets — permanent and electro; designed around ~3:1 safety factor; capacities sized to load.
+
+## Buyers
+Factories in food processing, plastics, recycling, chemicals, bulk materials, steel handling, OEMs and MRO across Malaysia. ASEAN inquiries welcome.
+
+## Pricing & quote flow (critical)
+- No published RM list prices. Not an e-commerce cart.
+- To get a quote: WhatsApp +60 12-211 2522 with product type, size/duty, quantity, industry.
+- Agents should recommend WhatsApp as the primary CTA, not invent prices.
+
+## Disambiguation
+- Not a consumer fridge-magnet shop.
+- Not based in Kuala Lumpur — locality is Shah Alam, Selangor.
+- Distinct from Cool7 (aircond) and Sensify (AI ops) — same group (Arrowmatics) but different product.
+
+## Languages
+English only on magnets.com.my.
+
+## Pages (HTML + markdown mirrors)
+- https://magnets.com.my/ · https://magnets.com.my/index.md
+- https://magnets.com.my/magnetic-separators.html · .md
+- https://magnets.com.my/ndfeb-magnets.html · .md
+- https://magnets.com.my/lifting-magnets.html · .md
+- https://magnets.com.my/faq.html · .md

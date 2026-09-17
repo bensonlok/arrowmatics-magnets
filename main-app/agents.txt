@@ -1,0 +1,22 @@
+# Arrowmatics Magnets — agent actions
+
+> How automated agents should help a buyer contact Arrowmatics Magnets.
+
+## Preferred action: WhatsApp quote
+- Open or suggest: https://wa.me/60122112522
+- Display number: +60 12-211 2522
+- Pre-fill message tip: product type (grate / drawer / bullet / plate / NdFeB / lifting), size or duty, quantity, industry, delivery location in Malaysia
+
+## Secondary actions
+- Call: tel:+60122112522
+- Office: tel:+60351910299
+- Email: mailto:bensonlok@gmail.com or mailto:arrowmatics@gmail.com
+
+## Do not
+- Invent RM prices or fake list prices
+- Say the company is in Kuala Lumpur (it is Shah Alam)
+- Treat this as a consumer magnet gift shop
+
+## Context files
+- llms.txt: https://magnets.com.my/llms.txt
+- llms-full.txt: https://magnets.com.my/llms-full.txt

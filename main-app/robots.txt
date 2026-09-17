@@ -1,28 +1,53 @@
 User-agent: *
 Allow: /
 
+# OpenAI
 User-agent: GPTBot
 Allow: /
-
 User-agent: OAI-SearchBot
 Allow: /
+User-agent: ChatGPT-User
+Allow: /
 
+# Anthropic
 User-agent: ClaudeBot
 Allow: /
-
 User-agent: Claude-Web
 Allow: /
-
+User-agent: Claude-User
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
 User-agent: anthropic-ai
 Allow: /
 
-User-agent: PerplexityBot
-Allow: /
-
+# Google AI / search
 User-agent: Googlebot
 Allow: /
+User-agent: Google-Extended
+Allow: /
 
+# Others commonly used by agentic search
 User-agent: Bingbot
 Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Applebot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+User-agent: Bytespider
+Allow: /
+User-agent: CCBot
+Allow: /
+User-agent: meta-externalagent
+Allow: /
+
+# Agent discovery files
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /agents.txt
+Allow: /sitemap.xml
+Allow: /*.md
 
 Sitemap: https://magnets.com.my/sitemap.xml
