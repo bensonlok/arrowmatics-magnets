@@ -546,3 +546,36 @@ p:last-child { margin-bottom: 0; }
   font-size: 0.9rem;
   color: #334155;
 }
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  text-decoration: none;
+  color: inherit;
+}
+.brand-logo {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+.brand-text { font-weight: 700; font-size: 1rem; letter-spacing: 0.02em; }
+@media (max-width: 640px) {
+  .brand-logo { height: 32px; }
+  .brand-text { font-size: 0.85rem; }
+}
+.site-footer .brand-logo { height: 36px; margin-bottom: 0.75rem; }
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  text-decoration: none;
+  color: inherit;
+}
+.logo .brand-logo {
+  height: 42px;
+  width: auto;
+  flex-shrink: 0;
+}
+.logo .logo-mark { display: none; } /* prefer real logo image */
