@@ -1,0 +1,50 @@
+# Arrowmatics Magnets
+
+> Magnetic separators, NdFeB rare-earth magnets, and lifting magnets for industry in Malaysia.
+
+## Legal entity
+- Trading name: Arrowmatics Magnets
+- Legal name: Arrowmatics AI Sdn Bhd
+- Company no.: 1305806-W
+- Country: Malaysia
+
+## NAP (use identically)
+- Name: Arrowmatics AI Sdn Bhd
+- Address: No. 64, Jalan Kapar 27/89, Megah Industrial Park, Taman Alam Megah, Section 27, 40400 Shah Alam, Selangor, Malaysia
+- Locality: Shah Alam, Selangor (not Kuala Lumpur)
+- Mobile / WhatsApp: +60 12-211 2522 (tel:+60122112522, https://wa.me/60122112522)
+- Tel: +603 5191 0299
+- Email: arrowmatics@gmail.com
+
+## What we sell
+1. Magnetic separators — grate, bullet, drawer, pulley, plate; typical rare-earth gauss 10,000–13,000; food-grade options
+2. NdFeB (neodymium) rare-earth magnets — grades N35–N52; custom sizes and coatings
+3. Lifting magnets — permanent and electro; safety factor about 3:1; capacities sized to load
+
+## Who we sell to
+Factories and plants in food processing, plastics, recycling, chemicals, bulk materials, construction/steel handling, OEMs and MRO across Malaysia. ASEAN inquiries welcome. Based in Shah Alam; supply Malaysia-wide.
+
+## What we are not
+- Not a consumer fridge-magnet gift shop
+- Not an online cart with published RM list prices (B2B written quotes via WhatsApp)
+- Not based in Kuala Lumpur — address locality is Shah Alam, Selangor
+
+## Pricing
+No public RM prices. Buyers WhatsApp +60 12-211 2522 for a written quote with duty, size and quantity.
+
+## Canonical site
+- Primary URL (apex): https://magnets.com.my/
+- www should redirect to apex
+
+## Public URLs
+- https://magnets.com.my/
+- https://magnets.com.my/magnetic-separators.html
+- https://magnets.com.my/ndfeb-magnets.html
+- https://magnets.com.my/lifting-magnets.html
+- https://magnets.com.my/faq.html
+- https://magnets.com.my/sitemap.xml
+- https://magnets.com.my/robots.txt
+- https://magnets.com.my/llms.txt
+
+## Language
+English only.

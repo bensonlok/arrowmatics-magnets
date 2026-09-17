@@ -1,0 +1,15 @@
+# Cloudflare Pages / Workers assets for magnets.com.my
+# NOT a single-page application — missing paths must 404, not return index.html
+# so robots.txt, sitemap.xml and llms.txt are never rewritten to HTML.
+
+name = "magnets-com-my"
+compatibility_date = "2024-09-01"
+main = "worker/index.js"
+
+[assets]
+directory = "./main-app"
+binding = "ASSETS"
+# Valid values: "none" | "404-page" | "single-page-application"
+# Use "none" (null-body 404) — NEVER "single-page-application"
+not_found_handling = "none"
+html_handling = "auto-trailing-slash"

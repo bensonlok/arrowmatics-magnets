@@ -1,0 +1,13 @@
+{
+  "name": "magnets-com-my",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Arrowmatics Magnets static site for magnets.com.my (Cloudflare Pages)",
+  "scripts": {
+    "build": "echo ok",
+    "deploy": "wrangler pages deploy main-app --project-name=magnets-com-my"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}

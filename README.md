@@ -1,44 +1,34 @@
-# ✅ Arrowmatics ai sdn bhd - AI-Optimized Website Complete
+# Arrowmatics Magnets — magnets.com.my
 
-## 🚀 Ready to Upload (No Download Required)
+GEO/SEO-ready static website for **Arrowmatics Magnets** (legal: Arrowmatics AI Sdn Bhd 1305806-W).
 
-### 📁 Files in Your Folder (10 total)
+Magnetic separators, NdFeB rare-earth magnets, and lifting magnets for industry in Malaysia. Based in Shah Alam; supply Malaysia-wide.
 
-| Location | Files | Status |
-|----------|-------|--------|
-| Root | 6 HTML + sitemap | ✅ Complete |
-| `images/` | 3 SVG placeholders | ✅ Added |
+## Structure
 
----
+- `main-app/` — Cloudflare Pages **output directory** (HTML, CSS, robots, sitemap, llms)
+- `worker/index.js` — minimal asset passthrough (no SPA rewrite)
+- `wrangler.toml` — CF config (`not_found_handling = "404"`)
+- `DEPLOY.md` — step-by-step Cloudflare Pages + DNS cutover
 
-## 🖼️ Images Added to Folder
+## Local preview
 
-**Added 3 SVG placeholder images:**
-- `ndfeb-magnets-placeholder.svg` - Magnet products
-- `magnetic-separators-placeholder.svg` - Separators
-- `lifting-magnets-placeholder.svg` - Lifting solutions
+Open files under `main-app/` in a browser, or:
 
-These load instantly and are **custom-designed** for your brand.
+```bash
+npx serve main-app
+```
 
----
+## Build / deploy
 
-## 📱 WhatsApp Integration
+```bash
+npm run build    # echo ok — static site, no compile step
+npm run deploy   # optional: wrangler pages deploy
+```
 
-- **Number:** +6012-211-2522
-- Visible on all pages
-- Links work immediately
+Or connect GitHub `bensonlok/arrowmatics-magnets` in Cloudflare Pages (see `DEPLOY.md`).
 
----
+## Canonical
 
-## 🎯 AI Features
-
-✅ Organization Schema markup  
-✅ Product & FAQ Schemas  
-✅ Direct answers in first 100 words  
-✅ Technical specifications quantified  
-✅ Image placeholders with alt text  
-✅ Industry keywords embedded
-
----
-
-**Upload all files to www.magnets.com.my → Ready!**
+- Apex: https://magnets.com.my/
+- www → apex redirect (documented in DEPLOY.md and `main-app/_redirects`)
