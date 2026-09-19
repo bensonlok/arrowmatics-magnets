@@ -18,7 +18,9 @@
 
 ## Products
 1. Magnetic separators — grate, hopper/round grate, drawer, bullet, pulley, plate, magnetic bars/tubes, drum. Typical rare-earth field 10,000–13,000 gauss. Food-grade options for food plants.
-2. NdFeB (neodymium) rare-earth magnets — sintered grades N35–N52; coatings and custom sizes on request.
+2. NdFeB (neodymium) grades N35–N52
+2b. SmCo (samarium cobalt) SmCo5 / Sm2Co17 — high temperature & corrosion; page https://magnets.com.my/smco-magnets.html
+2x. NdFeB (neodymium) rare-earth magnets — sintered grades N35–N52; coatings and custom sizes on request.
 3. Lifting magnets — permanent and electro; designed around ~3:1 safety factor; capacities sized to load.
 
 ## Buyers
@@ -43,3 +45,8 @@ English only on magnets.com.my.
 - https://magnets.com.my/ndfeb-magnets.html · .md
 - https://magnets.com.my/lifting-magnets.html · .md
 - https://magnets.com.my/faq.html · .md
+
+
+## SmCo (samarium cobalt)
+Page: https://magnets.com.my/smco-magnets.html
+Families: SmCo5, Sm2Co17. Use when heat/corrosion rules out NdFeB. Quote via WhatsApp +60 12-211 2522.

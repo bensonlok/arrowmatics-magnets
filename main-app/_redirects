@@ -31,3 +31,11 @@ http://www.magnets.com.my/* https://magnets.com.my/:splat 301
 /index.htm / 301
 /Index.htm / 301
 /index.html / 301
+
+# SmCo search aliases
+/smco /smco-magnets.html 301
+/smco.html /smco-magnets.html 301
+/SmCo.html /smco-magnets.html 301
+/samarium-cobalt.html /smco-magnets.html 301
+/samariumcobalt.html /smco-magnets.html 301
+/SamariumCobalt.html /smco-magnets.html 301

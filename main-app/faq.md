@@ -210,3 +210,12 @@ Mobile / WhatsApp: [+60 12-211 2522](tel:+60122112522) · Office: [+603 5191 029
   [
     
   ](https://wa.me/60122112522)
+
+
+## What are SmCo magnets?
+
+SmCo (samarium cobalt) are high-temperature rare-earth magnets. See [SmCo magnets](/smco-magnets.html). WhatsApp +60 12-211 2522.
+
+## SmCo vs NdFeB?
+
+NdFeB for max room-temp strength; SmCo for heat/corrosion. [SmCo page](/smco-magnets.html).
