@@ -1,3 +1,33 @@
-# Force apex canonical (www → https://magnets.com.my/)
+# www → apex (canonical)
 https://www.magnets.com.my/* https://magnets.com.my/:splat 301
 http://www.magnets.com.my/* https://magnets.com.my/:splat 301
+
+# Old site product URLs (Google still indexes these) → new pages
+/GrateGridMagnet.html /magnetic-separators.html 301
+/GrateMagnetsinHousing.html /magnetic-separators.html 301
+/grategridmagnet.html /magnetic-separators.html 301
+/gratemagnetsinhousing.html /magnetic-separators.html 301
+/Bulletmagnet.html /magnetic-separators.html 301
+/bulletmagnet.html /magnetic-separators.html 301
+/MagneticHeadPulley.html /magnetic-separators.html 301
+/magneticheadpulley.html /magnetic-separators.html 301
+/magneticseparator.htm /magnetic-separators.html 301
+/MagneticSeparator.htm /magnetic-separators.html 301
+/bar.html /magnetic-separators.html 301
+/Bar.html /magnetic-separators.html 301
+/DrawerMagnet.html /magnetic-separators.html 301
+/drawermagnet.html /magnetic-separators.html 301
+/PlateMagnet.html /magnetic-separators.html 301
+/platemagnet.html /magnetic-separators.html 301
+/DrumSeparator.html /magnetic-separators.html 301
+/drumseparator.html /magnetic-separators.html 301
+
+# Holding / specialty → home or NdFeB / lifting guesses
+/AlnicoHorseshoeButtonMagnets.html /ndfeb-magnets.html 301
+/CeramicCupAssembies.html / 301
+/Ceramictoolbar.html / 301
+/about.htm / 301
+/About.htm / 301
+/index.htm / 301
+/Index.htm / 301
+/index.html / 301
