@@ -16,3 +16,8 @@ Set on project `magnets-com-my`:
 - Injected on home + product/FAQ pages
 
 After merge, redeploy Pages and confirm env vars.
+
+## Tone & proprietary knowledge
+- Live reply brain: `functions/api/magnet-chat.js` → `BASE_SYSTEM`
+- Editable company brief: `MAGNET-EXPERT-KNOWLEDGE.md` (edit, then ask Github to sync into `BASE_SYSTEM`)
+- How to teach the bot proprietary facts: paste in chat to Github, or edit `MAGNET-EXPERT-KNOWLEDGE.md`, then say “sync Magnet Expert knowledge”
