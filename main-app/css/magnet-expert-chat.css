@@ -1,0 +1,133 @@
+/* Magnet Expert chat — scoped; sits above Call/WhatsApp FABs */
+#magnets-expert-root { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+#magnets-expert-root * { box-sizing: border-box; }
+
+#magnets-expert-fab {
+  position: fixed;
+  right: 20px;
+  bottom: 168px;
+  z-index: 9998;
+  width: 56px;
+  height: 56px;
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #0a1628, #1a4a7a);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(10, 22, 40, 0.35);
+}
+#magnets-expert-fab:hover { filter: brightness(1.08); }
+#magnets-expert-fab span { display: block; line-height: 1.15; }
+
+#magnets-expert-panel {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 9999;
+  width: min(380px, calc(100vw - 24px));
+  height: min(540px, calc(100vh - 32px));
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 16px 48px rgba(0,0,0,0.22);
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #d8e0ea;
+}
+#magnets-expert-panel.open { display: flex; }
+
+#magnets-expert-panel header {
+  background: linear-gradient(145deg, #0a1628, #132238);
+  color: #fff;
+  padding: 12px 14px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+#magnets-expert-panel header .titles { flex: 1; min-width: 0; }
+#magnets-expert-panel header h2 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+}
+#magnets-expert-panel header p {
+  margin: 2px 0 0;
+  font-size: 11px;
+  opacity: 0.85;
+}
+#magnets-expert-close {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 4px;
+}
+
+#magnets-expert-human {
+  display: block;
+  margin: 10px 12px 0;
+  text-align: center;
+  background: #25d366;
+  color: #fff !important;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+#magnets-expert-human:hover { filter: brightness(1.05); }
+
+#magnets-expert-msgs {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px;
+  background: #f4f7fb;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.mec-msg {
+  max-width: 88%;
+  padding: 8px 11px;
+  border-radius: 12px;
+  font-size: 13px;
+  line-height: 1.45;
+  white-space: pre-wrap;
+}
+.mec-msg.bot { align-self: flex-start; background: #fff; border: 1px solid #e2e8f0; color: #0a1628; }
+.mec-msg.user { align-self: flex-end; background: #0b3a5b; color: #fff; }
+.mec-msg.err { align-self: flex-start; background: #fff5f5; border: 1px solid #fecaca; color: #991b1b; }
+
+#magnets-expert-form {
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+  border-top: 1px solid #e2e8f0;
+  background: #fff;
+}
+#magnets-expert-input {
+  flex: 1;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 14px;
+}
+#magnets-expert-send {
+  border: none;
+  border-radius: 10px;
+  background: #0b3a5b;
+  color: #fff;
+  font-weight: 700;
+  padding: 0 14px;
+  cursor: pointer;
+}
+#magnets-expert-send:disabled { opacity: 0.5; cursor: wait; }
+
+/* Nudge existing FABs so chat doesn’t cover them on small screens */
+body:has(#magnets-expert-root) .wa-fab { bottom: 88px !important; }
+body:has(#magnets-expert-root) .call-fab { bottom: 148px !important; right: 20px; }
