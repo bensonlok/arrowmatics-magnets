@@ -131,3 +131,48 @@
 /* Nudge existing FABs so chat doesn’t cover them on small screens */
 body:has(#magnets-expert-root) .wa-fab { bottom: 88px !important; }
 body:has(#magnets-expert-root) .call-fab { bottom: 148px !important; right: 20px; }
+
+#magnets-expert-gate {
+  padding: 14px 12px 12px;
+  background: #f4f7fb;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow-y: auto;
+}
+#magnets-expert-gate .mec-gate-intro {
+  margin: 0 0 4px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #0a1628;
+}
+#magnets-expert-gate input {
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 14px;
+}
+#magnets-expert-gate .mec-gate-hint {
+  margin: 0;
+  font-size: 11px;
+  color: #64748b;
+}
+#magnets-expert-gate .mec-gate-err {
+  margin: 0;
+  font-size: 12px;
+  color: #b91c1c;
+  min-height: 1em;
+}
+#mec-gate-btn {
+  border: none;
+  border-radius: 10px;
+  background: #0b3a5b;
+  color: #fff;
+  font-weight: 700;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+#mec-gate-btn:hover { filter: brightness(1.06); }
+#magnets-expert-msgs { display: none; }
+#magnets-expert-form { display: none; }

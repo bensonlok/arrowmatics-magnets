@@ -1,8 +1,9 @@
 /**
- * Cloudflare Pages Function: POST /api/magnet-chat
- * Env: OPENROUTER_API_KEY (required), LLM_MODEL (optional, default openrouter/free)
+ * POST /api/magnet-chat
+ * Env: OPENROUTER_API_KEY, LLM_MODEL (default openrouter/free)
+ * Optional lead notify: LEAD_TELEGRAM_BOT_TOKEN, LEAD_TELEGRAM_CHAT_ID
  */
-const SYSTEM = `You are Magnet Expert for Arrowmatics Magnets (www.magnets.com.my).
+const BASE_SYSTEM = `You are Magnet Expert for Arrowmatics Magnets (www.magnets.com.my).
 Company: Arrowmatics AI Sdn Bhd (1305806-W), Shah Alam, Selangor, Malaysia.
 WhatsApp / mobile for human sales: +60 12-211 2522 (https://wa.me/60122112522). Office +603 5191 0299.
 Email: arrowmatics@gmail.com / bensonlok@gmail.com.
@@ -12,6 +13,7 @@ You help industrial buyers with: magnetic separators (grate, bullet, drawer, pul
 Rules:
 - Sales + technical, concise, professional EN.
 - Never invent RM prices or stock. For quotes, urge WhatsApp +60 12-211 2522 with duty, size, qty, industry.
+- The visitor already gave name/contact — use their name, and when quoting remind them we can follow up on their WhatsApp/email on file.
 - If unsure, say so and offer Talk to human / WhatsApp.
 - Do not claim you can visit site or place orders online.`;
 
@@ -34,14 +36,33 @@ export async function onRequestPost(context) {
       );
     }
     const body = await context.request.json();
+    const lead = sanitizeLead(body.lead);
+    if (!lead) {
+      return json(
+        { error: "Name and WhatsApp or email are required before chatting." },
+        400,
+        cors
+      );
+    }
+
+    if (body.notify) {
+      context.waitUntil(notifyLead(context.env, lead, body.messages));
+    }
+
     const messages = Array.isArray(body.messages) ? body.messages.slice(-12) : [];
     const cleaned = messages
-      .filter((m) => m && (m.role === "user" || m.role === "assistant") && typeof m.content === "string")
+      .filter(
+        (m) =>
+          m &&
+          (m.role === "user" || m.role === "assistant") &&
+          typeof m.content === "string"
+      )
       .map((m) => ({ role: m.role, content: String(m.content).slice(0, 4000) }));
     if (!cleaned.length) {
       return json({ error: "No messages" }, 400, cors);
     }
 
+    const leadLine = `Visitor lead on file: name=${lead.name}; phone=${lead.phone || "—"}; email=${lead.email || "—"}.`;
     const model = (context.env.LLM_MODEL || "openrouter/free").trim();
     const res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
       method: "POST",
@@ -53,7 +74,10 @@ export async function onRequestPost(context) {
       },
       body: JSON.stringify({
         model,
-        messages: [{ role: "system", content: SYSTEM }, ...cleaned],
+        messages: [
+          { role: "system", content: BASE_SYSTEM + "\n" + leadLine },
+          ...cleaned,
+        ],
         temperature: 0.4,
         max_tokens: 700,
       }),
@@ -69,7 +93,7 @@ export async function onRequestPost(context) {
         data.choices[0].message &&
         data.choices[0].message.content) ||
       "";
-    return json({ reply: String(reply).trim() || "(no reply)" }, 200, cors);
+    return json({ reply: String(reply).trim() || "(no reply)", lead_ok: true }, 200, cors);
   } catch (e) {
     return json({ error: e instanceof Error ? e.message : "Server error" }, 500, cors);
   }
@@ -84,6 +108,42 @@ export async function onRequestOptions() {
       "Access-Control-Allow-Headers": "Content-Type",
     },
   });
+}
+
+function sanitizeLead(lead) {
+  if (!lead || typeof lead !== "object") return null;
+  const name = String(lead.name || "").trim().slice(0, 80);
+  const phone = String(lead.phone || "").trim().slice(0, 40);
+  const email = String(lead.email || "").trim().slice(0, 120);
+  if (name.length < 2) return null;
+  const phoneOk = phone.replace(/\s+/g, "").length >= 8;
+  const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  if (!phoneOk && !emailOk) return null;
+  return { name, phone: phoneOk ? phone : "", email: emailOk ? email : "" };
+}
+
+async function notifyLead(env, lead, messages) {
+  const token = (env.LEAD_TELEGRAM_BOT_TOKEN || "").trim();
+  const chatId = (env.LEAD_TELEGRAM_CHAT_ID || "").trim();
+  if (!token || !chatId) return;
+  const first =
+    Array.isArray(messages) && messages[0] && messages[0].content
+      ? String(messages[0].content).slice(0, 200)
+      : "";
+  const text = [
+    "🧲 Magnet Expert lead (magnets.com.my)",
+    `Name: ${lead.name}`,
+    lead.phone ? `WhatsApp/phone: ${lead.phone}` : null,
+    lead.email ? `Email: ${lead.email}` : null,
+    first ? `First msg: ${first}` : null,
+  ]
+    .filter(Boolean)
+    .join("\n");
+  await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ chat_id: chatId, text }),
+  }).catch(() => {});
 }
 
 function json(obj, status, cors) {
