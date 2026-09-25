@@ -12,7 +12,8 @@
 
 #magnets-expert-panel {
   position: fixed; right: 16px; bottom: 16px; z-index: 9999;
-  width: min(380px, calc(100vw - 24px)); height: min(540px, calc(100vh - 32px));
+  width: min(720px, calc(100vw - 24px));
+  height: min(620px, calc(100vh - 32px));
   background: #fff; border-radius: 4px; box-shadow: 0 16px 48px rgba(0,0,0,0.22);
   display: none; flex-direction: column; overflow: hidden; border: 1px solid #d8e0ea;
 }
@@ -21,6 +22,7 @@
 #magnets-expert-panel header {
   background: linear-gradient(145deg, #070a12, #0a1630); color: #fff;
   padding: 12px 14px; display: flex; align-items: flex-start; gap: 10px;
+  flex-shrink: 0;
 }
 #magnets-expert-panel header .titles { flex: 1; min-width: 0; }
 #magnets-expert-panel header h2 { margin: 0; font-size: 15px; font-weight: 700; }
@@ -34,6 +36,7 @@
   display: block; margin: 10px 12px 0; text-align: center;
   background: #25d366; color: #fff !important; text-decoration: none;
   font-weight: 700; font-size: 13px; padding: 10px 12px; border-radius: 2px;
+  flex-shrink: 0;
 }
 
 #magnets-expert-gate {
@@ -54,20 +57,88 @@
   font-weight: 700; padding: 14px; cursor: pointer; font-size: 15px; margin-top: 4px;
 }
 
+/* Two-column body */
+#magnets-expert-body {
+  flex: 1; min-height: 0; display: none;
+  flex-direction: row; background: #f3f1ea;
+}
+
+#magnets-expert-left {
+  flex: 1; min-width: 0; display: flex; flex-direction: column; min-height: 0;
+  order: 2;
+}
+#magnets-expert-right {
+  width: 240px; flex-shrink: 0; border-left: 1px solid #e2e8f0;
+  background: #fff; display: flex; flex-direction: column; min-height: 0;
+  order: 3;
+}
+
+#mec-upload-toggle {
+  display: none;
+  width: 100%; border: none; border-bottom: 1px solid #e2e8f0;
+  background: #0a1630; color: #fff; font-weight: 700; font-size: 13px;
+  padding: 10px 12px; cursor: pointer; text-align: left;
+}
+
+#mec-upload-inner {
+  padding: 12px; overflow-y: auto; flex: 1; display: flex; flex-direction: column; gap: 10px;
+}
+.mec-upload-title {
+  margin: 0; font-size: 13px; font-weight: 800; text-transform: uppercase;
+  letter-spacing: 0.06em; color: #070a12;
+}
+.mec-upload-tip {
+  margin: 0; font-size: 12px; line-height: 1.45; color: #5d6270;
+}
+
+#mec-drop {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 4px; padding: 16px 10px; border: 1.5px dashed #1558ff;
+  background: rgba(21, 88, 255, 0.06); border-radius: 4px; cursor: pointer;
+  text-align: center; color: #0a1628;
+}
+#mec-drop:hover { background: rgba(21, 88, 255, 0.12); }
+#mec-drop strong { font-size: 13px; }
+#mec-drop span { font-size: 11px; color: #64748b; }
+.mec-drop-icon { font-size: 22px; line-height: 1; }
+#mec-file { position: absolute; width: 1px; height: 1px; opacity: 0; overflow: hidden; }
+
+#mec-preview-wrap {
+  display: flex; flex-direction: column; gap: 6px;
+  border: 1px solid #e2e8f0; border-radius: 4px; padding: 8px; background: #f8fafc;
+}
+#mec-preview-wrap[hidden] { display: none !important; }
+#mec-preview-img {
+  width: 100%; max-height: 140px; object-fit: contain; border-radius: 2px;
+  background: #fff; border: 1px solid #e2e8f0;
+}
+#mec-preview-meta { margin: 0; font-size: 11px; color: #475569; line-height: 1.35; word-break: break-word; }
+#mec-clear-file {
+  align-self: flex-start; border: 1px solid #cbd5e1; background: #fff;
+  border-radius: 2px; padding: 4px 10px; font-size: 12px; cursor: pointer; color: #0a1628;
+}
+#mec-attach-status { margin: 0; font-size: 11px; color: #1558ff; min-height: 1.2em; font-weight: 600; }
+
 #magnets-expert-msgs {
-  flex: 1; overflow-y: auto; padding: 12px; background: #f3f1ea;
-  display: none; flex-direction: column; gap: 8px;
+  flex: 1; overflow-y: auto; padding: 12px;
+  display: flex; flex-direction: column; gap: 8px; min-height: 0;
 }
 .mec-msg {
-  max-width: 88%; padding: 8px 11px; border-radius: 12px;
-  font-size: 13px; line-height: 1.45; white-space: pre-wrap;
+  max-width: 92%; padding: 8px 11px; border-radius: 12px;
+  font-size: 13px; line-height: 1.45;
+}
+.mec-msg-text { white-space: pre-wrap; }
+.mec-msg-thumb {
+  display: block; max-width: 160px; max-height: 110px; object-fit: cover;
+  border-radius: 6px; margin-bottom: 6px; border: 1px solid rgba(255,255,255,0.35);
 }
 .mec-msg.bot { align-self: flex-start; background: #fff; border: 1px solid #e2e8f0; color: #0a1628; }
 .mec-msg.user { align-self: flex-end; background: #0b3a5b; color: #fff; }
 .mec-msg.err { align-self: flex-start; background: #fff5f5; border: 1px solid #fecaca; color: #991b1b; }
 
 #magnets-expert-form {
-  display: none; gap: 8px; padding: 10px; border-top: 1px solid #e2e8f0; background: #fff;
+  display: flex; gap: 8px; padding: 10px; border-top: 1px solid #e2e8f0; background: #fff;
+  flex-shrink: 0;
 }
 #magnets-expert-input {
   flex: 1; border: 1px solid #cbd5e1; border-radius: 2px; padding: 10px 12px; font-size: 14px;
@@ -77,6 +148,24 @@
   font-weight: 700; padding: 0 14px; cursor: pointer;
 }
 #magnets-expert-send:disabled { opacity: 0.5; cursor: wait; }
+
+/* Mobile: upload on top, collapsible */
+@media (max-width: 640px) {
+  #magnets-expert-panel {
+    width: calc(100vw - 16px); right: 8px; bottom: 8px;
+    height: min(92vh, calc(100vh - 16px));
+  }
+  #magnets-expert-body { flex-direction: column; }
+  #magnets-expert-right {
+    width: 100%; border-left: none; border-bottom: 1px solid #e2e8f0;
+    max-height: 42%; order: 1;
+  }
+  #magnets-expert-left { order: 2; min-height: 0; }
+  #mec-upload-toggle { display: block; }
+  #magnets-expert-right.collapsed #mec-upload-inner { display: none; }
+  #magnets-expert-right.collapsed { max-height: none; }
+  #mec-preview-img { max-height: 100px; }
+}
 
 body:has(#magnets-expert-root) .wa-fab { bottom: 88px !important; }
 body:has(#magnets-expert-root) .call-fab { bottom: 148px !important; right: 20px; }

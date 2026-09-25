@@ -72,3 +72,8 @@ Full FAQ → [faq.html](https://magnets.com.my/faq.html)
 - **Mobile / WhatsApp:** +60 12-211 2522 · https://wa.me/60122112522
 - **Tel:** +603 5191 0299
 - **Email:** bensonlok@gmail.com · arrowmatics@gmail.com
+
+## Easy as 1-2-3
+1. Snap/upload a machine photo or sketch (circle the problem).
+2. Short description to Magnet Expert.
+3. Application-fit magnet solution + WhatsApp quote (+60 12-211 2522).

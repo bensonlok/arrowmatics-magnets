@@ -917,3 +917,100 @@ body > main.section:first-of-type {
 
 /* Soften product-card photo hover invert */
 .card:hover .card-photo { opacity: 0.92; }
+
+
+/* —— Easy as 1-2-3 (Magnet Expert path) —— */
+.easy-123 {
+  background: var(--white);
+  border-top: 1px solid var(--line-dark);
+  border-bottom: 1px solid var(--line-dark);
+}
+.easy-steps {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--line-dark);
+  border: 1px solid var(--line-dark);
+  margin: 0 0 2rem;
+  padding: 0;
+}
+.easy-step {
+  background: var(--paper);
+  padding: 1.75rem 1.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.easy-num {
+  flex-shrink: 0;
+  width: 2.5rem; height: 2.5rem;
+  border-radius: 50%;
+  background: linear-gradient(145deg, var(--ink), var(--cobalt));
+  color: #fff;
+  font-weight: 900;
+  font-size: 1.15rem;
+  display: grid; place-items: center;
+  letter-spacing: 0;
+}
+.easy-step h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.05rem;
+}
+.easy-step p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+.easy-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+.easy-actions .btn { cursor: pointer; font: inherit; }
+.easy-123 .btn.btn-outline {
+  background: transparent;
+  color: var(--ink);
+  border: 1.5px solid var(--ink);
+}
+.easy-123 .btn.btn-outline:hover {
+  background: var(--ink);
+  color: #fff;
+  text-decoration: none;
+}
+button.btn {
+  font-family: inherit;
+}
+/* On light sections outside hero, outline buttons that are <button> keep ink */
+.easy-123 button.btn.btn-wa,
+button.btn.btn-wa {
+  border: none;
+}
+
+.easy-strip {
+  background: rgba(21, 88, 255, 0.08);
+  border-left: 4px solid var(--cobalt);
+  padding: 1rem 1.25rem;
+  margin: 0 0 1.75rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--text);
+}
+.easy-strip strong { color: var(--ink); }
+.easy-strip button,
+.easy-strip .linkish {
+  color: var(--cobalt);
+  font-weight: 700;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font: inherit;
+  text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  .easy-steps { grid-template-columns: 1fr; }
+}
