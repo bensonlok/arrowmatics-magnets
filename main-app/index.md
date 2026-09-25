@@ -1,406 +1,74 @@
 # Arrowmatics Magnets
 
-> Agent-readable mirror. Canonical HTML: same path without `.md`. Contact: WhatsApp +60 12-211 2522.
+> Agent-readable mirror. Canonical HTML: https://magnets.com.my/ · WhatsApp +60 12-211 2522
 
-Magnetic Separators & NdFeB Magnets Malaysia | Arrowmatics Magnets
-  
-  
-- 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+## Who we are
 
-  
-    
-      [
-          
-          Arrowmatics MagnetsMagnetic Separators · NdFeB · Lifting
-        ](/)
-      
-        [Home](/)
-        [Separators](/magnetic-separators.html)
-        [NdFeB](/ndfeb-magnets.html)
-        [Lifting](/lifting-magnets.html)
-        [FAQ](/faq.html)
-        [Call](tel:+60122112522)
-        [WhatsApp Quote](https://wa.me/60122112522)
-      
-    
-  
+We are **Arrowmatics Magnets** (legal entity: **Arrowmatics AI Sdn Bhd (1305806-W)**). We supply magnetic separators, NdFeB and SmCo rare-earth magnets, and lifting magnets for food, plastics, recycling, chemicals, bulk materials and steel handling — from Shah Alam across Malaysia. ASEAN inquiries welcome.
 
-  
-    
-      Shah Alam · Supply Malaysia-wide
-      
-# Magnetic separators, NdFeB magnets & lifting magnets for Malaysian industry
+## Key figures
 
-      
-Arrowmatics Magnets equips factories in food processing, plastics, recycling, chemicals, bulk materials and steel handling. Get a written quote on WhatsApp — no fake list prices.
+- **10–13k G** — typical rare-earth separator field
+- **N35–N52** — NdFeB grade range
+- **~3:1** — lifting safety factor (relative to rated load under stated conditions)
+- **MY** — Shah Alam base · ASEAN welcome
 
-      
-        [WhatsApp +60 12-211 2522](https://wa.me/60122112522)
-        [Call +60 12-211 2522](tel:+60122112522)
-        [Browse separators](/magnetic-separators.html)
-      
-    
-  
-
-  
-    
-      
-        
-          
 ## What is a magnetic separator?
 
-          
-A magnetic separator uses permanent magnets to pull ferrous contaminants (iron, steel filings, tramp metal) out of powders, liquids or bulk solids before they damage equipment or spoil product. Industrial plants in Malaysia typically specify grate, bullet, drawer, pulley or plate magnets — often in the 10,000–13,000 gauss range for rare-earth designs.
+A **magnetic separator** uses permanent magnets to remove ferrous contaminants (iron, steel filings, tramp metal) from powders, liquids or bulk solids — protecting product quality and downstream equipment. Industrial plants in Malaysia typically specify grate, bullet, drawer, pulley or plate magnets, often in the **10,000–13,000 gauss** range for rare-earth designs.
 
-          
-Arrowmatics Magnets (legal entity: Arrowmatics AI Sdn Bhd (1305806-W)) supplies these separators from Shah Alam to sites across Malaysia. ASEAN inquiries are welcome. For application fit and a written quote, WhatsApp [+60 12-211 2522](https://wa.me/60122112522).
+WhatsApp [+60 12-211 2522](https://wa.me/60122112522) for application fit and a written quote.
 
-        
-      
-    
+## Product families
 
-    
-      
-        
-          
-## Product lines
+Standard industrial ranges plus quote-to-drawing options:
 
-          
-Three core lines for industrial buyers — separators for contamination control, NdFeB for high-energy magnet applications, and lifting magnets for steel handling.
-
-        
-        
-          
-            
-            
 ### Magnetic separators
+Grate, bullet, drawer, pulley and plate magnets for food, plastics, recycling and bulk materials. Food-grade options. Typical rare-earth field: 10,000–13,000 gauss. → [magnetic-separators.html](https://magnets.com.my/magnetic-separators.html)
 
-            
-Grate, bullet, drawer, pulley and plate magnets for food, plastics, recycling and bulk materials. Food-grade options available. Typical gauss: 10,000–13,000.
-
-            
-              Grate
-              Bullet
-              Drawer
-              Pulley
-              Plate
-            
-            [Separator types & quote →](/magnetic-separators.html)
-          
-          
-            
-            
 ### NdFeB rare-earth magnets
+Sintered neodymium grades N35–N52 for motors, sensors, fixtures and OEM assemblies. Coatings and sizes quoted to drawing. → [ndfeb-magnets.html](https://magnets.com.my/ndfeb-magnets.html)
 
-            
-Sintered neodymium magnets grades N35–N52 for motors, sensors, fixtures and OEM assemblies. Coatings and custom sizes on request.
+### SmCo samarium cobalt magnets
+High-temperature rare-earth magnets (SmCo5 / Sm2Co17) when heat or corrosion rules out NdFeB. Quoted to drawing. → [smco-magnets.html](https://magnets.com.my/smco-magnets.html)
 
-            
-              N35
-              N42
-              N48
-              N52
-            
-            [NdFeB grades & quote →](/ndfeb-magnets.html)
-          
-          
-            
-            
 ### Lifting magnets
+Permanent and electro lifters for plate, billet and scrap. Sized around a ~3:1 safety factor. → [lifting-magnets.html](https://magnets.com.my/lifting-magnets.html)
 
-            
-Permanent and electro lifting magnets for plate, billet and scrap handling. Designed around a safety factor of about 3:1. Capacities sized to your load.
+## Industries served
 
-            
-              Permanent
-              Electro
-              ~3:1 safety
-            
-            [Lifting options & quote →](/lifting-magnets.html)
-          
-        
-      
-    
+Magnet systems that protect product quality, equipment and handling safety:
 
-    
-    
-      
-        
-          
-## Magnet types by category
+- Food processing & packaging — food-grade grate and drawer magnets
+- Plastics & compounding — hopper and drawer magnets
+- Recycling & scrap — pulley and plate magnets
+- Chemicals & bulk materials — bullet and pipeline magnets
+- Construction & steel handling — lifting magnets
+- OEMs & MRO — NdFeB blanks and assemblies
 
-          
-Catalog views by separator type — grate, hopper grate, drawer, bullet, plate, magnetic bars, drum — plus NdFeB and lifting magnets.
-
-        
-        
-          
-            
-            Grate magnet
-          
-          
-            
-            Hopper / round grate
-          
-          
-            
-            Drawer magnet
-          
-          
-            
-            Bullet magnet
-          
-          
-            
-            Plate magnet
-          
-          
-            
-            Magnetic bars / tubes
-          
-          
-            
-            Drum separator
-          
-          
-            
-            NdFeB magnets
-          
-          
-            
-            Lifting magnet
-          
-        
-      
-    
-
-    
-      
-        
-          
-## Who we supply
-
-          
-Factories and plants that need reliable ferrous control or high-energy magnets — not consumer fridge magnets.
-
-        
-        
-          
-            ✓Food processing & packaging — food-grade grate and drawer magnets for powders, grains and ingredients.
-            
-- ✓Plastics & compounding — hopper and drawer magnets to protect extruders and moulds.
-            
-- ✓Recycling & scrap — pulley and plate magnets for ferrous recovery on conveyors.
-          
-          
-            
-- ✓Chemicals & bulk materials — bullet and pipeline magnets for pneumatic and gravity feeds.
-            
-- ✓Construction & steel handling — lifting magnets for plate and structural steel.
-            
-- ✓OEMs & MRO — NdFeB blanks and assemblies for Malaysian manufacturers.
-          
-        
-      
-    
-
-    
-      
-        
-          
 ## Why Arrowmatics Magnets
 
-          
-Malaysia-based, industrial application focus, clear product-type guidance, and fast WhatsApp quotes.
+- **Shah Alam base** — Malaysian company Arrowmatics AI Sdn Bhd (1305806-W); supply Malaysia-wide; ASEAN welcome
+- **Application engineering** — grate vs bullet vs drawer, NdFeB grade, SmCo vs NdFeB, permanent vs electro lifting matched to process duty
+- **Written quotes on WhatsApp** — send duty, size and quantity to +60 12-211 2522; no published RM list prices
 
-        
-        
-          
-            
-### Based in Shah Alam
+## Quick technical answers
 
-            
-Local presence in Selangor with supply across Malaysia. ASEAN inquiries welcome. You deal with a Malaysian company — Arrowmatics AI Sdn Bhd (1305806-W).
-
-          
-          
-            
-### Application-first advice
-
-            
-We help you pick grate vs bullet vs drawer, NdFeB grade, or permanent vs electro lifting — not a one-size SKU dump.
-
-          
-          
-            
-### Written quotes on WhatsApp
-
-            
-No published RM price lists. Send duty, size and quantity to [+60 12-211 2522](https://wa.me/60122112522) for a written quote.
-
-          
-        
-      
-    
-
-    
-      
-        
-          
-## Quick answers buyers ask
-
-        
-        
-          
 ### Food-grade grate magnets Malaysia?
+Yes. We supply food-grade grate and drawer magnets for Malaysian food plants. Share product and opening size for a written quote.
 
-          
-Yes — we supply food-grade grate and drawer magnets for Malaysian food plants. Share product and opening size for a written quote.
-
-        
-        
-          
 ### NdFeB N52 strongest commercial grade?
-
-          
 Among common sintered grades, N52 is at the top of the energy-product range we supply (N35–N52). Grade choice also depends on temperature and coating.
 
-        
-        
-          
 ### Lifting magnet safety factor?
-
-          
 We size permanent and electro lifting magnets around a safety factor of about 3:1 relative to rated load. Confirm with your site safety rules.
 
-        
-        
-[Read all FAQs →](/faq.html)
+Full FAQ → [faq.html](https://magnets.com.my/faq.html)
 
-      
-    
-
-    
-      
-        
-          
-            
 ## Contact & NAP
 
-            
-              
-                Company
-                Arrowmatics AI Sdn Bhd (1305806-W)
-
-                Trading as Arrowmatics Magnets
-              
-            
-            
-              
-                Address
-                No. 64, Jalan Kapar 27/89, Megah Industrial Park,
-
-                Taman Alam Megah, Section 27,
-
-                40400 Shah Alam, Selangor, Malaysia
-              
-            
-            
-              
-                Mobile / WhatsApp
-                [+60 12-211 2522](tel:+60122112522)
-                · [wa.me/60122112522](https://wa.me/60122112522)
-              
-            
-            
-              
-                Tel
-                [+603 5191 0299](tel:+60351910299)
-              
-            
-            
-              
-                Email
-                [bensonlok@gmail.com](mailto:bensonlok@gmail.com) · [arrowmatics@gmail.com](mailto:arrowmatics@gmail.com)
-              
-            
-          
-          
-            
-## Need a written quote?
-
-            
-Tell us product type, size, quantity and industry. We reply on WhatsApp with a written quote — no online cart, no fake RM prices.
-
-            [WhatsApp +60 12-211 2522](https://wa.me/60122112522)
-            [Call](tel:+60122112522)
-          
-        
-      
-    
-  
-
-  
-    
-      
-        
-          
-### Arrowmatics Magnets
-
-          
-Magnetic separators, NdFeB rare-earth magnets, and lifting magnets for industry in Malaysia.
-
-        
-        
-          
-### Products
-
-          [Magnetic separators](/magnetic-separators.html)
-          [NdFeB magnets](/ndfeb-magnets.html)
-          [Lifting magnets](/lifting-magnets.html)
-          [FAQ](/faq.html)
-        
-        
-          
-### NAP
-
-          
-Arrowmatics AI Sdn Bhd (1305806-W)
-
-          
-No. 64, Jalan Kapar 27/89, Megah Industrial Park, Taman Alam Megah, Section 27, 40400 Shah Alam, Selangor, Malaysia
-
-          
-Mobile / WhatsApp: [+60 12-211 2522](tel:+60122112522) · Office: [+603 5191 0299](tel:+60351910299)
-
-          
-[bensonlok@gmail.com](mailto:bensonlok@gmail.com) · [arrowmatics@gmail.com](mailto:arrowmatics@gmail.com)
-
-        
-      
-      
-        © Arrowmatics AI Sdn Bhd (1305806-W). All rights reserved. · [magnets.com.my](https://magnets.com.my/)
-      
-    
-  
-
-  [Call](tel:+60122112522)
-  [
-    
-  ](https://wa.me/60122112522)
+- **Company:** Arrowmatics AI Sdn Bhd (1305806-W) · trading as Arrowmatics Magnets
+- **Address:** No. 64, Jalan Kapar 27/89, Megah Industrial Park, Taman Alam Megah, Section 27, 40400 Shah Alam, Selangor, Malaysia
+- **Mobile / WhatsApp:** +60 12-211 2522 · https://wa.me/60122112522
+- **Tel:** +603 5191 0299
+- **Email:** bensonlok@gmail.com · arrowmatics@gmail.com
