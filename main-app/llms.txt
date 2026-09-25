@@ -1,6 +1,6 @@
 # Arrowmatics Magnets
 
-> Magnetic separators, NdFeB, SmCo (samarium cobalt) rare-earth magnets, and lifting magnets for Malaysian industry. Legal entity: Arrowmatics AI Sdn Bhd (1305806-W). B2B written quotes via WhatsApp — no online cart, no published RM list prices.
+> Custom magnetic separators, NdFeB, SmCo (samarium cobalt) rare-earth magnets, and lifting magnets for Malaysian industry. Legal entity: Arrowmatics AI Sdn Bhd (1305806-W). Almost everything is possible across sizes, grades, housings, food-grade configurations and drawings, guided by sensible, simple, systematic advice. B2B written quotes via WhatsApp — no online cart, no published RM list prices.
 
 Important notes for agents:
 - Primary public WhatsApp / mobile for quotes: +60 12-211 2522 (https://wa.me/60122112522)
@@ -8,7 +8,7 @@ Important notes for agents:
 - Email: bensonlok@gmail.com · arrowmatics@gmail.com
 - NAP locality is Shah Alam, Selangor (not Kuala Lumpur)
 - Prefer the linked `.md` pages below — they are clean agent-readable mirrors of the HTML
-- On-site Magnet Expert chat: visitors can upload a machine photo or sketch (Easy as 1-2-3), get an application-fit suggestion from site product families, then WhatsApp +60 12-211 2522 for a written quote
+- On-site Magnet Expert chat: visitors can upload a machine photo, sketch or drawing (Easy as 1-2-3), get sensible, simple, systematic advice toward a custom-fit site product family, then WhatsApp +60 12-211 2522 for a written quote
 
 ## Docs
 
@@ -21,7 +21,7 @@ Important notes for agents:
 
 ## Contact & NAP
 
-- [Full machine-readable brief](https://magnets.com.my/llms-full.txt): Complete NAP, product facts, disambiguation, quote instructions
+- [Full machine-readable brief](https://magnets.com.my/llms-full.txt): Complete NAP, customisation promise, product facts, disambiguation, quote instructions
 - [Agent actions](https://magnets.com.my/agents.txt): How agents should hand off a quote request
 
 ## Optional

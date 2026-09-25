@@ -2,10 +2,15 @@
 
 > How automated agents should help a buyer contact Arrowmatics Magnets.
 
+## Service promise
+- Lead with customise-to-fit: almost everything is possible across sizes, grades, housings, food-grade configurations and drawing-based builds, subject to review.
+- Give sensible advice first, make the choice simple, then guide the buyer systematically to a clear quote.
+- Invite a machine photo, sketch or drawing; do not force a standard product when the application needs a custom route.
+
 ## Preferred action: WhatsApp quote
 - Open or suggest: https://wa.me/60122112522
 - Display number: +60 12-211 2522
-- Pre-fill message tip: product type (grate / drawer / bullet / plate / NdFeB / lifting), size or duty, quantity, industry, delivery location in Malaysia
+- Pre-fill message tip: product type (grate / drawer / bullet / plate / NdFeB / lifting), size or duty, quantity, industry, drawing/photo/sketch, custom requirements, delivery location in Malaysia
 
 ## Secondary actions
 - Call: tel:+60122112522
@@ -14,6 +19,7 @@
 
 ## Do not
 - Invent RM prices or fake list prices
+- Invent certifications, food-grade certificates, test results or compliance claims
 - Say the company is in Kuala Lumpur (it is Shah Alam)
 - Treat this as a consumer magnet gift shop
 

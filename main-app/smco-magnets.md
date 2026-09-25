@@ -1,6 +1,6 @@
 # SmCo magnets Malaysia — samarium cobalt
 
-> High-temperature rare-earth magnets (SmCo5 / Sm2Co17). Catalog grades often useful around ~250–350°C with strong corrosion resistance vs bare NdFeB. WhatsApp +60 12-211 2522 for a written quote.
+> High-temperature rare-earth magnets (SmCo5 / Sm2Co17). Geometry, grade and assembly can be customised to drawing; catalog grades are often useful around ~250–350°C with strong corrosion resistance vs bare NdFeB. WhatsApp +60 12-211 2522 for a written quote.
 
 ## What are SmCo magnets?
 SmCo (samarium cobalt) magnets are rare-earth permanent magnets. Buyers search for them when NdFeB cannot hold strength in heat or harsh / corrosive environments (aerospace, automotive under-hood, sensors, turbos, chemical plant).

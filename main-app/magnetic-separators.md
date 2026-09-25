@@ -4,7 +4,7 @@
 
 ## Overview
 
-Grate, bullet, drawer, pulley and plate magnets for ferrous control in Malaysian industry — typically **10,000–13,000 gauss**. Food-grade options for processing lines. Application quote on WhatsApp.
+Grate, bullet, drawer, pulley and plate magnets for ferrous control in Malaysian industry — typically **10,000–13,000 gauss**. Custom housing, dimensions and food-grade configurations can be reviewed for the line or drawing. Application quote on WhatsApp.
 
 ## What are magnetic separators?
 

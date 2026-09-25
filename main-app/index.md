@@ -2,9 +2,11 @@
 
 > Agent-readable mirror. Canonical HTML: https://magnets.com.my/ · WhatsApp +60 12-211 2522
 
+> **Core promise:** customise-to-fit wherever practical, with sensible advice, simple specification and systematic follow-through.
+
 ## Who we are
 
-We are **Arrowmatics Magnets** (legal entity: **Arrowmatics AI Sdn Bhd (1305806-W)**). We supply magnetic separators, NdFeB and SmCo rare-earth magnets, and lifting magnets for food, plastics, recycling, chemicals, bulk materials and steel handling — from Shah Alam across Malaysia. ASEAN inquiries welcome.
+We are **Arrowmatics Magnets** (legal entity: **Arrowmatics AI Sdn Bhd (1305806-W)**). We customise magnetic solutions for food, plastics, recycling, chemicals, bulk materials and steel handling — almost everything is possible across sizes, grades, housings, food-grade configurations and drawing-based builds, subject to duty review. We supply separators, NdFeB, SmCo and lifting magnets from Shah Alam across Malaysia. ASEAN inquiries welcome.
 
 ## Key figures
 
@@ -21,7 +23,7 @@ WhatsApp [+60 12-211 2522](https://wa.me/60122112522) for application fit and a 
 
 ## Product families
 
-Standard industrial ranges plus quote-to-drawing options:
+Standard industrial ranges plus custom-to-fit options — sizes, grades, housings, food-grade configurations and drawings are welcome:
 
 ### Magnetic separators
 Grate, bullet, drawer, pulley and plate magnets for food, plastics, recycling and bulk materials. Food-grade options. Typical rare-earth field: 10,000–13,000 gauss. → [magnetic-separators.html](https://magnets.com.my/magnetic-separators.html)
@@ -48,9 +50,9 @@ Magnet systems that protect product quality, equipment and handling safety:
 
 ## Why Arrowmatics Magnets
 
-- **Shah Alam base** — Malaysian company Arrowmatics AI Sdn Bhd (1305806-W); supply Malaysia-wide; ASEAN welcome
-- **Application engineering** — grate vs bullet vs drawer, NdFeB grade, SmCo vs NdFeB, permanent vs electro lifting matched to process duty
-- **Written quotes on WhatsApp** — send duty, size and quantity to +60 12-211 2522; no published RM list prices
+- **Customise to fit** — sizes, grades, housings, food-grade configurations and drawing-based builds, subject to application review
+- **Sensible → simple → systematic** — best-fit advice first, a clear technical choice next, then a systematic route through fit, materials and quote
+- **Engineering-led handoff** — send a photo, sketch or drawing with duty, size and quantity to +60 12-211 2522; no invented prices or certifications
 
 ## Quick technical answers
 
@@ -74,6 +76,6 @@ Full FAQ → [faq.html](https://magnets.com.my/faq.html)
 - **Email:** bensonlok@gmail.com · arrowmatics@gmail.com
 
 ## Easy as 1-2-3
-1. Snap/upload a machine photo or sketch (circle the problem).
-2. Short description to Magnet Expert.
-3. Application-fit magnet solution + WhatsApp quote (+60 12-211 2522).
+1. Upload a machine photo, sketch or drawing (circle the problem).
+2. Share product, duty, size, quantity and what should be customised.
+3. Receive sensible, simple, systematic advice toward a custom-fit magnet + WhatsApp quote (+60 12-211 2522).

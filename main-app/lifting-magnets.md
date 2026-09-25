@@ -4,7 +4,7 @@
 
 ## Overview
 
-Permanent and electro lifting magnets for plate, billet and scrap. Capacities sized to load around a **~3:1** safety factor.
+Permanent and electro lifting magnets for plate, billet and scrap. Capacity, pole layout and handling format are sized to the load around a **~3:1** safety factor.
 
 ## What are lifting magnets?
 

@@ -28,7 +28,7 @@ Set on project `magnets-com-my` (Settings → Environment variables):
 - `main-app/js/magnet-expert-chat.js`
 - `main-app/css/magnet-expert-chat.css`
 - Homepage **Easy as 1-2-3** section `#easy-123` + HowTo schema
-- Injected on home + product/FAQ pages (`?v=photo123` cache-bust)
+- Injected on home + product/FAQ pages (`?v=sss-custom-20260926` cache-bust)
 
 After push to `main`, Cloudflare Pages redeploys. Confirm env vars, then spot-check:
 - https://magnets.com.my/#easy-123

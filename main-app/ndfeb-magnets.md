@@ -4,7 +4,7 @@
 
 ## Overview
 
-Sintered neodymium for Malaysian OEMs, MRO and industrial fixtures. Grade, coating and size quoted to drawing — **N35 through N52**.
+Sintered neodymium for Malaysian OEMs, MRO and industrial fixtures. Grade, coating, shape and size can be customised to drawing — **N35 through N52**.
 
 ## What are NdFeB magnets?
 
