@@ -169,3 +169,7 @@
 
 body:has(#magnets-expert-root) .wa-fab { bottom: 88px !important; }
 body:has(#magnets-expert-root) .call-fab { bottom: 148px !important; right: 20px; }
+
+@media (max-width: 768px) {
+  #magnets-expert-fab { right: 12px; bottom: 116px; width: 48px; height: 48px; font-size: 10px; }
+}

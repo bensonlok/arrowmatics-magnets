@@ -1333,3 +1333,24 @@ button.btn.btn-wa {
   .hpb-text strong { color: var(--white); }
   .hpb-arrow { flex: 0 0 auto; font-size: 1.2rem; color: var(--cyan); }
 }
+
+/* Contact band headline + mobile: keep CTAs clear of floating buttons */
+.contact-band h2.contact-headline { line-height: 0.95; max-width: 14ch; }
+@media (max-width: 768px) {
+  .contact-band h2.contact-headline { font-size: 2.1rem; line-height: 1.05; max-width: none; }
+  .contact-band .contact-number { font-size: 1.6rem; margin: 1.1rem 0 1.25rem; }
+
+  /* Floating buttons: smaller, stacked in one column at the bottom-right */
+  .wa-fab { width: 48px; height: 48px; right: 0.75rem; bottom: 0.75rem; }
+  .wa-fab svg { width: 24px; height: 24px; }
+  .call-fab { right: 0.75rem; bottom: 4.25rem; min-width: 48px; width: 48px; height: 44px; padding: 0; font-size: 0.6rem; letter-spacing: 0.06em; }
+
+  /* CTA buttons stack full width but stop short of the floating column */
+  .hero-actions { flex-direction: column; align-items: stretch; padding-right: 4rem; }
+  .hero-actions .btn { width: 100%; justify-content: center; text-align: center; }
+  .easy-actions { flex-direction: column; align-items: stretch; padding-right: 4rem; }
+  .easy-actions .btn { width: 100%; justify-content: center; text-align: center; }
+
+  /* Room at the very bottom so the last content/footer is never hidden */
+  .site-footer { padding-bottom: 6rem; }
+}
