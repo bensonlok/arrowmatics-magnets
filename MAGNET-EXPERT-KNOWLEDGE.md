@@ -54,6 +54,12 @@ We explain in plain language and ask only the few facts needed to size correctly
 - Page: https://magnets.com.my/plate-magnets.html
 - **HONESTY RULE:** never say Arrowmatics is ISO 22000 or HACCP certified, never invent certificates, test numbers or customer names. Say "designed to support your HACCP / ISO 22000 programme"; customers remain responsible for their own certification.
 
+## Magnetic bars / grate magnets — full weld (OK to say)
+- **Full-weld construction is available, built to order** for magnetic bars, tubes, threaded square bars and grate magnets on food, pharma and hygiene-sensitive lines. **Do NOT say every bar model is full weld** — tell the customer to confirm the build spec (weld, SS grade, finish) at quotation.
+- Why full weld (plain language): (1) no crevices for product, grease or moisture to trap, so easier to clean and inspect; (2) NdFeB core sealed from water, so no rust and no magnet dust contamination; (3) withstands wet washdown and high-pressure cleaning; (4) resists vibration and impact so end caps and welds do not loosen; (5) smooth polished weld, no exposed fasteners or grooves.
+- Supports the customer's HACCP / ISO 22000 programme ("designed to support your HACCP and ISO 22000 programme"). Same HONESTY RULE as plate magnets: never claim Arrowmatics is certified; no invented certificates, test numbers or customers.
+- Page: https://magnets.com.my/magnetic-separators.html#bars-full-weld
+
 ## Proprietary notes (add below — do not invent if blank)
 <!-- Paste supplier MOQs, preferred brands, margin rules, do-not-sell list, typical lead times, competitor positioning, case studies, SOP for RFQ — anything the bot should know but not invent. -->
 

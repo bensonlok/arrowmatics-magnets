@@ -31,6 +31,9 @@
 1b. Plate magnets (food-grade, full weld) - up to ~10,000 Gauss surface field (typical rating; confirm per application/air gap); 100% full-weld SS304/SS316 with continuous seal welds, no crevices/gaps/exposed fasteners, smooth cleanable finish; hinged, suspended or quick-release; custom sizes. Designed to support customers' HACCP and ISO 22000 food-safety programmes. Page: https://magnets.com.my/plate-magnets.html
    - Honesty: Arrowmatics does NOT claim ISO 22000 or HACCP certification for itself; customers remain responsible for their own certification. Do not state or imply otherwise.
 
+1c. Magnetic bars / tubes / threaded square bars / grate magnets - FULL-WELD CONSTRUCTION AVAILABLE, BUILT TO ORDER for food, pharma and hygiene-sensitive lines (NOT every bar model is full weld; customers should confirm the build spec at quotation). Why full weld: no crevices for product, grease or moisture to trap (easier to clean and inspect); NdFeB core sealed from water so no rust or magnet dust contamination; withstands wet washdown and high-pressure cleaning; resists vibration and impact so end caps and welds do not loosen; smooth polished weld with no exposed fasteners or grooves. Designed to support customers' HACCP and ISO 22000 programmes. Page: https://magnets.com.my/magnetic-separators.html#bars-full-weld
+   - Honesty: same rule as plate magnets - Arrowmatics does NOT claim ISO 22000 or HACCP certification; do not invent certificates, test numbers or customers; never say all bars are full weld.
+
 ## Buyers
 Factories in food processing, plastics, recycling, chemicals, bulk materials, steel handling, OEMs and MRO across Malaysia. ASEAN inquiries welcome.
 

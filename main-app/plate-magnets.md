@@ -31,6 +31,8 @@ Arrowmatics does not hold, and does not claim, ISO 22000 or HACCP certification 
 6. Verify performance: cling/pull test or Gauss-meter reading if required
 7. Close, refit, check latch and mounting, sign the log
 
+**Need bars instead?** Full-weld magnetic bars and grate magnets are available to order too — see [magnetic separators](https://magnets.com.my/magnetic-separators.html#bars-full-weld).
+
 ## FAQ
 
 **Are your plate magnets rated at 10,000 Gauss?** We can build plate magnets up to about 10,000 Gauss surface field (typical rating, not a guarantee for every build). Field at the product depends on air gap and plate size; we confirm per application.

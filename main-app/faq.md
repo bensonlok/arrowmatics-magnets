@@ -81,6 +81,14 @@ Yes. We supply food-grade grate and drawer magnets for food processing and packa
 
 Yes. We build 100% full-weld SS304/SS316 plate magnets with a typical surface field of up to ~10,000 Gauss (confirm per application and air gap), continuous seal welds, no crevices or exposed fasteners, and a smooth, cleanable finish. They are designed to support your HACCP and ISO 22000 food-safety programme. Arrowmatics does not claim its own ISO 22000 or HACCP certification; customers remain responsible for their own certification. See [plate magnets](/plate-magnets.html) or WhatsApp +60 12-211 2522.
 
+## Are magnetic bars full-weld?
+
+Full-weld construction is available for magnetic bars, tubes, threaded square bars and grate magnets, built to order for food, pharma and hygiene-sensitive lines. Not every bar model is full weld, so please confirm the build spec at quotation.
+
+Why full weld: no crevices for product, grease or moisture to trap (easier to clean and inspect); the NdFeB core is sealed from water, so no rust or magnet dust contamination; it withstands wet washdown and high-pressure cleaning; it resists vibration and impact so end caps and welds do not loosen; and the weld is smooth and polished with no exposed fasteners or grooves.
+
+Designed to support your HACCP and ISO 22000 programme. Arrowmatics does not claim its own ISO 22000 or HACCP certification; customers remain responsible for their own. See [magnetic separators](/magnetic-separators.html#bars-full-weld) or WhatsApp +60 12-211 2522.
+
 ## What gauss rating do your separators use?
 
           
