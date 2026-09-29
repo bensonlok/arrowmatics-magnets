@@ -22,7 +22,7 @@ Yes. Food processors use stainless food-grade grate and drawer magnets in hopper
 - **Bullet magnets** — pipeline / pneumatic; plastics compounding and powder transfer
 - **Drawer magnets** — multi-row under hoppers or before extruders
 - **Magnetic pulleys** — conveyor head ferrous discharge (recycling, aggregates, scrap)
-- **Plate magnets** — chute walls or suspended above belts
+- **Plate magnets** — chute walls or suspended above belts; food-grade 100% full-weld SS304/SS316 builds up to ~10,000 Gauss (typical) that support your HACCP / ISO 22000 programme — see [plate-magnets](https://magnets.com.my/plate-magnets.html)
 
 ## Quote
 

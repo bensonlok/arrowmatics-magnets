@@ -1144,3 +1144,70 @@ button.btn.btn-wa {
     transform: none;
   }
 }
+
+/* —— Plate magnets page (full weld / hygiene) —— */
+.page-hero .hero-eyebrow { margin-bottom: 1rem; }
+.split {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+.split-photo { margin: 0; border: 1px solid var(--line); background: #0b1220; }
+.split-photo img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+.split-photo figcaption {
+  padding: 0.85rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #e2e8f0;
+}
+.feature-list-dark li { border-bottom-color: var(--line); color: #dfe4ef; }
+.feature-list-dark li:last-child { border-bottom-color: var(--line); }
+.feature-list-dark strong { color: var(--white); }
+.honesty-note {
+  margin-top: 1.75rem;
+  background: rgba(255, 90, 31, 0.08);
+  border-left: 4px solid var(--orange);
+  padding: 1.25rem 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+.checklist {
+  list-style: none;
+  counter-reset: chk;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1px;
+  background: var(--line-dark);
+  border: 1px solid var(--line-dark);
+  padding: 0;
+}
+.checklist li {
+  counter-increment: chk;
+  background: var(--white);
+  padding: 1.4rem 1.4rem 1.4rem 4rem;
+  position: relative;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+.checklist li::before {
+  content: counter(chk);
+  position: absolute;
+  left: 1.2rem;
+  top: 1.3rem;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  background: var(--cobalt);
+  color: #fff;
+  font-weight: 900;
+}
+.checklist li strong { color: var(--ink); display: block; margin-bottom: 0.2rem; }
+@media (max-width: 920px) {
+  .split { grid-template-columns: 1fr; }
+}

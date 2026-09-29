@@ -46,6 +46,14 @@ We explain in plain language and ask only the few facts needed to size correctly
 - Site: www.magnets.com.my
 - Categories: magnetic separators (grate, bullet, drawer, pulley, plate; often 10k–13k gauss), NdFeB N35–N52, SmCo, lifting magnets (~3:1 safety), food-grade configurations, custom sizes/grades/housings/drawings, Malaysia / ASEAN supply
 
+## Plate magnets — full weld, food safety (OK to say)
+- Plate magnets up to **~10,000 Gauss** surface field (say "up to ~10,000 Gauss, typical rating; confirm per application/air gap").
+- **100% full-weld** SS304 (standard) / SS316 (corrosive/washdown) housing: continuous seal welds, no crevices/gaps, no exposed fasteners on the product face, smooth cleanable weld finish.
+- Hinged swing-open, suspended, quick-release / lift-out; custom sizes to drawing.
+- Hygienic design that **supports the customer's HACCP programme and ISO 22000** food safety management system; good as a ferrous foreign-body control at a CCP the customer's HACCP team selects.
+- Page: https://magnets.com.my/plate-magnets.html
+- **HONESTY RULE:** never say Arrowmatics is ISO 22000 or HACCP certified, never invent certificates, test numbers or customer names. Say "designed to support your HACCP / ISO 22000 programme"; customers remain responsible for their own certification.
+
 ## Proprietary notes (add below — do not invent if blank)
 <!-- Paste supplier MOQs, preferred brands, margin rules, do-not-sell list, typical lead times, competitor positioning, case studies, SOP for RFQ — anything the bot should know but not invent. -->
 

@@ -28,6 +28,9 @@
 2x. NdFeB (neodymium) rare-earth magnets — sintered grades N35–N52; coatings and custom sizes on request.
 3. Lifting magnets — permanent and electro; designed around ~3:1 safety factor; capacities sized to load.
 
+1b. Plate magnets (food-grade, full weld) - up to ~10,000 Gauss surface field (typical rating; confirm per application/air gap); 100% full-weld SS304/SS316 with continuous seal welds, no crevices/gaps/exposed fasteners, smooth cleanable finish; hinged, suspended or quick-release; custom sizes. Designed to support customers' HACCP and ISO 22000 food-safety programmes. Page: https://magnets.com.my/plate-magnets.html
+   - Honesty: Arrowmatics does NOT claim ISO 22000 or HACCP certification for itself; customers remain responsible for their own certification. Do not state or imply otherwise.
+
 ## Buyers
 Factories in food processing, plastics, recycling, chemicals, bulk materials, steel handling, OEMs and MRO across Malaysia. ASEAN inquiries welcome.
 
@@ -52,6 +55,7 @@ English only on magnets.com.my.
 ## Pages (HTML + markdown mirrors)
 - https://magnets.com.my/ · https://magnets.com.my/index.md
 - https://magnets.com.my/magnetic-separators.html · .md
+- https://magnets.com.my/plate-magnets.html · .md
 - https://magnets.com.my/ndfeb-magnets.html · .md
 - https://magnets.com.my/lifting-magnets.html · .md
 - https://magnets.com.my/faq.html · .md

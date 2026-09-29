@@ -76,6 +76,11 @@ Yes. We supply food-grade grate and drawer magnets for food processing and packa
 
         
           
+
+## Full-weld plate magnets for HACCP and ISO 22000?
+
+Yes. We build 100% full-weld SS304/SS316 plate magnets with a typical surface field of up to ~10,000 Gauss (confirm per application and air gap), continuous seal welds, no crevices or exposed fasteners, and a smooth, cleanable finish. They are designed to support your HACCP and ISO 22000 food-safety programme. Arrowmatics does not claim its own ISO 22000 or HACCP certification; customers remain responsible for their own certification. See [plate magnets](/plate-magnets.html) or WhatsApp +60 12-211 2522.
+
 ## What gauss rating do your separators use?
 
           
