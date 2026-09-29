@@ -29,10 +29,10 @@ Standard industrial ranges plus custom-to-fit options — sizes, grades, housing
 Grate, bullet, drawer, pulley and plate magnets for food, plastics, recycling and bulk materials. Food-grade options. Typical rare-earth field: 10,000–13,000 gauss. → [magnetic-separators.html](https://magnets.com.my/magnetic-separators.html)
 
 ### Full-weld plate magnets
-100% full-weld SS304/SS316 plate magnets, up to ~10,000 Gauss (typical rating; confirm per application/air gap), smooth easy-clean finish, designed to support your HACCP and ISO 22000 food-safety programme. Arrowmatics does not claim its own ISO 22000/HACCP certification. → [plate-magnets.html](https://magnets.com.my/plate-magnets.html)
+100% full-weld SS304/SS316/SS316L plate magnets, up to ~10,000 Gauss (typical rating; confirm per application/air gap), smooth easy-clean finish, designed to support your HACCP and ISO 22000 food-safety programme. Arrowmatics does not claim its own ISO 22000/HACCP certification. → [plate-magnets.html](https://magnets.com.my/plate-magnets.html)
 
 ### Full-weld magnetic bars (built to order)
-Full-weld construction is available for magnetic bars, tubes, threaded square bars and grate magnets for food, pharma and hygiene-sensitive lines: no crevices, sealed NdFeB core, washdown and vibration resistant, smooth polished weld. Not every bar model is full weld; confirm the build spec at quotation. Designed to support your HACCP and ISO 22000 programme. → [magnetic-separators.html#bars-full-weld](https://magnets.com.my/magnetic-separators.html#bars-full-weld)
+Full-weld construction is available for magnetic bars, tubes, threaded square bars and grate magnets for food, pharma and hygiene-sensitive lines: no screws, nuts or threads for deposit to build up in (fasteners can trap product and cause corrosion), no crevices, sealed NdFeB core, washdown and vibration resistant, smooth polished weld. Stainless grades 304, 316 and 316L available (confirm grade at quotation). Not every bar model is full weld; confirm the build spec at quotation. Designed to support your HACCP and ISO 22000 programme. → [magnetic-separators.html#bars-full-weld](https://magnets.com.my/magnetic-separators.html#bars-full-weld)
 
 ### NdFeB rare-earth magnets
 Sintered neodymium grades N35–N52 for motors, sensors, fixtures and OEM assemblies. Coatings and sizes quoted to drawing. → [ndfeb-magnets.html](https://magnets.com.my/ndfeb-magnets.html)

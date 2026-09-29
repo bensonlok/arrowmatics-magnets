@@ -4,7 +4,7 @@
 
 ## Overview
 
-Plate magnets with a typical surface field of **up to ~10,000 Gauss** (typical rating; confirm per application and air gap), built as **100% full-weld SS304/SS316 stainless steel** housings with continuous seal welds, no crevices, no gaps and no exposed fasteners on the product side. Weld seams are finished to a smooth, cleanable surface. Designed to **support your HACCP and ISO 22000** food-safety programme.
+Plate magnets with a typical surface field of **up to ~10,000 Gauss** (typical rating; confirm per application and air gap), built as **100% full-weld SS304/SS316/SS316L stainless steel** housings with continuous seal welds, no crevices, no gaps and no exposed fasteners on the product side. Weld seams are finished to a smooth, cleanable surface. Designed to **support your HACCP and ISO 22000** food-safety programme.
 
 ## Honesty note
 
@@ -16,7 +16,7 @@ Arrowmatics does not hold, and does not claim, ISO 22000 or HACCP certification 
 - 100% full-weld construction, continuous seal welds
 - No crevices, gaps or exposed fasteners on the product-contact face
 - Smooth, cleanable finish on weld seams
-- Food-grade stainless steel: SS304 standard, SS316 for corrosive products or washdown chemicals
+- Food-grade stainless steel grades 304, 316 and 316L available (316/316L generally suit more corrosive or washdown-heavy environments; confirm grade at quotation)
 - Easy-clean designs: hinged swing-open, suspended, quick-release / lift-out
 - Custom sizes to chute, duct or conveyor drawing
 - Ferrous foreign-body control at the point in the line selected by the customer's HACCP team
@@ -31,7 +31,7 @@ Arrowmatics does not hold, and does not claim, ISO 22000 or HACCP certification 
 6. Verify performance: cling/pull test or Gauss-meter reading if required
 7. Close, refit, check latch and mounting, sign the log
 
-**Need bars instead?** Full-weld magnetic bars and grate magnets are available to order too — see [magnetic separators](https://magnets.com.my/magnetic-separators.html#bars-full-weld).
+**Need bars instead?** Full-weld magnetic bars and grate magnets are available to order too. Without full weld, bar and grate magnets can use screws or nuts that leave crevices and threads where deposit builds up; full weld removes them. Stainless grades 304, 316 and 316L are available; confirm at quotation — see [magnetic separators](https://magnets.com.my/magnetic-separators.html#bars-full-weld).
 
 ## FAQ
 
@@ -43,7 +43,7 @@ Arrowmatics does not hold, and does not claim, ISO 22000 or HACCP certification 
 
 **Is Arrowmatics ISO 22000 certified?** No, we do not claim that. ISO 22000 certifies a food safety management system at the customer's site; we supply hygienic-design equipment that supports it.
 
-**SS304 or SS316?** SS304 as standard; SS316 for more corrosive products or washdown chemicals.
+**Which stainless steel: 304, 316 or 316L?** All three grades are available. 316 and 316L generally suit more corrosive or washdown-heavy environments. Confirm the grade at quotation.
 
 **How do we verify performance?** Visual inspection of face and welds, cling/pull test, and optional Gauss-meter reading, recorded in your own programme.
 
@@ -51,7 +51,7 @@ Arrowmatics does not hold, and does not claim, ISO 22000 or HACCP certification 
 
 ## Quote
 
-WhatsApp +60 12-211 2522 or email arrowmatics@gmail.com with product, chute/conveyor size, SS304 or SS316, quantity and industry. No published RM list prices.
+WhatsApp +60 12-211 2522 or email arrowmatics@gmail.com with product, chute/conveyor size, SS304, SS316 or SS316L, quantity and industry. No published RM list prices.
 
 ## NAP
 

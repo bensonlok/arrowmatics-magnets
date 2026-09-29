@@ -48,7 +48,7 @@ We explain in plain language and ask only the few facts needed to size correctly
 
 ## Plate magnets — full weld, food safety (OK to say)
 - Plate magnets up to **~10,000 Gauss** surface field (say "up to ~10,000 Gauss, typical rating; confirm per application/air gap").
-- **100% full-weld** SS304 (standard) / SS316 (corrosive/washdown) housing: continuous seal welds, no crevices/gaps, no exposed fasteners on the product face, smooth cleanable weld finish.
+- **100% full-weld** stainless housing (SS304 / SS316 / SS316L available; 316/316L generally suit more corrosive or washdown-heavy environments; confirm grade at quotation): continuous seal welds, no crevices/gaps, no exposed fasteners on the product face, smooth cleanable weld finish.
 - Hinged swing-open, suspended, quick-release / lift-out; custom sizes to drawing.
 - Hygienic design that **supports the customer's HACCP programme and ISO 22000** food safety management system; good as a ferrous foreign-body control at a CCP the customer's HACCP team selects.
 - Page: https://magnets.com.my/plate-magnets.html
@@ -56,6 +56,8 @@ We explain in plain language and ask only the few facts needed to size correctly
 
 ## Magnetic bars / grate magnets — full weld (OK to say)
 - **Full-weld construction is available, built to order** for magnetic bars, tubes, threaded square bars and grate magnets on food, pharma and hygiene-sensitive lines. **Do NOT say every bar model is full weld** — tell the customer to confirm the build spec (weld, SS grade, finish) at quotation.
+- **KEY POINT (fasteners):** without full weld, grate/bar magnets can be assembled with screws or nuts to hold parts together. Those fasteners create crevices and threads where product deposit builds up and can cause corrosion — a hygiene problem. Full weld removes the screws, nuts and threads so there is nowhere for deposit to sit. Keep it factual; no certification claims.
+- **Materials:** stainless steel grades **304, 316 and 316L** are available for construction (never say only 316). 316/316L generally suit more corrosive or washdown-heavy environments (general statement only — no invented test data). Always confirm the grade at quotation.
 - Why full weld (plain language): (1) no crevices for product, grease or moisture to trap, so easier to clean and inspect; (2) NdFeB core sealed from water, so no rust and no magnet dust contamination; (3) withstands wet washdown and high-pressure cleaning; (4) resists vibration and impact so end caps and welds do not loosen; (5) smooth polished weld, no exposed fasteners or grooves.
 - Supports the customer's HACCP / ISO 22000 programme ("designed to support your HACCP and ISO 22000 programme"). Same HONESTY RULE as plate magnets: never claim Arrowmatics is certified; no invented certificates, test numbers or customers.
 - Page: https://magnets.com.my/magnetic-separators.html#bars-full-weld

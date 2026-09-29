@@ -14,8 +14,8 @@ Important notes for agents:
 
 - [Home](https://magnets.com.my/index.md): Company overview, product lines, NAP, FAQ answers
 - [Magnetic separators](https://magnets.com.my/magnetic-separators.md): Grate, bullet, drawer, pulley, plate — gauss 10,000–13,000, food-grade options
-- [Plate magnets](https://magnets.com.my/plate-magnets.md): Full-weld SS304/SS316 plate magnets, up to ~10,000 Gauss (typical), hygienic design supporting customers' HACCP / ISO 22000 programmes (Arrowmatics itself is not claimed as certified)
-- [Magnetic bars, full weld](https://magnets.com.my/magnetic-separators.md): Full-weld magnetic bars, tubes, threaded square bars and grate magnets available to order for food, pharma and hygiene-sensitive lines; confirm build spec at quotation
+- [Plate magnets](https://magnets.com.my/plate-magnets.md): Full-weld SS304/SS316/SS316L plate magnets, up to ~10,000 Gauss (typical), hygienic design supporting customers' HACCP / ISO 22000 programmes (Arrowmatics itself is not claimed as certified)
+- [Magnetic bars, full weld](https://magnets.com.my/magnetic-separators.md): Full-weld magnetic bars, tubes, threaded square bars and grate magnets available to order for food, pharma and hygiene-sensitive lines; stainless 304/316/316L available; full weld removes screws/nuts/threads where deposit can build up; confirm build spec and grade at quotation
 - [NdFeB magnets](https://magnets.com.my/ndfeb-magnets.md): Sintered neodymium grades N35–N52, coatings, custom sizes
 - [SmCo magnets](https://magnets.com.my/smco-magnets.md): Samarium cobalt SmCo5 / Sm2Co17 — high temperature & corrosion
 - [Lifting magnets](https://magnets.com.my/lifting-magnets.md): Permanent and electro lifters, ~3:1 safety factor
