@@ -1355,55 +1355,80 @@ button.btn.btn-wa {
   .site-footer { padding-bottom: 6rem; }
 }
 
-/* —— Photo-first home hero: full-bleed real photos, CSS-only crossfade + Ken Burns —— */
-.hero-slides { position: absolute; inset: 0; z-index: 0; overflow: hidden; background: var(--ink); pointer-events: none; }
-.hero-slide { position: absolute; inset: 0; opacity: 0; animation: heroFade 30s linear infinite; will-change: opacity; }
-.hero-slide:first-child { opacity: 1; }
-.hero-slide:nth-child(1) { animation-delay: -1.5s; }
-.hero-slide:nth-child(2) { animation-delay: 4.5s; }
-.hero-slide:nth-child(3) { animation-delay: 10.5s; }
-.hero-slide:nth-child(4) { animation-delay: 16.5s; }
-.hero-slide:nth-child(5) { animation-delay: 22.5s; }
-.hero-slide img {
-  display: block; width: 100%; height: 100%; object-fit: cover; object-position: 60% 50%;
-  transform-origin: 60% 50%; animation: heroZoom 14s ease-in-out infinite alternate; will-change: transform;
+/* —— Home hero showcase: bright product photo tiles up front, text on its own panel —— */
+.hero-showcase {
+  background: var(--ink);
+  min-height: 0;
+  padding: 7.5rem 0 3rem;
+  align-items: center;
 }
-.hero-slide:nth-child(even) img { transform-origin: 40% 50%; animation-duration: 16s; }
-@keyframes heroFade { 0% { opacity: 0; } 4% { opacity: 1; } 20% { opacity: 1; } 24% { opacity: 0; } 100% { opacity: 0; } }
-@keyframes heroZoom { from { transform: scale(1); } to { transform: scale(1.08); } }
-/* Data-saver / slow connection: static first photo */
-.hero-static .hero-slide { animation: none !important; }
-.hero-static .hero-slide:not(:first-child) { display: none; }
-.hero-static .hero-slide img { animation: none !important; }
-@media (prefers-reduced-motion: reduce) {
-  .hero-slide, .hero-slide img { animation: none !important; transform: none !important; }
-  .hero-slide:not(:first-child) { display: none; }
+.hero-showcase::before, .hero-showcase::after { display: none; }
+.hero-showcase .hero-signal, .hero-showcase .hero-signal-2 { display: none; }
+.hero-inner { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 2.5rem; align-items: center; }
+.hero-showcase h1 { font-size: clamp(2.2rem, 4.2vw, 3.9rem); line-height: 0.98; max-width: 16ch; margin-bottom: 1.1rem; }
+.hero-showcase .hero-lead { max-width: 30rem; opacity: 0.95; margin-bottom: 1.4rem; }
+
+.hero-tiles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.hero-tile {
+  position: relative; display: block; overflow: hidden; background: #e8ecf2;
+  aspect-ratio: 4 / 3; text-decoration: none; color: #fff;
+  opacity: 0; animation: tileIn 0.6s ease-out forwards; animation-delay: calc(var(--i) * 90ms + 80ms);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-/* Overlay: the photo stays visible; text sits on a dark gradient */
-.hero::before { display: none; }
-.hero::after {
-  background:
-    linear-gradient(90deg, rgba(7,10,18,0.88) 0%, rgba(7,10,18,0.55) 45%, rgba(7,10,18,0.08) 80%),
-    linear-gradient(180deg, rgba(7,10,18,0.55) 0%, rgba(7,10,18,0) 22%, rgba(7,10,18,0) 50%, rgba(7,10,18,0.9) 100%);
+.hero-tile img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+/* Only the label strip has a gradient; the photo itself is never dimmed */
+.hero-tile-label {
+  position: absolute; left: 0; right: 0; bottom: 0; padding: 1.4rem 0.6rem 0.45rem;
+  background: linear-gradient(0deg, rgba(7,10,18,0.82), rgba(7,10,18,0));
+  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; line-height: 1.2;
 }
-.hero h1 { max-width: 20ch; line-height: 0.95; font-size: clamp(2.3rem, 5.6vw, 5rem); }
-.hero-lead { max-width: 30rem; opacity: 0.95; margin-bottom: 1.5rem; }
+.hero-tile:hover, .hero-tile:focus-visible { transform: translateY(-2px) scale(1.02); box-shadow: 0 10px 28px rgba(0,0,0,0.45); z-index: 2; text-decoration: none; color: #fff; }
+.hero-tile:hover img { transform: scale(1.06); }
+.hero-tile:active { transform: scale(0.98); }
+.hero-tile:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; }
+@keyframes tileIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
 .hero-intro { background: var(--ink); color: #c5cad6; padding: 1.6rem 0; border-top: 1px solid rgba(255,255,255,0.08); }
 .hero-intro p { max-width: 52rem; margin: 0; font-size: 0.95rem; line-height: 1.7; }
 .hero-intro strong { color: #fff; }
 
+@media (prefers-reduced-motion: reduce), (update: slow) {
+  .hero-tile { animation: none !important; opacity: 1 !important; }
+  .hero-tile, .hero-tile img { transition: none !important; }
+  .hero-tile:hover, .hero-tile:hover img { transform: none; }
+}
+.hero-static .hero-tile { animation: none !important; opacity: 1 !important; }
+
+@media (max-width: 900px) {
+  .hero-inner { grid-template-columns: 1fr; gap: 1rem; }
+}
+
 @media (max-width: 768px) {
-  .hero { min-height: 92svh; padding: 6rem 0 2rem; align-items: flex-end; }
-  .hero::after {
-    background: linear-gradient(180deg, rgba(7,10,18,0.6) 0%, rgba(7,10,18,0.05) 22%, rgba(7,10,18,0.25) 38%, rgba(7,10,18,0.9) 64%, rgba(7,10,18,0.96) 100%);
-  }
-  .hero-slide img { object-position: 50% 30%; }
-  .hero h1 { font-size: clamp(1.9rem, 8.4vw, 2.5rem); line-height: 1.02; max-width: none; margin-bottom: 0.8rem; }
-  .hero-eyebrow { font-size: 0.62rem; letter-spacing: 0.2em; margin-bottom: 0.8rem; }
-  .hero-lead { font-size: 0.95rem; margin-bottom: 1rem; }
-  .hero-plate-banner { margin-bottom: 0.9rem; }
-  /* two primary CTAs full width, the other two side by side */
-  .hero-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; padding-right: 4rem; }
-  .hero-actions .btn { padding: 0.85rem 0.6rem; font-size: 0.66rem; letter-spacing: 0.08em; }
-  .hero-actions .btn:nth-child(1), .hero-actions .btn:nth-child(2) { grid-column: 1 / -1; }
+  .hero-showcase { padding: 5.2rem 0 1.5rem; }
+  /* Reorder for the first screen: headline, short line, two CTAs, photos, then teaser + secondary buttons */
+  .hero-inner { display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: stretch; }
+  .hero-copy, .hero-actions { display: contents; }
+  .hero-eyebrow { display: none; }
+  .hero-showcase h1 { order: 1; flex: 0 0 100%; font-size: clamp(1.55rem, 7vw, 2rem); line-height: 1.05; max-width: none; margin: 0; }
+  .hero-showcase .hero-lead { order: 2; flex: 0 0 100%; font-size: 0.88rem; line-height: 1.4; margin: 0; }
+  .hero-actions .btn { padding: 0.8rem 0.4rem; font-size: 0.64rem; letter-spacing: 0.04em; justify-content: center; text-align: center; width: auto; }
+  .hero-actions .btn:nth-child(1) { order: 3; flex: 1 1 calc(50% - 0.3rem); }
+  .hero-actions .btn:nth-child(2) { order: 4; flex: 1 1 calc(50% - 0.3rem); }
+  .hero-tiles { order: 5; flex: 0 0 100%; gap: 6px; margin: 0.15rem 0; }
+  .hero-tile-label { font-size: 0.6rem; padding: 1.1rem 0.4rem 0.35rem; letter-spacing: 0.03em; }
+  .hero-showcase .hero-plate-banner { order: 6; flex: 0 0 100%; margin: 0; }
+  .hero-actions .btn:nth-child(3) { order: 7; }
+  .hero-actions .btn:nth-child(4) { order: 8; }
+  /* Keep the lower rows clear of the floating button column at the bottom-right */
+  .hero-showcase .hero-plate-banner,
+  .hero-actions .btn:nth-child(3),
+  .hero-actions .btn:nth-child(4) { max-width: calc(100% - 4rem); }
+  .hero-actions .btn:nth-child(3), .hero-actions .btn:nth-child(4) { flex: 0 0 calc((100% - 4rem - 0.6rem) / 2); max-width: none; }
+}
+@media (max-width: 380px) {
+  .hero-tile-label { font-size: 0.56rem; }
+}
+
+/* Desktop: keep the photo mosaic clear of the floating buttons in the bottom-right corner */
+@media (min-width: 901px) {
+  .hero-showcase .hero-inner { padding-right: 5rem; }
 }
