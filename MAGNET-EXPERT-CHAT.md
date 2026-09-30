@@ -46,3 +46,23 @@ After push to `main`, Cloudflare Pages redeploys. Confirm env vars, then spot-ch
 - If everything fails the visitor still gets a helpful WhatsApp message, and (if Telegram env vars are set) the owner receives a "AI could NOT answer" alert with the visitor's message and photo.
 - Browser resizes photos to <=1280px JPEG before upload; only the newest image is sent upstream.
 - `openrouter/free` is never used for chat (code substitutes `google/gemini-2.5-flash-lite`, even if `LLM_MODEL` is set to it). Replies that look like guard/safety-classifier output, are too short, or are cut off (finish_reason length / dangling `* **` bullets) are rejected and the next model is tried. Tests: `node tests/magnet-chat.test.mjs`.
+
+## Example photos
+- `magnet-chat.js` has a fixed `PHOTOS` whitelist (files under `main-app/images/`, served as `https://www.magnets.com.my/images/...`). The model may end its reply with `[[photo:KEY]]`; the server strips the tag (also malformed/unknown ones), maps it to whitelisted photos (max 2) and returns `images: [{url, caption}]`. If the model gives no tag, a keyword fallback looks at the visitor's message (then, if focused, at the reply). `[[photo:none]]` suppresses photos.
+- Frontend renders same-site `/images/` thumbnails only (tap = full size in new tab) with the note "Example photo — actual spec confirmed at quotation". Tests: `node tests/magnet-chat.test.mjs`.
+
+| Key | File |
+|---|---|
+| ndfeb | ndfeb-blocks.jpg (discs + blocks) |
+| ndfeb-discs | real-ndfeb-4.jpg |
+| ndfeb-blocks | real-ndfeb-3.jpg |
+| smco | real-smco-2.jpg |
+| plate | plate-magnet-10000g.jpg |
+| bars | real-bars-1.jpg |
+| grate | real-grate-1.jpg |
+| hopper | real-hopper-grate-1.jpg |
+| lifting | real-lifting-1.jpg |
+| drawer | real-drawer-1.jpg |
+| drum | real-drum-1.jpg |
+| bullet | real-bullet-1.jpg |
+| liquid | real-liquid-trap-1.jpg |

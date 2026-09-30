@@ -173,3 +173,13 @@ body:has(#magnets-expert-root) .call-fab { bottom: 148px !important; right: 20px
 @media (max-width: 768px) {
   #magnets-expert-fab { right: 12px; bottom: 116px; width: 48px; height: 48px; font-size: 10px; }
 }
+
+/* Example product photos under a bot bubble */
+.mec-photos { align-self: flex-start; display: flex; flex-wrap: wrap; gap: 8px; max-width: 92%; margin-top: -2px; }
+.mec-photo {
+  display: block; width: 112px; max-width: 46%; text-decoration: none; color: #0a1628;
+  background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden;
+}
+.mec-photo img { display: block; width: 100%; height: 84px; object-fit: cover; background: #eef2f7; }
+.mec-photo-cap { display: block; padding: 4px 6px; font-size: 10.5px; line-height: 1.25; color: #334155; overflow-wrap: anywhere; }
+.mec-photo-note { flex: 1 0 100%; font-size: 10.5px; color: #64748b; font-style: italic; line-height: 1.3; }

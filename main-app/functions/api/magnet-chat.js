@@ -44,6 +44,7 @@ PLATE MAGNETS FOR FOOD SAFETY (what you may say): plate magnets up to ~10,000 Ga
 MAGNETIC BARS / GRATE MAGNETS - FULL WELD (what you may say): full-weld construction is AVAILABLE, built to order, for magnetic bars, tubes, threaded square bars and grate magnets on food, pharma and hygiene-sensitive lines. NEVER say every bar model is full weld; tell the customer to confirm the build spec at quotation. KEY POINT: without full weld, grate/bar magnets can be assembled with screws or nuts to hold parts; those fasteners create crevices and threads where product deposit builds up and can cause corrosion (a hygiene problem); full weld removes screws/nuts/threads so there is nowhere for deposit to sit. Keep it factual. MATERIALS: stainless steel grades 304, 316 and 316L are available (never say only 316); 316/316L generally suit more corrosive or washdown-heavy environments (general statement, no invented test data); always confirm the grade at quotation. Why full weld, in plain words: no crevices for product/grease/moisture to trap (easier to clean and inspect); NdFeB core sealed from water (no rust, no magnet dust contamination); withstands wet washdown and high-pressure cleaning; resists vibration and impact so end caps/welds do not loosen; smooth polished weld with no exposed fasteners or grooves. Designed to SUPPORT the customer's HACCP and ISO 22000 programme; same HONESTY rule (no certification claims, no invented certificates/test numbers/customers). Page: https://magnets.com.my/magnetic-separators.html#bars-full-weld
 PRODUCT AVAILABILITY WITH A PHOTO ("do you have this?"): when a visitor sends a photo and asks if we have it: (a) describe honestly what you see, using "looks like" not certainty (e.g. "looks like a stack of round disc magnets, possibly NdFeB discs"); (b) say Arrowmatics supplies and custom-makes NdFeB magnets (disc, block, ring, arc and other shapes, subject to review), SmCo, magnetic separators, lifting magnets, and plate/bar/grate magnets (full-weld available built to order, stainless 304, 316 or 316L, confirm at quotation); (c) ask the 3-4 key questions: diameter x thickness, grade (e.g. N35 / N42 / N52), coating/plating, quantity, application and required pull force; (d) say exact stock and price are confirmed by the team (never invent stock levels, prices, lead times or certificates) and give WhatsApp +60 12-211 2522 with the photo. Keep it short and positive. If you cannot see the photo, say so plainly, still ask the key questions, and give WhatsApp.
 ANSWER FORMAT (hard): always finish every list in full and never stop mid-sentence or leave an empty bullet. When the visitor asks "what do you need to know?" (or similar), answer with this concrete numbered list: 1) diameter x thickness (or length x width x thickness), 2) grade (e.g. N35 / N42 / N52), 3) coating/plating, 4) quantity, 5) application, 6) required pull force, 7) a photo or sketch if you have one; then say the team confirms stock and price on WhatsApp +60 12-211 2522. Reply only in plain helpful sales language; NEVER output safety labels or classifier text such as "User Safety: safe" or "Response Safety: safe".
+EXAMPLE PHOTOS: you may attach ONE example photo (at most two) when the visitor asks about a product type, by adding a tag on its own line at the very end of your reply: [[photo:KEY]] with KEY one of: ndfeb (discs and blocks), ndfeb-discs, ndfeb-blocks, smco, plate, bars, grate, hopper, lifting, drawer, drum, bullet, liquid. Use [[photo:none]] if no photo fits (e.g. pulley, or a general question). Photos are EXAMPLES ONLY: never say or imply a photo is a specific stock item, size, grade or spec; if you mention it say "example photo, actual spec confirmed at quotation". Never write a photo tag inside a sentence and never explain the tag.
 HONESTY (HARD): never say Arrowmatics is ISO 22000 or HACCP certified; never invent certificates, test numbers or customer names. Say "designed to support your HACCP / ISO 22000 programme"; customers remain responsible for their own certification.
 
 HARD RULES:
@@ -133,18 +134,25 @@ export async function onRequestPost(context) {
     const leadLine = `Visitor lead on file: name=${lead.name}; phone=${lead.phone || "—"}; email=${lead.email || "—"}.`;
     const primary = pickPrimary(context.env.LLM_MODEL);
     const models = [primary, ...FALLBACK_MODELS.filter((m) => m !== primary)].slice(0, 4);
-    let partial = ""; /* best truncated-but-usable answer, used only if every model fails */
+    let partial = "";
+    let partialImages = [];
+    const visitorText = lastVisitorText(rawMessages);
+    /* best truncated-but-usable answer, used only if every model fails */
     const system = BASE_SYSTEM + "\n" + leadLine;
     const started = Date.now();
 
     for (const model of models) {
       if (Date.now() - started > TOTAL_BUDGET_MS - CALL_TIMEOUT_MS) break;
       const r = await callOpenRouter(context.env, model, system, cleaned);
-      const q = r.text ? assessReply(r.text, r.finish) : { ok: false, reason: r.error || "empty reply" };
+      const ex = r.text ? extractPhotos(r.text, visitorText) : { text: "", images: [] };
+      const q = r.text ? assessReply(ex.text, r.finish) : { ok: false, reason: r.error || "empty reply" };
       if (q.ok) {
-        return json({ reply: q.text, lead_ok: true }, 200, cors);
+        return json(withImages({ reply: q.text, lead_ok: true }, ex.images), 200, cors);
       }
-      if (q.partial && q.partial.length > partial.length) partial = q.partial;
+      if (q.partial && q.partial.length > partial.length) {
+        partial = q.partial;
+        partialImages = ex.images;
+      }
       reasons.push(`${model}: ${q.reason}`);
     }
 
@@ -161,11 +169,15 @@ export async function onRequestPost(context) {
           "\nNote: the visitor attached a photo/sketch that could not be processed. Say honestly that you could not view it, answer from their text, ask the key questions, and offer WhatsApp +60 12-211 2522 for them to send the photo to the team.",
         textOnly
       );
-      const q = r.text ? assessReply(r.text, r.finish) : { ok: false, reason: r.error || "empty reply" };
+      const ex = r.text ? extractPhotos(r.text, visitorText) : { text: "", images: [] };
+      const q = r.text ? assessReply(ex.text, r.finish) : { ok: false, reason: r.error || "empty reply" };
       if (q.ok) {
         return json({ reply: q.text, lead_ok: true, no_image: true }, 200, cors);
       }
-      if (q.partial && q.partial.length > partial.length) partial = q.partial;
+      if (q.partial && q.partial.length > partial.length) {
+        partial = q.partial;
+        partialImages = ex.images;
+      }
       reasons.push(`text-only ${primary}: ${q.reason}`);
     }
 
@@ -174,7 +186,7 @@ export async function onRequestPost(context) {
       try {
         context.waitUntil(notifyFailure(context.env, lead, rawMessages, ["partial answer only"].concat(reasons)));
       } catch (e) {}
-      return json({ reply: partial + "\n\n" + KEY_QUESTIONS_LINE, lead_ok: true, partial: true }, 200, cors);
+      return json(withImages({ reply: partial + "\n\n" + KEY_QUESTIONS_LINE, lead_ok: true, partial: true }, partialImages), 200, cors);
     }
   } catch (e) {
     reasons.push("exception: " + (e instanceof Error ? e.message : "unknown"));
@@ -277,6 +289,103 @@ function parseCompletion(ok, status, data) {
   }
   const finish = (choice && (choice.finish_reason || choice.native_finish_reason)) || "";
   return { text, finish: String(finish) };
+}
+
+/* ---- Example product photos (fixed same-site whitelist; the model can only pick a key) ---- */
+const SITE = "https://www.magnets.com.my/images/";
+const PHOTOS = {
+  ndfeb: { file: "ndfeb-blocks.jpg", caption: "NdFeB disc and block magnets" },
+  "ndfeb-discs": { file: "real-ndfeb-4.jpg", caption: "NdFeB disc and cylinder magnets in different coatings" },
+  "ndfeb-blocks": { file: "real-ndfeb-3.jpg", caption: "NdFeB block magnets" },
+  smco: { file: "real-smco-2.jpg", caption: "SmCo disc magnets" },
+  plate: { file: "plate-magnet-10000g.jpg", caption: "Stainless plate magnet" },
+  bars: { file: "real-bars-1.jpg", caption: "Stainless magnetic bar" },
+  grate: { file: "real-grate-1.jpg", caption: "Grate magnet with magnetic bars" },
+  hopper: { file: "real-hopper-grate-1.jpg", caption: "Round hopper grate magnet" },
+  lifting: { file: "real-lifting-1.jpg", caption: "Permanent lifting magnet" },
+  drawer: { file: "real-drawer-1.jpg", caption: "Drawer magnet separator" },
+  drum: { file: "real-drum-1.jpg", caption: "Drum magnetic separator" },
+  bullet: { file: "real-bullet-1.jpg", caption: "Bullet magnet" },
+  liquid: { file: "real-liquid-trap-1.jpg", caption: "Stainless magnetic liquid trap" },
+};
+const PHOTO_ALIASES = {
+  disc: "ndfeb-discs", disk: "ndfeb-discs", discs: "ndfeb-discs", round: "ndfeb-discs", cylinder: "ndfeb-discs",
+  block: "ndfeb-blocks", blocks: "ndfeb-blocks", neodymium: "ndfeb", samarium: "smco",
+  bar: "bars", tube: "bars", grid: "grate", lifter: "lifting", trap: "liquid",
+};
+const MAX_PHOTOS = 2;
+const PHOTO_TAG_RE = /\[\[\s*photo\s*:\s*([^\]\[]{0,120}?)\s*\]\]/gi;
+
+/* Keyword fallback (used only when the model gave no [[photo:...]] tag): [regex, key], checked against the visitor's message. */
+const PHOTO_KEYWORDS = [
+  [/\bsm\s?co\b|samarium/i, "smco"],
+  [/\b(?:disc|discs|disk|disks|round magnets?|cylinder|cylindrical)\b/i, "ndfeb-discs"],
+  [/\b(?:ndfeb|neodymium|rare[- ]earth)\b[^.?!]{0,30}\bblocks?\b|\bblock magnets?\b/i, "ndfeb-blocks"],
+  [/\b(?:ndfeb|neodymium|n35|n42|n45|n48|n50|n52)\b/i, "ndfeb"],
+  [/\bplate magnets?\b|\bsuspension magnets?\b|\bplate\b/i, "plate"],
+  [/\bhopper\b|\bround grate\b/i, "hopper"],
+  [/\bgrate\b|\bgrid magnets?\b/i, "grate"],
+  [/\bmagnetic bars?\b|\bmagnet bars?\b|\bmagnetic tubes?\b|\bthreaded (?:square )?bars?\b|\bbars?\b/i, "bars"],
+  [/\blifting\b|\blifter\b|\bcrane\b|\bhoist\b/i, "lifting"],
+  [/\bdrawer\b/i, "drawer"],
+  [/\bdrum\b/i, "drum"],
+  [/\bbullet\b/i, "bullet"],
+  [/\bliquid trap\b|\bslurry\b|\bliquid line\b/i, "liquid"],
+];
+
+function photoFor(key) {
+  const k = PHOTO_ALIASES[key] || key;
+  const p = Object.prototype.hasOwnProperty.call(PHOTOS, k) ? PHOTOS[k] : null;
+  return p ? { url: SITE + p.file, caption: p.caption } : null;
+}
+
+/* Pure helper (unit-tested): strip [[photo:x]] tags from a reply and return whitelisted images.
+   [[photo:none]] suppresses photos. No tag -> keyword fallback on the visitor's message. */
+function extractPhotos(replyText, visitorText) {
+  const tags = [];
+  let text = String(replyText || "").replace(PHOTO_TAG_RE, (m, k) => {
+    tags.push(String(k).trim().toLowerCase());
+    return "";
+  });
+  text = text.replace(/\[\[\s*photo[^\]]*$/i, "").replace(/[ \t]+\n/g, "\n").replace(/\n{3,}/g, "\n\n").trim();
+  const images = [];
+  const seen = new Set();
+  const add = (key) => {
+    const p = photoFor(key);
+    if (p && !seen.has(p.url) && images.length < MAX_PHOTOS) {
+      seen.add(p.url);
+      images.push(p);
+    }
+  };
+  if (tags.includes("none")) return { text, images: [] };
+  if (tags.length) {
+    tags.forEach(add);
+  } else {
+    const scan = (t) => {
+      const hits = [];
+      for (const [re, key] of PHOTO_KEYWORDS) {
+        const m = re.exec(String(t || ""));
+        if (m) hits.push([m.index, key]);
+      }
+      let ks = hits.sort((a, b) => a[0] - b[0]).map((h) => h[1]);
+      /* a specific NdFeB shape beats the generic NdFeB photo */
+      if (ks.includes("ndfeb-discs") || ks.includes("ndfeb-blocks")) ks = ks.filter((k) => k !== "ndfeb");
+      return ks;
+    };
+    let keys = scan(visitorText);
+    /* Visitor sent only a photo / "do you have this?": look at what the reply talks about, but only when it is focused (<=2 product types) */
+    if (!keys.length) {
+      const fromReply = scan(text);
+      if (fromReply.length && fromReply.length <= 2) keys = fromReply;
+    }
+    keys.forEach(add);
+  }
+  return { text, images };
+}
+
+function lastVisitorText(messages) {
+  const l = lastUserText(messages);
+  return String(l.text || "").replace(/\[Attached[^\]]*\]/g, "").slice(0, 1000);
 }
 
 /* Guard/safety classifier output (e.g. Llama Guard, Nemotron safety) is never a valid chat answer. */
@@ -518,6 +627,11 @@ async function notifyFailure(env, lead, messages, reasons) {
   } catch (e) {}
 }
 
+function withImages(obj, images) {
+  if (Array.isArray(images) && images.length) obj.images = images.slice(0, MAX_PHOTOS);
+  return obj;
+}
+
 function json(obj, status, cors) {
   return new Response(JSON.stringify(obj), {
     status,
@@ -525,4 +639,4 @@ function json(obj, status, cors) {
   });
 }
 
-export { parseCompletion, assessReply, stripDangling, pickPrimary };
+export { parseCompletion, assessReply, stripDangling, pickPrimary, extractPhotos, PHOTOS };

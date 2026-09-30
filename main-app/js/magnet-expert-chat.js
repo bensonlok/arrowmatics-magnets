@@ -217,6 +217,37 @@
   root.appendChild(panel);
   document.body.appendChild(root);
 
+  var PHOTO_NOTE = "Example photo — actual spec confirmed at quotation";
+  var PHOTO_RE = /^https:\/\/(?:www\.)?magnets\.com\.my(\/images\/[A-Za-z0-9_\/.-]{1,80}\.(?:jpe?g|png|webp))$/i;
+
+  /* Example photos from the server: same-site /images/ paths only, max 2 */
+  function addPhotos(images) {
+    if (!images || !images.length || !images.slice) return;
+    var wrap = el("div", { class: "mec-photos" });
+    var count = 0;
+    images.slice(0, 2).forEach(function (im) {
+      var m = im && typeof im.url === "string" ? PHOTO_RE.exec(im.url) : null;
+      if (!m) return;
+      var path = m[1];
+      var caption = String((im && im.caption) || "Example photo").slice(0, 80);
+      var a = el("a", {
+        class: "mec-photo",
+        href: path,
+        target: "_blank",
+        rel: "noopener",
+        "aria-label": caption + " — open full size",
+      });
+      a.appendChild(el("img", { src: path, alt: caption, loading: "lazy" }));
+      a.appendChild(el("span", { class: "mec-photo-cap", text: caption }));
+      wrap.appendChild(a);
+      count++;
+    });
+    if (!count) return;
+    wrap.appendChild(el("div", { class: "mec-photo-note", text: PHOTO_NOTE }));
+    msgs.appendChild(wrap);
+    msgs.scrollTop = msgs.scrollHeight;
+  }
+
   function addMsg(role, text, isErr, thumbUrl) {
     var m = el("div", {
       class: "mec-msg " + (isErr ? "err" : role === "user" ? "user" : "bot"),
@@ -613,6 +644,7 @@
         if (res.ok && reply) {
           history.push({ role: "assistant", content: reply });
           addMsg("bot", reply, !!res.j.degraded);
+          if (!res.j.degraded) addPhotos(res.j.images);
           attachStatus.textContent = "";
           return;
         }

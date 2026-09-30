@@ -80,3 +80,54 @@ x=await call({lead:{name:'x'},messages:photoMsg}); assert.equal(x.r.status,400);
 x=await call({lead,messages:[]}); assert.equal(x.r.status,400);
 // 9 hang -> timeout handled (shorten by faking timers not needed: skip long); 
 console.log('handler ok');
+
+// ================= example photos =================
+{
+  const M = await import('../main-app/functions/api/magnet-chat.js');
+  const { extractPhotos, PHOTOS } = M;
+  const fs = await import('node:fs');
+  const path = await import('node:path');
+  const SITEP = 'https://www.magnets.com.my/images/';
+  // every whitelisted file exists on disk
+  for (const [k, p] of Object.entries(PHOTOS)) assert.ok(fs.existsSync(path.join('../main-app/images', p.file)), 'missing ' + p.file);
+  // tag stripping + mapping
+  let e = extractPhotos('These look like NdFeB discs. Please share size.\n[[photo:ndfeb-discs]]', 'hi');
+  assert.equal(e.text, 'These look like NdFeB discs. Please share size.'); assert.equal(e.images.length, 1);
+  assert.equal(e.images[0].url, SITEP + 'real-ndfeb-4.jpg');
+  // alias + case + spacing
+  e = extractPhotos('ok [[ Photo : DISC ]]', ''); assert.equal(e.images[0].url, SITEP + 'real-ndfeb-4.jpg'); assert.ok(!/photo/i.test(e.text));
+  // max 2, dedupe
+  e = extractPhotos('x [[photo:plate]] [[photo:bars]] [[photo:grate]] [[photo:plate]]', ''); assert.equal(e.images.length, 2);
+  // whitelist enforcement: unknown keys / urls / path tricks ignored, tag still stripped
+  e = extractPhotos('x [[photo:../../etc/passwd]] [[photo:https://evil.com/a.jpg]] [[photo:secret]] [[photo:constructor]] [[photo:__proto__]] [[photo:toString]]', 'hello');
+  assert.equal(e.images.length, 0); assert.ok(!e.text.includes('[[')); 
+  for (const im of extractPhotos('[[photo:plate]][[photo:lifting]]', '').images) assert.ok(im.url.startsWith(SITEP));
+  // no tag + no keyword -> no images
+  e = extractPhotos('Hello, how can I help?', 'hi there'); assert.equal(e.images.length, 0);
+  // photo:none suppresses even when keywords match
+  e = extractPhotos('We do pulleys too. [[photo:none]]', 'do you have plate magnets?'); assert.equal(e.images.length, 0); assert.ok(!e.text.includes('[['));
+  // keyword fallback on visitor text
+  e = extractPhotos('Sure, we make those.', 'Do you have round disc magnets N52?'); assert.equal(e.images[0].url, SITEP + 'real-ndfeb-4.jpg');
+  e = extractPhotos('Sure.', 'need a full weld plate magnet'); assert.equal(e.images[0].url, SITEP + 'plate-magnet-10000g.jpg');
+  e = extractPhotos('Sure.', 'threaded square bar magnet'); assert.equal(e.images[0].url, SITEP + 'real-bars-1.jpg');
+  e = extractPhotos('Sure.', 'SmCo for high temperature'); assert.equal(e.images[0].url, SITEP + 'real-smco-2.jpg');
+  e = extractPhotos('Sure.', 'lifting magnet for steel plate 500kg'); assert.ok(e.images.length <= 2); assert.ok(e.images.some(i => i.url.endsWith('real-lifting-1.jpg')));
+  // reply-based fallback only when focused
+  e = extractPhotos('Those look like NdFeB disc magnets.', 'do you have this ?'); assert.equal(e.images[0].url, SITEP + 'real-ndfeb-4.jpg');
+  e = extractPhotos('We supply NdFeB, SmCo, plate magnets, grate magnets and lifting magnets.', 'what do you sell'); assert.equal(e.images.length, 0);
+  // truncated tag at end is removed
+  e = extractPhotos('Answer here. [[photo:pla', ''); assert.equal(e.text, 'Answer here.');
+
+  // end-to-end through the handler: response has images, no tag leaks, guard/truncation logic sees stripped text
+  const ok2 = (t) => ({ body: { choices: [{ message: { content: t }, finish_reason: 'stop' }] } });
+  mode = () => ok2('Looks like NdFeB discs. Please share diameter x thickness and grade.\n[[photo:ndfeb-discs]]');
+  x = await call({ lead, messages: photoMsg });
+  assert.ok(!x.j.reply.includes('[[')); assert.equal(x.j.images.length, 1); assert.equal(x.j.images[0].url, SITEP + 'real-ndfeb-4.jpg');
+  assert.ok(x.j.images[0].caption);
+  mode = () => ok2('Hello there, how can I help you today with magnets?');
+  x = await call({ lead, messages: [{ role: 'user', content: 'hello' }] }); assert.equal(x.j.images, undefined);
+  // tag-only reply is treated as too short -> next model
+  mode = () => orCalls.length === 1 ? ok2('[[photo:plate]]') : ok2('Plate magnets are built full weld to order; please share size and quantity.');
+  x = await call({ lead, messages: [{ role: 'user', content: 'plate magnet?' }] }); assert.match(x.j.reply, /full weld/); assert.equal(orCalls.length, 2);
+  console.log('photos ok');
+}
