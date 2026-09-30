@@ -9,7 +9,10 @@
     );
   var API = "/api/magnet-chat";
   var MAX_IMAGE_EDGE = 1280;
-  var JPEG_QUALITY = 0.72;
+  var JPEG_QUALITY = 0.8;
+  var REQUEST_TIMEOUT_MS = 70000;
+  var FALLBACK_MSG =
+    "I could not answer just now. Please tap Talk to human — WhatsApp +60 12-211 2522 and send your message or photo there; we will reply with availability.";
   var MAX_DATA_URL_CHARS = 900000; /* ~650KB binary — keep CF / OpenRouter payloads small */
   var history = [];
   var lead = null;
@@ -384,15 +387,30 @@
         canvas.height = ch;
         var ctx = canvas.getContext("2d");
         ctx.drawImage(img, 0, 0, cw, ch);
-        URL.revokeObjectURL(url);
         var dataUrl = canvas.toDataURL("image/jpeg", JPEG_QUALITY);
-        if (dataUrl.length > MAX_DATA_URL_CHARS) {
-          dataUrl = canvas.toDataURL("image/jpeg", 0.55);
+        /* Still large: step quality down, then shrink the picture, until it fits */
+        var q = JPEG_QUALITY;
+        var tries = 0;
+        while (dataUrl.length > MAX_DATA_URL_CHARS && tries < 6) {
+          tries++;
+          if (q > 0.5) {
+            q -= 0.1;
+          } else {
+            cw = Math.max(1, Math.round(cw * 0.8));
+            ch = Math.max(1, Math.round(ch * 0.8));
+            canvas.width = cw;
+            canvas.height = ch;
+            ctx = canvas.getContext("2d");
+            ctx.drawImage(img, 0, 0, cw, ch);
+          }
+          dataUrl = canvas.toDataURL("image/jpeg", q);
         }
         if (dataUrl.length > MAX_DATA_URL_CHARS) {
-          reject(new Error("Image still too large after compression. Try a smaller photo."));
+          URL.revokeObjectURL(url);
+          reject(new Error("Image still too large after compression. Try a smaller photo, or WhatsApp it to +60 12-211 2522."));
           return;
         }
+        URL.revokeObjectURL(url);
         resolve({
           name: (file.name || "photo.jpg").replace(/\.[^.]+$/, "") + ".jpg",
           mime: "image/jpeg",
@@ -403,7 +421,7 @@
       };
       img.onerror = function () {
         URL.revokeObjectURL(url);
-        reject(new Error("Could not read that image."));
+        reject(new Error("Could not read that image (HEIC or unusual format?). Please pick a JPG/PNG, or WhatsApp it to +60 12-211 2522."));
       };
       img.src = url;
     });
@@ -526,11 +544,52 @@
     send.disabled = true;
     attachStatus.textContent = "Magnet Expert is reviewing…";
 
+    /* Only the newest image goes upstream; older ones are replaced by a text note (keeps payload small) */
+    var lastImgIdx = -1;
+    history.forEach(function (m, idx) {
+      if (
+        m.role === "user" &&
+        Array.isArray(m.content) &&
+        m.content.some(function (p) {
+          return p && p.type === "image_url";
+        })
+      )
+        lastImgIdx = idx;
+    });
+    var payloadMsgs = history.map(function (m, idx) {
+      if (m.role === "user" && Array.isArray(m.content) && idx !== lastImgIdx) {
+        var txt = m.content
+          .map(function (p) {
+            if (p && p.type === "text") return p.text;
+            if (p && p.type === "image_url") return "[Earlier attached image]";
+            if (p && p.type === "file") return "[Earlier attached file]";
+            return "";
+          })
+          .filter(Boolean)
+          .join("\n");
+        return { role: "user", content: txt || "(attachment)" };
+      }
+      return m;
+    });
+
+    var ctrl = typeof AbortController !== "undefined" ? new AbortController() : null;
+    var timer = ctrl
+      ? setTimeout(function () {
+          ctrl.abort();
+        }, REQUEST_TIMEOUT_MS)
+      : null;
+
+    function showFallback() {
+      addMsg("bot", FALLBACK_MSG, true);
+      attachStatus.textContent = "";
+    }
+
     fetch(API, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
+      signal: ctrl ? ctrl.signal : undefined,
       body: JSON.stringify({
-        messages: history,
+        messages: payloadMsgs,
         lead: lead,
         notify: history.filter(function (m) {
           return m.role === "user";
@@ -538,36 +597,37 @@
       }),
     })
       .then(function (r) {
-        return r.json().then(function (j) {
-          return { ok: r.ok, j: j };
-        });
+        return r
+          .json()
+          .catch(function () {
+            return {};
+          })
+          .then(function (j) {
+            return { ok: r.ok, j: j || {} };
+          });
       })
       .then(function (res) {
-        if (!res.ok || res.j.error) {
-          var err =
-            (res.j && res.j.error) ||
-            "Chat offline. Use Talk to human on WhatsApp.";
-          if (/name|whatsapp|email/i.test(err)) {
-            gateErr.textContent = err;
-            showGate();
-          } else {
-            addMsg("bot", err, true);
-          }
+        var reply = typeof res.j.reply === "string" ? res.j.reply.trim() : "";
+        if (res.ok && reply) {
+          history.push({ role: "assistant", content: reply });
+          addMsg("bot", reply, !!res.j.degraded);
+          attachStatus.textContent = "";
           return;
         }
-        var reply = res.j.reply || "";
-        history.push({ role: "assistant", content: reply });
-        addMsg("bot", reply);
-        attachStatus.textContent = "";
+        var err = res.j && res.j.error;
+        if (err && /name|whatsapp|email/i.test(err) && /required/i.test(err)) {
+          gateErr.textContent = err;
+          showGate();
+          return;
+        }
+        /* Any other failure or an empty reply: never show a blank/"(no reply)" bubble */
+        showFallback();
       })
       .catch(function () {
-        addMsg(
-          "bot",
-          "Network error. Please Talk to human — WhatsApp +60 12-211 2522.",
-          true
-        );
+        showFallback();
       })
       .finally(function () {
+        if (timer) clearTimeout(timer);
         send.disabled = false;
       });
   });

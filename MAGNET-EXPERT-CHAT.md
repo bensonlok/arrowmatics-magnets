@@ -38,3 +38,10 @@ After push to `main`, Cloudflare Pages redeploys. Confirm env vars, then spot-ch
 ## Tone & proprietary knowledge
 - Live reply brain: `functions/api/magnet-chat.js` → `BASE_SYSTEM`
 - Editable company brief: `MAGNET-EXPERT-KNOWLEDGE.md` (edit, then ask to sync into `BASE_SYSTEM`)
+
+
+## Reliability (never a silent failure)
+- `main-app/functions/api/magnet-chat.js` is the copy Cloudflare deploys (root `functions/` is a mirror).
+- Model order: `LLM_MODEL` (default `openrouter/free`), then vision-capable fallbacks (`google/gemini-2.5-flash-lite`, `openai/gpt-4o-mini`), then a text-only retry. Empty/array/error responses are parsed safely.
+- If everything fails the visitor still gets a helpful WhatsApp message, and (if Telegram env vars are set) the owner receives a "AI could NOT answer" alert with the visitor's message and photo.
+- Browser resizes photos to <=1280px JPEG before upload; only the newest image is sent upstream.
