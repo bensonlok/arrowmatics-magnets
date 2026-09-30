@@ -45,3 +45,4 @@ After push to `main`, Cloudflare Pages redeploys. Confirm env vars, then spot-ch
 - Model order: `LLM_MODEL` (default `openrouter/free`), then vision-capable fallbacks (`google/gemini-2.5-flash-lite`, `openai/gpt-4o-mini`), then a text-only retry. Empty/array/error responses are parsed safely.
 - If everything fails the visitor still gets a helpful WhatsApp message, and (if Telegram env vars are set) the owner receives a "AI could NOT answer" alert with the visitor's message and photo.
 - Browser resizes photos to <=1280px JPEG before upload; only the newest image is sent upstream.
+- `openrouter/free` is never used for chat (code substitutes `google/gemini-2.5-flash-lite`, even if `LLM_MODEL` is set to it). Replies that look like guard/safety-classifier output, are too short, or are cut off (finish_reason length / dangling `* **` bullets) are rejected and the next model is tried. Tests: `node tests/magnet-chat.test.mjs`.

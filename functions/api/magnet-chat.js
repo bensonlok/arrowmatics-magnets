@@ -41,6 +41,7 @@ Magnetic separators (grate, bullet, drawer, pulley, plate; typical 10,000–13,0
 PLATE MAGNETS FOR FOOD SAFETY (what you may say): plate magnets up to ~10,000 Gauss surface field (typical rating; confirm per application and air gap); 100% full-weld SS304/SS316/SS316L with continuous seal welds, no crevices/gaps/exposed fasteners, smooth cleanable finish; hinged, suspended or quick-release; custom sizes. Designed to SUPPORT the customer's HACCP and ISO 22000 food-safety programme as a ferrous foreign-body control. Page: https://magnets.com.my/plate-magnets.html
 MAGNETIC BARS / GRATE MAGNETS - FULL WELD (what you may say): full-weld construction is AVAILABLE, built to order, for magnetic bars, tubes, threaded square bars and grate magnets on food, pharma and hygiene-sensitive lines. NEVER say every bar model is full weld; tell the customer to confirm the build spec at quotation. KEY POINT: without full weld, grate/bar magnets can be assembled with screws or nuts to hold parts; those fasteners create crevices and threads where product deposit builds up and can cause corrosion (a hygiene problem); full weld removes screws/nuts/threads so there is nowhere for deposit to sit. Keep it factual. MATERIALS: stainless steel grades 304, 316 and 316L are available (never say only 316); 316/316L generally suit more corrosive or washdown-heavy environments (general statement, no invented test data); always confirm the grade at quotation. Why full weld, in plain words: no crevices for product/grease/moisture to trap (easier to clean and inspect); NdFeB core sealed from water (no rust, no magnet dust contamination); withstands wet washdown and high-pressure cleaning; resists vibration and impact so end caps/welds do not loosen; smooth polished weld with no exposed fasteners or grooves. Designed to SUPPORT the customer's HACCP and ISO 22000 programme; same HONESTY rule (no certification claims, no invented certificates/test numbers/customers). Page: https://magnets.com.my/magnetic-separators.html#bars-full-weld
 PRODUCT AVAILABILITY WITH A PHOTO ("do you have this?"): when a visitor sends a photo and asks if we have it: (a) describe honestly what you see, using "looks like" not certainty (e.g. "looks like a stack of round disc magnets, possibly NdFeB discs"); (b) say Arrowmatics supplies and custom-makes NdFeB magnets (disc, block, ring, arc and other shapes, subject to review), SmCo, magnetic separators, lifting magnets, and plate/bar/grate magnets (full-weld available built to order, stainless 304, 316 or 316L, confirm at quotation); (c) ask the 3-4 key questions: diameter x thickness, grade (e.g. N35 / N42 / N52), coating/plating, quantity, application and required pull force; (d) say exact stock and price are confirmed by the team (never invent stock levels, prices, lead times or certificates) and give WhatsApp +60 12-211 2522 with the photo. Keep it short and positive. If you cannot see the photo, say so plainly, still ask the key questions, and give WhatsApp.
+ANSWER FORMAT (hard): always finish every list in full and never stop mid-sentence or leave an empty bullet. When the visitor asks "what do you need to know?" (or similar), answer with this concrete numbered list: 1) diameter x thickness (or length x width x thickness), 2) grade (e.g. N35 / N42 / N52), 3) coating/plating, 4) quantity, 5) application, 6) required pull force, 7) a photo or sketch if you have one; then say the team confirms stock and price on WhatsApp +60 12-211 2522. Reply only in plain helpful sales language; NEVER output safety labels or classifier text such as "User Safety: safe" or "Response Safety: safe".
 HONESTY (HARD): never say Arrowmatics is ISO 22000 or HACCP certified; never invent certificates, test numbers or customer names. Say "designed to support your HACCP / ISO 22000 programme"; customers remain responsible for their own certification.
 
 HARD RULES:
@@ -60,11 +61,22 @@ const FALLBACK_TEXT =
   " and the team will reply.";
 
 /* Vision-capable fallbacks, tried after LLM_MODEL (env var names unchanged). */
+const DEFAULT_MODEL = "google/gemini-2.5-flash-lite";
 const FALLBACK_MODELS = [
   "google/gemini-2.5-flash-lite",
   "openai/gpt-4o-mini",
   "google/gemma-4-31b-it:free",
 ];
+const MAX_TOKENS = 850;
+const KEY_QUESTIONS_LINE =
+  "To quote, please send: diameter x thickness, grade (N35/N42/N52), coating, quantity, application and pull force — or WhatsApp +60 12-211 2522 with your photo and the team will confirm stock and price.";
+
+/* Never route the chat to the free router (it can land on guard/safety models). */
+function pickPrimary(envModel) {
+  const m = String(envModel || "").trim();
+  if (!m || /^openrouter\/free$/i.test(m) || /guard|safety/i.test(m)) return DEFAULT_MODEL;
+  return m;
+}
 const CALL_TIMEOUT_MS = 22000;
 const TOTAL_BUDGET_MS = 55000;
 
@@ -116,18 +128,21 @@ export async function onRequestPost(context) {
     }
 
     const leadLine = `Visitor lead on file: name=${lead.name}; phone=${lead.phone || "—"}; email=${lead.email || "—"}.`;
-    const primary = (context.env.LLM_MODEL || "openrouter/free").trim();
-    const models = [primary, ...FALLBACK_MODELS.filter((m) => m !== primary)].slice(0, 3);
+    const primary = pickPrimary(context.env.LLM_MODEL);
+    const models = [primary, ...FALLBACK_MODELS.filter((m) => m !== primary)].slice(0, 4);
+    let partial = ""; /* best truncated-but-usable answer, used only if every model fails */
     const system = BASE_SYSTEM + "\n" + leadLine;
     const started = Date.now();
 
     for (const model of models) {
       if (Date.now() - started > TOTAL_BUDGET_MS - CALL_TIMEOUT_MS) break;
       const r = await callOpenRouter(context.env, model, system, cleaned);
-      if (r.text) {
-        return json({ reply: r.text, lead_ok: true }, 200, cors);
+      const q = r.text ? assessReply(r.text, r.finish) : { ok: false, reason: r.error || "empty reply" };
+      if (q.ok) {
+        return json({ reply: q.text, lead_ok: true }, 200, cors);
       }
-      reasons.push(`${model}: ${r.error || "empty reply"}`);
+      if (q.partial && q.partial.length > partial.length) partial = q.partial;
+      reasons.push(`${model}: ${q.reason}`);
     }
 
     if (hasVision && Date.now() - started < TOTAL_BUDGET_MS - CALL_TIMEOUT_MS) {
@@ -143,10 +158,20 @@ export async function onRequestPost(context) {
           "\nNote: the visitor attached a photo/sketch that could not be processed. Say honestly that you could not view it, answer from their text, ask the key questions, and offer WhatsApp +60 12-211 2522 for them to send the photo to the team.",
         textOnly
       );
-      if (r.text) {
-        return json({ reply: r.text, lead_ok: true, no_image: true }, 200, cors);
+      const q = r.text ? assessReply(r.text, r.finish) : { ok: false, reason: r.error || "empty reply" };
+      if (q.ok) {
+        return json({ reply: q.text, lead_ok: true, no_image: true }, 200, cors);
       }
-      reasons.push(`text-only ${primary}: ${r.error || "empty reply"}`);
+      if (q.partial && q.partial.length > partial.length) partial = q.partial;
+      reasons.push(`text-only ${primary}: ${q.reason}`);
+    }
+
+    if (partial) {
+      /* Every model gave a cut-off answer: return the clean part plus the key questions, and alert the owner. */
+      try {
+        context.waitUntil(notifyFailure(context.env, lead, rawMessages, ["partial answer only"].concat(reasons)));
+      } catch (e) {}
+      return json({ reply: partial + "\n\n" + KEY_QUESTIONS_LINE, lead_ok: true, partial: true }, 200, cors);
     }
   } catch (e) {
     reasons.push("exception: " + (e instanceof Error ? e.message : "unknown"));
@@ -201,7 +226,7 @@ async function callOpenRouter(env, model, system, messages) {
         model,
         messages: [{ role: "system", content: system }, ...messages],
         temperature: 0.4,
-        max_tokens: 1000,
+        max_tokens: MAX_TOKENS,
       }),
       signal: ctrl ? ctrl.signal : undefined,
     });
@@ -247,7 +272,57 @@ function parseCompletion(ok, status, data) {
     const fin = (choice && (choice.finish_reason || choice.native_finish_reason)) || "";
     return { error: "empty content" + (fin ? " (finish=" + fin + ")" : "") };
   }
-  return { text };
+  const finish = (choice && (choice.finish_reason || choice.native_finish_reason)) || "";
+  return { text, finish: String(finish) };
+}
+
+/* Guard/safety classifier output (e.g. Llama Guard, Nemotron safety) is never a valid chat answer. */
+const GUARD_RE = /^\s*(?:(?:user|response|assistant|prompt)\s+safety\s*:|(?:un)?safe\s*(?:\n|$))|\b(?:user|response)\s+safety\s*:\s*(?:safe|unsafe)\b|\bsafety\s*(?:categories|category)\s*:/i;
+
+/* Remove dangling list markers / bold markers / list intros left at the end of a cut-off reply. */
+function stripDangling(text) {
+  let t = String(text || "").replace(/\s+$/, "");
+  let changed = false;
+  for (let i = 0; i < 20; i++) {
+    const prev = t;
+    /* bullet / numbered marker (optionally followed by bold markers) alone on the last line */
+    t = t.replace(/\n[ \t]*(?:[-*•>]|\d{1,2}[.)])[ \t]*(?:\*{1,3}|_{1,3})?[ \t]*$/, "");
+    /* bold/italic/bullet markers left dangling at the very end of the text ("...details? * **") */
+    t = t.replace(/[ \t]+(?:[-•]|\*{1,3}|_{2,3})(?:[ \t]+(?:\*{1,3}|_{2,3}))*$/, "");
+    t = t.replace(/^[ \t]*(?:[-*•>]|\*{1,3}|_{2,3})[ \t]*$/m, (m) => m).replace(/\s+$/, "");
+    if (t === prev) break;
+    changed = true;
+  }
+  /* a list intro ending with ":" and nothing after it */
+  const beforeColon = t;
+  t = t.replace(/[ \t]*:$/, "");
+  if (t !== beforeColon) changed = true;
+  return { text: t.replace(/\s+$/, ""), changed };
+}
+
+/* Pure helper (unit-tested): decide whether a model reply is fit to show the visitor. */
+function assessReply(raw, finish) {
+  const text = String(raw || "").trim();
+  if (!text) return { ok: false, reason: "empty content" };
+  if (GUARD_RE.test(text)) return { ok: false, reason: "guard/safety-classifier output" };
+  const s = stripDangling(text);
+  const plain = s.text.replace(/[\s*_#>\-•.:;,!?()[\]`~|]+/g, "");
+  if (s.text.length < 15 || plain.length < 8) return { ok: false, reason: "too short / only symbols" };
+  const cut = finish === "length" || finish === "max_tokens";
+  if (s.changed || cut) {
+    let partial = s.text;
+    if (cut && !s.changed && !/[.!?)\]"'’”]$/.test(partial)) {
+      /* cut mid-sentence: keep up to the last complete sentence/line */
+      const k = Math.max(partial.lastIndexOf("\n"), partial.search(/[.!?][^.!?]*$/));
+      if (k > 40) partial = partial.slice(0, k + (partial[k] === "\n" ? 0 : 1)).trim();
+    }
+    return {
+      ok: false,
+      reason: s.changed ? "truncated (dangling list marker)" : "truncated (finish_reason length)",
+      partial: partial.length >= 30 ? partial : "",
+    };
+  }
+  return { ok: true, text };
 }
 
 function normalizeMessages(messages) {
@@ -447,4 +522,4 @@ function json(obj, status, cors) {
   });
 }
 
-export { parseCompletion };
+export { parseCompletion, assessReply, stripDangling, pickPrimary };

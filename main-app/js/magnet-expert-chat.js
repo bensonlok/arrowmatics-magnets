@@ -608,6 +608,8 @@
       })
       .then(function (res) {
         var reply = typeof res.j.reply === "string" ? res.j.reply.trim() : "";
+        /* Safety-classifier text is never a real answer */
+        if (/^\s*(user|response)\s+safety\s*:/i.test(reply)) reply = "";
         if (res.ok && reply) {
           history.push({ role: "assistant", content: reply });
           addMsg("bot", reply, !!res.j.degraded);
