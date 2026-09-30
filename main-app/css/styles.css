@@ -1354,3 +1354,56 @@ button.btn.btn-wa {
   /* Room at the very bottom so the last content/footer is never hidden */
   .site-footer { padding-bottom: 6rem; }
 }
+
+/* —— Photo-first home hero: full-bleed real photos, CSS-only crossfade + Ken Burns —— */
+.hero-slides { position: absolute; inset: 0; z-index: 0; overflow: hidden; background: var(--ink); pointer-events: none; }
+.hero-slide { position: absolute; inset: 0; opacity: 0; animation: heroFade 30s linear infinite; will-change: opacity; }
+.hero-slide:first-child { opacity: 1; }
+.hero-slide:nth-child(1) { animation-delay: -1.5s; }
+.hero-slide:nth-child(2) { animation-delay: 4.5s; }
+.hero-slide:nth-child(3) { animation-delay: 10.5s; }
+.hero-slide:nth-child(4) { animation-delay: 16.5s; }
+.hero-slide:nth-child(5) { animation-delay: 22.5s; }
+.hero-slide img {
+  display: block; width: 100%; height: 100%; object-fit: cover; object-position: 60% 50%;
+  transform-origin: 60% 50%; animation: heroZoom 14s ease-in-out infinite alternate; will-change: transform;
+}
+.hero-slide:nth-child(even) img { transform-origin: 40% 50%; animation-duration: 16s; }
+@keyframes heroFade { 0% { opacity: 0; } 4% { opacity: 1; } 20% { opacity: 1; } 24% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes heroZoom { from { transform: scale(1); } to { transform: scale(1.08); } }
+/* Data-saver / slow connection: static first photo */
+.hero-static .hero-slide { animation: none !important; }
+.hero-static .hero-slide:not(:first-child) { display: none; }
+.hero-static .hero-slide img { animation: none !important; }
+@media (prefers-reduced-motion: reduce) {
+  .hero-slide, .hero-slide img { animation: none !important; transform: none !important; }
+  .hero-slide:not(:first-child) { display: none; }
+}
+/* Overlay: the photo stays visible; text sits on a dark gradient */
+.hero::before { display: none; }
+.hero::after {
+  background:
+    linear-gradient(90deg, rgba(7,10,18,0.88) 0%, rgba(7,10,18,0.55) 45%, rgba(7,10,18,0.08) 80%),
+    linear-gradient(180deg, rgba(7,10,18,0.55) 0%, rgba(7,10,18,0) 22%, rgba(7,10,18,0) 50%, rgba(7,10,18,0.9) 100%);
+}
+.hero h1 { max-width: 20ch; line-height: 0.95; font-size: clamp(2.3rem, 5.6vw, 5rem); }
+.hero-lead { max-width: 30rem; opacity: 0.95; margin-bottom: 1.5rem; }
+.hero-intro { background: var(--ink); color: #c5cad6; padding: 1.6rem 0; border-top: 1px solid rgba(255,255,255,0.08); }
+.hero-intro p { max-width: 52rem; margin: 0; font-size: 0.95rem; line-height: 1.7; }
+.hero-intro strong { color: #fff; }
+
+@media (max-width: 768px) {
+  .hero { min-height: 92svh; padding: 6rem 0 2rem; align-items: flex-end; }
+  .hero::after {
+    background: linear-gradient(180deg, rgba(7,10,18,0.6) 0%, rgba(7,10,18,0.05) 22%, rgba(7,10,18,0.25) 38%, rgba(7,10,18,0.9) 64%, rgba(7,10,18,0.96) 100%);
+  }
+  .hero-slide img { object-position: 50% 30%; }
+  .hero h1 { font-size: clamp(1.9rem, 8.4vw, 2.5rem); line-height: 1.02; max-width: none; margin-bottom: 0.8rem; }
+  .hero-eyebrow { font-size: 0.62rem; letter-spacing: 0.2em; margin-bottom: 0.8rem; }
+  .hero-lead { font-size: 0.95rem; margin-bottom: 1rem; }
+  .hero-plate-banner { margin-bottom: 0.9rem; }
+  /* two primary CTAs full width, the other two side by side */
+  .hero-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; padding-right: 4rem; }
+  .hero-actions .btn { padding: 0.85rem 0.6rem; font-size: 0.66rem; letter-spacing: 0.08em; }
+  .hero-actions .btn:nth-child(1), .hero-actions .btn:nth-child(2) { grid-column: 1 / -1; }
+}
