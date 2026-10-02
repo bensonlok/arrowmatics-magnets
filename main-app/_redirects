@@ -22,7 +22,14 @@ http://www.magnets.com.my/* https://magnets.com.my/:splat 301
 /DrumSeparator.html /magnetic-separators.html 301
 /drumseparator.html /magnetic-separators.html 301
 
-# Holding / specialty → home or NdFeB / lifting guesses
+# Removed product: lifting magnets → closest remaining page (suspension magnets section)
+/lifting-magnets.html /magnetic-separators.html#suspension-magnets 301
+/lifting-magnets /magnetic-separators.html#suspension-magnets 301
+/lifting-magnets.md /magnetic-separators.md 301
+/liftingmagnets.html /magnetic-separators.html#suspension-magnets 301
+/lifting.html /magnetic-separators.html#suspension-magnets 301
+
+# Holding / specialty → home or NdFeB
 /AlnicoHorseshoeButtonMagnets.html /ndfeb-magnets.html 301
 /CeramicCupAssembies.html / 301
 /Ceramictoolbar.html / 301
