@@ -135,6 +135,18 @@ Overband (self-cleaning) magnets have a running belt and suit continuous or heav
 
         
           
+## Which magnetic separator do I need?
+
+Choose by how your product moves. Free-flowing powder or granules falling through a hopper or chute usually points to a grate or drawer magnet. Material on a conveyor belt points to a suspension (overband or suspended plate) magnet. Liquids, sauces and slurries in a pipeline point to a liquid line / filter magnetic trap. Plate magnets suit chute walls or a falling stream, and magnetic bars suit tanks, hoppers and custom grids. Send a photo to the Magnet Expert or WhatsApp [+60 12-211 2522](https://wa.me/60122112522) and we will guide you. Size, grade and build are confirmed at quotation.
+
+## What do you need to know to size a magnetic separator?
+
+Send the material and form (powder, granules, liquid, slurry), the contaminant and its size, flow rate, particle size, moisture, temperature, and the pipe, chute, hopper or belt size (for conveyors: belt width, speed, burden depth and hanging height). Whether the line is food-grade matters too. A photo or sketch of the spot helps most. Size, grade and gauss are confirmed at quotation.
+
+## How fast does Arrowmatics Magnets reply to enquiries?
+
+We aim to reply within 1–3 hours during Malaysia business hours. The on-site Magnet Expert chat gives guidance straight away; for a written quote, WhatsApp [+60 12-211 2522](https://wa.me/60122112522) with your photo or duty details. We do not promise stock, price or lead time before quotation.
+
 ## Do you publish prices in RM?
 
           

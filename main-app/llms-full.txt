@@ -40,7 +40,7 @@ Factories in food processing, plastics, recycling, chemicals, bulk materials, st
 
 ## Magnet Expert (on-site chat)
 - Visitors may upload a machine photo, hand sketch or drawing, add a short description, and receive sensible, simple, systematic advice toward a custom-fit recommendation from site families (separators incl. grate and suspension / NdFeB / SmCo).
-- Chat requires name + WhatsApp or email. Human handoff remains WhatsApp +60 12-211 2522.
+- Chat requires name + WhatsApp or email. Human handoff remains WhatsApp +60 12-211 2522. The chat answers general magnet questions and separator selection (grate, drawer, plate, suspension / overband, liquid line / filter, bar) and can reply in English, Chinese or Bahasa Malaysia. The team aims to reply within 1–3 hours during Malaysia business hours (owner-stated target, not a guarantee). No satisfaction statistics are published.
 - Do not invent products not listed on magnets.com.my, RM prices, certifications or compliance claims. Food-grade configurations can be discussed; confirm any specific certificate or standard in the quote.
 
 ## Pricing & quote flow (critical)
@@ -54,7 +54,7 @@ Factories in food processing, plastics, recycling, chemicals, bulk materials, st
 - Distinct from Cool7 (aircond) and Sensify (AI ops) — same group (Arrowmatics) but different product.
 
 ## Languages
-English only on magnets.com.my.
+Site pages are in English. The Magnet Expert chat can reply in English, Chinese (中文) or Bahasa Malaysia.
 
 ## Pages (HTML + markdown mirrors)
 - https://magnets.com.my/ · https://magnets.com.my/index.md

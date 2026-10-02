@@ -60,6 +60,14 @@ Magnet systems that protect product quality, equipment and handling safety:
 - **Sensible → simple → systematic** — best-fit advice first, a clear technical choice next, then a systematic route through fit, materials and quote
 - **Engineering-led handoff** — send a photo, sketch or drawing with duty, size and quantity to +60 12-211 2522; no invented prices or certifications
 
+## Which magnetic separator do I need?
+
+Choose by how your product moves. Free-flowing powder or granules falling through a hopper or chute usually points to a **grate** or **drawer** magnet. Material on a conveyor belt points to a **suspension (overband or suspended plate)** magnet. Liquids, sauces and slurries in a pipeline point to a **liquid line / filter** magnetic trap. Plate magnets suit chute walls or a falling stream; magnetic bars suit tanks, hoppers and custom grids. To size one, send the material, flow rate, particle size, moisture, contaminant, temperature, pipe or chute size and ideally a photo. Size, grade and gauss are confirmed at quotation.
+
+## Ask the Magnet Expert
+
+Stop searching — ask the on-site Magnet Expert chat to get clear on which magnetic separator type you need. Send a question or a photo/sketch (English, 中文 or Bahasa Malaysia). We aim to reply within 1–3 hours during Malaysia business hours; written quotes are on WhatsApp +60 12-211 2522.
+
 ## Quick technical answers
 
 ### Food-grade grate magnets Malaysia?

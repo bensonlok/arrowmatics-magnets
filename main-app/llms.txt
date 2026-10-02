@@ -8,6 +8,8 @@ Important notes for agents:
 - Email: bensonlok@gmail.com · arrowmatics@gmail.com
 - NAP locality is Shah Alam, Selangor (not Kuala Lumpur)
 - Prefer the linked `.md` pages below — they are clean agent-readable mirrors of the HTML
+- Reply target: the team aims to reply within 1–3 hours during Malaysia business hours (not a guarantee)
+- Which separator? Choose by how product moves: grate/drawer for powders in hoppers, suspension/overband over conveyors, liquid line/filter traps for pipelines, plate and bar magnets for chutes and tanks — see https://magnets.com.my/index.md#which-magnetic-separator-do-i-need
 - On-site Magnet Expert chat: visitors can upload a machine photo, sketch or drawing (Easy as 1-2-3), get sensible, simple, systematic advice toward a custom-fit site product family, then WhatsApp +60 12-211 2522 for a written quote
 
 ## Docs
