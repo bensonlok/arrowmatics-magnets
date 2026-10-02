@@ -49,9 +49,14 @@
   var fab = el("button", {
     id: "magnets-expert-fab",
     type: "button",
-    "aria-label": "Open Magnet Expert chat",
-    html: "<span>Magnet<br>Expert</span>",
+    "aria-label": "Ask the Magnet Expert",
+    html:
+      '<span class="fab-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/><path d="M8.5 11h7M8.5 14h4"/></svg></span>' +
+      '<span class="fab-text"><span class="fab-label">Ask the Magnet Expert</span><span class="fab-sub">Replies in 1–3 h · business hours</span></span>',
   });
+  try {
+    if (sessionStorage.getItem("magnets_expert_seen")) fab.className = "calm";
+  } catch (e) {}
   var panel = el("div", {
     id: "magnets-expert-panel",
     role: "dialog",
@@ -63,7 +68,7 @@
       el("h2", { text: "Magnet Expert" }),
       el("p", {
         id: "magnets-expert-sub",
-        text: "Photo / sketch → application-fit solution",
+        text: "Get clear on the right magnetic separator type",
       }),
     ]),
     el("button", {
@@ -82,12 +87,19 @@
     text: "Talk to human — WhatsApp +60 12-211 2522",
   });
 
+  var trust = el("ul", {
+    id: "magnets-expert-trust",
+    "aria-label": "What to expect",
+    html:
+      "<li>Photo or sketch welcome</li><li>Plain-language guidance</li><li>Real people on WhatsApp</li><li>We reply within 1–3 hours <em>(Malaysia business hours)</em></li>",
+  });
+
   /* ---- LEAD GATE ---- */
   var gate = el("div", { id: "magnets-expert-gate" });
   gate.appendChild(
     el("p", {
       class: "mec-gate-intro",
-      text: "Leave your name and WhatsApp or email, then chat with Magnet Expert — upload a machine photo or sketch anytime.",
+      text: "Stop searching — ask here. Tell us who we are helping (name + WhatsApp or email) and we will guide you to the right magnetic separator. You can send a machine photo or sketch anytime.",
     })
   );
   var nameIn = el("input", {
@@ -110,13 +122,13 @@
   });
   var gateHint = el("p", {
     class: "mec-gate-hint",
-    text: "Required: name + (WhatsApp or email).",
+    text: "Required: name + (WhatsApp or email). Used only to answer your enquiry. We reply within 1–3 hours (Malaysia business hours).",
   });
   var gateErr = el("p", { id: "mec-gate-err", class: "mec-gate-err", text: "" });
   var gateBtn = el("button", {
     id: "mec-gate-btn",
     type: "button",
-    text: "Start chat",
+    text: "Start — guide me to the right separator",
   });
   gate.appendChild(nameIn);
   gate.appendChild(phoneIn);
@@ -210,6 +222,7 @@
   body.appendChild(leftCol);
 
   panel.appendChild(header);
+  panel.appendChild(trust);
   panel.appendChild(human);
   panel.appendChild(gate);
   panel.appendChild(body);
@@ -263,11 +276,94 @@
     msgs.scrollTop = msgs.scrollHeight;
   }
 
+  var QUICK = [
+    { t: "Which separator for my powder?", q: "Which magnetic separator is right for my powder?" },
+    { t: "Upload a photo of my problem", upload: true },
+    { t: "Stainless 304/316 options", q: "What are my stainless steel options, 304, 316 or 316L, for a magnetic separator?" },
+    { t: "Food / HACCP use", q: "I need a magnetic separator for a food line. What should I consider for HACCP / hygiene?" },
+  ];
+  var pendingQuestion = null;
+  var pendingUpload = false;
+
+  function removeChips() {
+    var old = msgs.querySelectorAll(".mec-chips");
+    for (var i = 0; i < old.length; i++) old[i].parentNode.removeChild(old[i]);
+  }
+
+  function addChips() {
+    var wrap = el("div", { class: "mec-chips", role: "group", "aria-label": "Quick questions" });
+    QUICK.forEach(function (c) {
+      var b = el("button", { type: "button", class: "mec-chip", text: c.t });
+      b.addEventListener("click", function () {
+        runQuick(c);
+      });
+      wrap.appendChild(b);
+    });
+    msgs.appendChild(wrap);
+    msgs.scrollTop = msgs.scrollHeight;
+  }
+
+  function runQuick(c) {
+    if (c.upload) {
+      if (isSmall()) rightCol.classList.remove("collapsed");
+      try {
+        fileIn.click();
+      } catch (e) {}
+      return;
+    }
+    if (send.disabled) return;
+    removeChips();
+    input.value = c.q;
+    form.dispatchEvent(new Event("submit", { cancelable: true, bubbles: true }));
+  }
+
+  function isSmall() {
+    return window.matchMedia && window.matchMedia("(max-width: 640px)").matches;
+  }
+
+  /* Optional one-tap feedback. Sends only "up"/"down" (plus the visitor's own lead on file) to the existing alert channel. */
+  function addFeedback(question) {
+    var row = el("div", { class: "mec-fb" });
+    row.appendChild(el("span", { text: "Did this help?" }));
+    var yes = el("button", { type: "button", class: "mec-fb-btn", "aria-label": "Yes, this helped", text: "👍 Yes" });
+    var no = el("button", { type: "button", class: "mec-fb-btn", "aria-label": "No, this did not help", text: "👎 No" });
+    function done(v) {
+      yes.disabled = true;
+      no.disabled = true;
+      row.innerHTML = "";
+      row.appendChild(
+        el("span", {
+          text:
+            v === "up"
+              ? "Thanks — glad it helped. Send a photo or WhatsApp +60 12-211 2522 when you are ready for a quote."
+              : "Sorry about that. Tap Talk to human (WhatsApp) and we will help directly — or rephrase your question here.",
+        })
+      );
+      try {
+        fetch(API, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ feedback: v, lead: lead, question: v === "down" ? String(question || "").slice(0, 160) : "" }),
+        }).catch(function () {});
+      } catch (e) {}
+    }
+    yes.addEventListener("click", function () {
+      done("up");
+    });
+    no.addEventListener("click", function () {
+      done("down");
+    });
+    row.appendChild(yes);
+    row.appendChild(no);
+    msgs.appendChild(row);
+    msgs.scrollTop = msgs.scrollHeight;
+  }
+
   function showGate() {
     gate.style.display = "flex";
     body.style.display = "none";
     document.getElementById("magnets-expert-sub").textContent =
-      "Photo / sketch → application-fit solution";
+      "Get clear on the right magnetic separator type";
   }
 
   function showChat() {
@@ -288,14 +384,12 @@
     addMsg(
       "bot",
       "Hi " +
-        (lead && lead.name ? lead.name : "") +
-        " — I’m Magnet Expert for Arrowmatics Magnets (Shah Alam).\n\n" +
-        "Easy as 1-2-3:\n" +
-        "1) Upload a photo of your machine or a sketch (circle the problem) in the Photo / sketch panel.\n" +
-        "2) Add a short description.\n" +
-        "3) I’ll suggest a separator (grate, suspension, drawer…), NdFeB or SmCo fit from our range — then WhatsApp +60 12-211 2522 for a written quote.\n\n" +
-        "Need a person? Tap Talk to human."
+        (lead && lead.name ? lead.name : "there") +
+        " — you are in the right place. I’m the Magnet Expert for Arrowmatics Magnets (Shah Alam), and we’ll guide you step by step.\n\n" +
+        "Ask me anything about magnets — which separator type to choose (grate, drawer, plate, suspension / overband, liquid line, bar), NdFeB vs SmCo, stainless 304 / 316 / 316L, or food-line use. You can write in English, 中文 or Bahasa Malaysia.\n\n" +
+        "Easiest start: tap a question below, or upload a photo / sketch in the Photo panel. Our team replies within 1–3 hours (Malaysia business hours) if you prefer WhatsApp +60 12-211 2522."
     );
+    addChips();
     input.focus();
   }
 
@@ -312,13 +406,36 @@
     showGate();
   }
 
-  function open() {
+  function open(q) {
     panel.classList.add("open");
     fab.style.display = "none";
-    if (validLead(lead)) input.focus();
-    else {
+    fab.className = "calm";
+    try {
+      sessionStorage.setItem("magnets_expert_seen", "1");
+    } catch (e) {}
+    if (typeof q === "string" && q) pendingQuestion = q;
+    if (validLead(lead)) {
+      input.focus();
+      runPending();
+    } else {
       showGate();
       nameIn.focus();
+    }
+  }
+  function runPending() {
+    if (pendingQuestion && !send.disabled) {
+      var q = pendingQuestion;
+      pendingQuestion = null;
+      removeChips();
+      input.value = q;
+      form.dispatchEvent(new Event("submit", { cancelable: true, bubbles: true }));
+    }
+    if (pendingUpload) {
+      pendingUpload = false;
+      if (isSmall()) rightCol.classList.remove("collapsed");
+      try {
+        fileIn.click();
+      } catch (e) {}
     }
   }
   function close() {
@@ -327,7 +444,9 @@
   }
 
   window.openMagnetExpert = open;
-  fab.addEventListener("click", open);
+  fab.addEventListener("click", function () {
+    open();
+  });
   document.getElementById("magnets-expert-close").addEventListener("click", close);
 
   document.addEventListener("click", function (e) {
@@ -336,7 +455,11 @@
     var btn = t.closest && t.closest("[data-open-magnet-expert]");
     if (btn) {
       e.preventDefault();
-      open();
+      var q = btn.getAttribute("data-expert-q");
+      if (btn.hasAttribute("data-expert-upload")) {
+        pendingUpload = true;
+        open();
+      } else open(q || undefined);
     }
   });
 
@@ -357,6 +480,7 @@
       localStorage.setItem("magnets_expert_lead", JSON.stringify(lead));
     } catch (e) {}
     startChat();
+    runPending();
   });
 
   rightToggle.addEventListener("click", function () {
@@ -569,11 +693,12 @@
       fileObj && fileObj.kind === "image" ? fileObj.previewUrl || fileObj.dataUrl : null
     );
 
+    removeChips();
     var content = buildUserContent(text, fileObj);
     history.push({ role: "user", content: content });
     clearPending();
     send.disabled = true;
-    attachStatus.textContent = "Magnet Expert is reviewing…";
+    attachStatus.textContent = "Magnet Expert is checking your question…";
 
     /* Only the newest image goes upstream; older ones are replaced by a text note (keeps payload small) */
     var lastImgIdx = -1;
@@ -644,7 +769,10 @@
         if (res.ok && reply) {
           history.push({ role: "assistant", content: reply });
           addMsg("bot", reply, !!res.j.degraded);
-          if (!res.j.degraded) addPhotos(res.j.images);
+          if (!res.j.degraded) {
+            addPhotos(res.j.images);
+            addFeedback(text);
+          }
           attachStatus.textContent = "";
           return;
         }

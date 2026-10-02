@@ -110,6 +110,22 @@ export async function onRequestPost(context) {
     return json({ error: "Bad request." }, 400, cors);
   }
 
+  /* One-tap "Did this help?" feedback: nothing is stored; it is only forwarded to the existing Telegram alert channel (if configured). */
+  if (body.feedback === "up" || body.feedback === "down") {
+    const fl = sanitizeLead(body.lead);
+    if (fl) {
+      const q = String(body.question || "").replace(/\s+/g, " ").slice(0, 160);
+      context.waitUntil(
+        telegramSend(
+          context.env,
+          (body.feedback === "up" ? "👍 Magnet Expert: visitor said the answer helped" : "👎 Magnet Expert: visitor said the answer did NOT help — please follow up") +
+            "\n" + leadLines(fl).join("\n") + (q ? "\nQuestion: " + q : "")
+        )
+      );
+    }
+    return json({ ok: true }, 200, cors);
+  }
+
   const lead = sanitizeLead(body.lead);
   if (!lead) {
     return json(

@@ -158,3 +158,15 @@ console.log('handler ok');
   assert.match(x.j.reply, /Grate magnets/);
   console.log('prompt ok');
 }
+
+// ================= feedback (no LLM call, no storage; Telegram only) =================
+{
+  mode = () => { throw new Error('LLM must not be called for feedback'); };
+  x = await call({ feedback: 'down', lead, question: 'Which separator for my powder?', messages: [] });
+  assert.equal(x.r.status, 200); assert.equal(x.j.ok, true); assert.equal(orCalls.length, 0);
+  assert.ok(tg.some(t => t[1].includes('did NOT help') && t[1].includes('JK Wong')));
+  x = await call({ feedback: 'up', lead, messages: [] }); assert.equal(x.j.ok, true); assert.ok(tg.some(t => /helped/.test(t[1])));
+  x = await call({ feedback: 'up', lead: { name: 'x' }, messages: [] }); assert.equal(x.j.ok, true); assert.equal(tg.length, 0);
+  x = await call({ feedback: 'maybe', lead, messages: [] }); assert.equal(x.r.status, 400); // unknown value falls through to normal validation
+  console.log('feedback ok');
+}

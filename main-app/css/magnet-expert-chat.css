@@ -2,13 +2,33 @@
 #magnets-expert-root * { box-sizing: border-box; }
 
 #magnets-expert-fab {
-  position: fixed; right: 20px; bottom: 168px; z-index: 9998;
-  width: 56px; height: 56px; border: none; border-radius: 50%;
-  background: linear-gradient(145deg, #070a12, #1558ff); color: #fff;
-  font-size: 13px; font-weight: 700; cursor: pointer;
-  box-shadow: 0 8px 24px rgba(10, 22, 40, 0.35);
+  position: fixed; right: 20px; bottom: 156px; z-index: 9998;
+  display: inline-flex; align-items: center; gap: 10px;
+  min-height: 56px; padding: 8px 18px 8px 10px; border: 1px solid rgba(255,255,255,0.28);
+  border-radius: 999px; cursor: pointer; color: #fff; text-align: left;
+  background: linear-gradient(135deg, #0a1630 0%, #1558ff 100%);
+  box-shadow: 0 10px 28px rgba(10, 22, 40, 0.4);
+  animation: mecPulse 2.6s ease-out 1.2s 4;
+  transition: transform 0.15s ease, opacity 0.2s ease;
 }
-#magnets-expert-fab span { display: block; line-height: 1.15; }
+#magnets-expert-fab:hover { transform: translateY(-2px); }
+#magnets-expert-fab:focus-visible { outline: 3px solid #00d5d8; outline-offset: 3px; }
+#magnets-expert-fab.calm { animation: none; }
+#magnets-expert-fab .fab-ico {
+  flex: 0 0 auto; display: grid; place-items: center; width: 38px; height: 38px;
+  border-radius: 50%; background: #00d5d8; color: #070a12;
+}
+#magnets-expert-fab .fab-text { display: flex; flex-direction: column; line-height: 1.15; }
+#magnets-expert-fab .fab-label { font-size: 14px; font-weight: 800; letter-spacing: 0.01em; }
+#magnets-expert-fab .fab-sub { font-size: 10.5px; font-weight: 500; opacity: 0.85; margin-top: 2px; }
+@keyframes mecPulse {
+  0% { box-shadow: 0 10px 28px rgba(10,22,40,0.4), 0 0 0 0 rgba(21,88,255,0.55); }
+  70% { box-shadow: 0 10px 28px rgba(10,22,40,0.4), 0 0 0 16px rgba(21,88,255,0); }
+  100% { box-shadow: 0 10px 28px rgba(10,22,40,0.4), 0 0 0 0 rgba(21,88,255,0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  #magnets-expert-fab { animation: none; transition: none; }
+}
 
 #magnets-expert-panel {
   position: fixed; right: 16px; bottom: 16px; z-index: 9999;
@@ -167,12 +187,37 @@
   #mec-preview-img { max-height: 100px; }
 }
 
-body:has(#magnets-expert-root) .wa-fab { bottom: 88px !important; }
-body:has(#magnets-expert-root) .call-fab { bottom: 148px !important; right: 20px; }
+/* Floating column, bottom-right (never overlapping): WhatsApp, Call, then the Expert pill above them */
+body:has(#magnets-expert-root) .wa-fab { bottom: 20px !important; right: 20px !important; }
+body:has(#magnets-expert-root) .call-fab { bottom: 88px !important; right: 20px !important; }
 
 @media (max-width: 768px) {
-  #magnets-expert-fab { right: 12px; bottom: 116px; width: 48px; height: 48px; font-size: 10px; }
+  body:has(#magnets-expert-root) .wa-fab { bottom: 12px !important; right: 12px !important; }
+  body:has(#magnets-expert-root) .call-fab { bottom: 68px !important; right: 12px !important; }
+  #magnets-expert-fab { right: 12px; bottom: 124px; min-height: 48px; padding: 6px 14px 6px 8px; gap: 8px; max-width: calc(100vw - 24px); }
+  #magnets-expert-fab .fab-ico { width: 34px; height: 34px; }
+  #magnets-expert-fab .fab-label { font-size: 13px; }
+  #magnets-expert-fab .fab-sub { font-size: 9.5px; }
 }
+
+/* Trust strip + chips + feedback inside the panel */
+#magnets-expert-trust {
+  list-style: none; margin: 0; padding: 7px 12px; display: flex; flex-wrap: wrap; gap: 4px 14px;
+  background: #eef3ff; border-bottom: 1px solid #d8e0ea; flex-shrink: 0;
+  font-size: 11px; line-height: 1.3; color: #0a1628; font-weight: 600;
+}
+#magnets-expert-trust li::before { content: "✓ "; color: #0b8a4b; font-weight: 800; }
+#magnets-expert-trust em { font-style: normal; font-weight: 500; color: #475569; }
+.mec-chips { align-self: flex-start; display: flex; flex-wrap: wrap; gap: 7px; max-width: 96%; }
+.mec-chip {
+  border: 1.5px solid #1558ff; background: #fff; color: #0b2a7a; font: inherit; font-size: 12.5px; font-weight: 700;
+  padding: 7px 12px; border-radius: 999px; cursor: pointer; line-height: 1.2; text-align: left;
+  transition: background 0.15s, color 0.15s;
+}
+.mec-chip:hover, .mec-chip:focus-visible { background: #1558ff; color: #fff; outline: none; }
+.mec-fb { align-self: flex-start; display: flex; align-items: center; flex-wrap: wrap; gap: 6px; font-size: 12px; color: #475569; }
+.mec-fb-btn { border: 1px solid #cbd5e1; background: #fff; border-radius: 999px; padding: 3px 10px; font-size: 12px; cursor: pointer; color: #0a1628; }
+.mec-fb-btn:hover { border-color: #1558ff; }
 
 /* Example product photos under a bot bubble */
 .mec-photos { align-self: flex-start; display: flex; flex-wrap: wrap; gap: 8px; max-width: 92%; margin-top: -2px; }
