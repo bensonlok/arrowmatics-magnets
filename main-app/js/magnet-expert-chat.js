@@ -164,7 +164,7 @@
   rightInner.appendChild(
     el("p", {
       class: "mec-upload-tip",
-      text: "Tip: circle or point at the problem area on the machine, hopper, pipe or drawing. Magnet Expert recommends separator / NdFeB / SmCo / lifting from what it sees — then WhatsApp for a written quote.",
+      text: "Tip: circle or point at the problem area on the machine, hopper, pipe or drawing. Magnet Expert recommends separator (grate, suspension, drawer…) / NdFeB / SmCo from what it sees — then WhatsApp for a written quote.",
     })
   );
 
@@ -293,7 +293,7 @@
         "Easy as 1-2-3:\n" +
         "1) Upload a photo of your machine or a sketch (circle the problem) in the Photo / sketch panel.\n" +
         "2) Add a short description.\n" +
-        "3) I’ll suggest a separator, NdFeB, SmCo or lifting fit from our range — then WhatsApp +60 12-211 2522 for a written quote.\n\n" +
+        "3) I’ll suggest a separator (grate, suspension, drawer…), NdFeB or SmCo fit from our range — then WhatsApp +60 12-211 2522 for a written quote.\n\n" +
         "Need a person? Tap Talk to human."
     );
     input.focus();

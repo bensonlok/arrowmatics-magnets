@@ -101,7 +101,7 @@ console.log('handler ok');
   // whitelist enforcement: unknown keys / urls / path tricks ignored, tag still stripped
   e = extractPhotos('x [[photo:../../etc/passwd]] [[photo:https://evil.com/a.jpg]] [[photo:secret]] [[photo:constructor]] [[photo:__proto__]] [[photo:toString]]', 'hello');
   assert.equal(e.images.length, 0); assert.ok(!e.text.includes('[[')); 
-  for (const im of extractPhotos('[[photo:plate]][[photo:lifting]]', '').images) assert.ok(im.url.startsWith(SITEP));
+  for (const im of extractPhotos('[[photo:plate]][[photo:suspension]]', '').images) assert.ok(im.url.startsWith(SITEP));
   // no tag + no keyword -> no images
   e = extractPhotos('Hello, how can I help?', 'hi there'); assert.equal(e.images.length, 0);
   // photo:none suppresses even when keywords match
@@ -111,10 +111,15 @@ console.log('handler ok');
   e = extractPhotos('Sure.', 'need a full weld plate magnet'); assert.equal(e.images[0].url, SITEP + 'plate-magnet-10000g.jpg');
   e = extractPhotos('Sure.', 'threaded square bar magnet'); assert.equal(e.images[0].url, SITEP + 'real-bars-1.jpg');
   e = extractPhotos('Sure.', 'SmCo for high temperature'); assert.equal(e.images[0].url, SITEP + 'real-smco-2.jpg');
-  e = extractPhotos('Sure.', 'lifting magnet for steel plate 500kg'); assert.ok(e.images.length <= 2); assert.ok(e.images.some(i => i.url.endsWith('real-lifting-1.jpg')));
+  e = extractPhotos('Sure.', 'overband magnet for my conveyor belt'); assert.equal(e.images[0].url, SITEP + 'suspension-overband-magnet-yellow-frame-workshop.jpg');
+  e = extractPhotos('Sure.', 'suspension magnet over conveyor'); assert.equal(e.images[0].url, SITEP + 'suspension-overband-magnet-yellow-frame-workshop.jpg');
+  e = extractPhotos('ok [[photo:suspended]] [[photo:large-bars]]', ''); assert.equal(e.images.length, 2); assert.equal(e.images[1].url, SITEP + 'grate-magnet-large-bars-stainless-tubes-cross-frame.jpg');
+  e = extractPhotos('ok [[photo:suspension-plate]]', ''); assert.equal(e.images[0].url, SITEP + 'suspension-plate-magnet-yellow-four-eyebolts.jpg');
+  e = extractPhotos('Sure.', 'grate magnet with big bars for a hopper'); assert.equal(e.images[0].url, SITEP + 'grate-magnet-large-bars-stainless-tubes-cross-frame.jpg');
+  e = extractPhotos('Sure.', 'lifting magnet for steel plate 500kg'); assert.ok(e.images.every(i => !/lift/i.test(i.url)));
   // reply-based fallback only when focused
   e = extractPhotos('Those look like NdFeB disc magnets.', 'do you have this ?'); assert.equal(e.images[0].url, SITEP + 'real-ndfeb-4.jpg');
-  e = extractPhotos('We supply NdFeB, SmCo, plate magnets, grate magnets and lifting magnets.', 'what do you sell'); assert.equal(e.images.length, 0);
+  e = extractPhotos('We supply NdFeB, SmCo, plate magnets, grate magnets and suspension magnets.', 'what do you sell'); assert.equal(e.images.length, 0);
   // truncated tag at end is removed
   e = extractPhotos('Answer here. [[photo:pla', ''); assert.equal(e.text, 'Answer here.');
 

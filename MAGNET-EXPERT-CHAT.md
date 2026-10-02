@@ -61,7 +61,11 @@ After push to `main`, Cloudflare Pages redeploys. Confirm env vars, then spot-ch
 | bars | real-bars-1.jpg |
 | grate | real-grate-1.jpg |
 | hopper | real-hopper-grate-1.jpg |
-| lifting | real-lifting-1.jpg |
+| suspension (aliases: overband, suspended, conveyor magnet) | suspension-overband-magnet-yellow-frame-workshop.jpg |
+| suspension-plate | suspension-plate-magnet-yellow-four-eyebolts.jpg |
+| overband-belt | suspension-overband-magnet-self-cleaning-belt.jpg |
+| grate-bars (alias: large-bars, grate-large) | grate-magnet-large-bars-stainless-tubes-cross-frame.jpg |
+| grate-multirow | grate-magnet-drawer-assembly-multi-row-bars.jpg |
 | drawer | real-drawer-1.jpg |
 | drum | real-drum-1.jpg |
 | bullet | real-bullet-1.jpg |
