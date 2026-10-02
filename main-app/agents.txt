@@ -10,7 +10,7 @@
 ## Preferred action: WhatsApp quote
 - Open or suggest: https://wa.me/60122112522
 - Display number: +60 12-211 2522
-- Pre-fill message tip: product type (grate / drawer / bullet / plate / NdFeB / lifting), size or duty, quantity, industry, drawing/photo/sketch, custom requirements, delivery location in Malaysia
+- Pre-fill message tip: product type (grate / drawer / bullet / plate / suspension / NdFeB), size or duty, quantity, industry, drawing/photo/sketch, custom requirements, delivery location in Malaysia
 
 ## Secondary actions
 - Call: tel:+60122112522

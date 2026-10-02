@@ -6,13 +6,13 @@
 
 ## Who we are
 
-We are **Arrowmatics Magnets** (legal entity: **Arrowmatics AI Sdn Bhd (1305806-W)**). We customise magnetic solutions for food, plastics, recycling, chemicals, bulk materials and steel handling — almost everything is possible across sizes, grades, housings, food-grade configurations and drawing-based builds, subject to duty review. We supply separators, NdFeB, SmCo and lifting magnets from Shah Alam across Malaysia. ASEAN inquiries welcome.
+We are **Arrowmatics Magnets** (legal entity: **Arrowmatics AI Sdn Bhd (1305806-W)**). We customise magnetic solutions for food, plastics, recycling, chemicals, bulk materials and steel handling — almost everything is possible across sizes, grades, housings, food-grade configurations and drawing-based builds, subject to duty review. We supply separators (including suspension and grate magnets), NdFeB and SmCo magnets from Shah Alam across Malaysia. ASEAN inquiries welcome.
 
 ## Key figures
 
 - **10–13k G** — typical rare-earth separator field
 - **N35–N52** — NdFeB grade range
-- **~3:1** — lifting safety factor (relative to rated load under stated conditions)
+- **304 / 316 / 316L** — stainless grades available (confirm grade at quotation)
 - **MY** — Shah Alam base · ASEAN welcome
 
 ## What is a magnetic separator?
@@ -40,8 +40,8 @@ Sintered neodymium grades N35–N52 for motors, sensors, fixtures and OEM assemb
 ### SmCo samarium cobalt magnets
 High-temperature rare-earth magnets (SmCo5 / Sm2Co17) when heat or corrosion rules out NdFeB. Quoted to drawing. → [smco-magnets.html](https://magnets.com.my/smco-magnets.html)
 
-### Lifting magnets
-Permanent and electro lifters for plate, billet and scrap. Sized around a ~3:1 safety factor. → [lifting-magnets.html](https://magnets.com.my/lifting-magnets.html)
+### Suspension magnets
+Overband (self-cleaning) and suspended plate magnets hung over conveyor belts to remove tramp iron. Quoted to belt width, speed, burden depth and hanging height. → [magnetic-separators.html#suspension-magnets](https://magnets.com.my/magnetic-separators.html#suspension-magnets)
 
 ## Industries served
 
@@ -51,7 +51,7 @@ Magnet systems that protect product quality, equipment and handling safety:
 - Plastics & compounding — hopper and drawer magnets
 - Recycling & scrap — pulley and plate magnets
 - Chemicals & bulk materials — bullet and pipeline magnets
-- Construction & steel handling — lifting magnets
+- Aggregates & conveyors — suspension (overband) and plate magnets
 - OEMs & MRO — NdFeB blanks and assemblies
 
 ## Why Arrowmatics Magnets
@@ -68,8 +68,8 @@ Yes. We supply food-grade grate and drawer magnets for Malaysian food plants. Sh
 ### NdFeB N52 strongest commercial grade?
 Among common sintered grades, N52 is at the top of the energy-product range we supply (N35–N52). Grade choice also depends on temperature and coating.
 
-### Lifting magnet safety factor?
-We size permanent and electro lifting magnets around a safety factor of about 3:1 relative to rated load. Confirm with your site safety rules.
+### What is a suspension (overband) magnet?
+A suspension magnet hangs over a conveyor belt and pulls tramp iron out of the material passing underneath. Overband types clear the iron automatically on a running belt; suspended plate types are cleaned by hand. Send belt width, burden depth and hanging height on WhatsApp for a written quote.
 
 Full FAQ → [faq.html](https://magnets.com.my/faq.html)
 

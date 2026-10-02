@@ -2,7 +2,7 @@
 
 > Agent-readable mirror. Canonical HTML: same path without `.md`. Contact: WhatsApp +60 12-211 2522.
 
-FAQ | Magnetic Separators, NdFeB & Lifting Magnets | Arrowmatics
+FAQ | Magnetic Separators, Suspension Magnets & NdFeB | Arrowmatics
   
   
   
@@ -24,13 +24,12 @@ FAQ | Magnetic Separators, NdFeB & Lifting Magnets | Arrowmatics
     
       [
           
-          Arrowmatics MagnetsMagnetic Separators · NdFeB · Lifting
+          Arrowmatics MagnetsMagnetic Separators · NdFeB · SmCo
         ](/)
       
         [Home](/)
         [Separators](/magnetic-separators.html)
         [NdFeB](/ndfeb-magnets.html)
-        [Lifting](/lifting-magnets.html)
         [FAQ](/faq.html)
         [Call](tel:+60122112522)
         [WhatsApp Quote](https://wa.me/60122112522)
@@ -47,7 +46,7 @@ FAQ | Magnetic Separators, NdFeB & Lifting Magnets | Arrowmatics
 # Frequently asked questions
 
       
-Answer-first replies for industrial buyers of magnetic separators, NdFeB magnets and lifting magnets in Malaysia.
+Answer-first replies for industrial buyers of magnetic separators, suspension magnets and NdFeB magnets in Malaysia.
 
     
   
@@ -118,19 +117,19 @@ Sintered NdFeB from N35 to N52 in blocks, discs, rings, arcs and custom shapes. 
 
         
           
-## What safety factor do lifting magnets use?
+## What is a suspension (overband) magnet and what do you need to quote one?
 
           
-We size permanent and electro lifting magnets around a safety factor of about 3:1 relative to rated load under stated conditions (air gap, thickness, surface). Follow your crane and site safety rules. See [lifting magnets](/lifting-magnets.html).
+A suspension magnet hangs over a conveyor belt and pulls tramp iron out of the material passing underneath. Overband types clear the iron automatically with a running belt; suspended plate types are cleaned by hand. To quote, send belt width, belt speed, burden depth, hanging height and the iron you need to remove on WhatsApp. See [suspension magnets](/magnetic-separators.html#suspension-magnets).
 
         
 
         
           
-## Permanent or electro lifting magnet — which should I choose?
+## Overband or suspended plate magnet — which should I choose?
 
           
-Permanent lifters need no power to hold and suit controlled plate handling. Electro lifters need power and suit scrap or remote on/off duty. Share load type, thickness and site power on WhatsApp for a recommendation.
+Overband (self-cleaning) magnets have a running belt and suit continuous or heavier tramp-iron loads. Suspended plate magnets are fixed plates cleaned by hand and suit lighter loads with easy access. Share belt width, burden depth and hanging height on WhatsApp for a recommendation.
 
         
 
@@ -170,7 +169,7 @@ Call [+60 12-211 2522](tel:+60122112522), WhatsApp [+60 12-211 2522](https://wa.
 ## Still deciding?
 
         
-Send a photo or sketch of your line — we will point you to grate, bullet, drawer, NdFeB grade or lifting type with a written quote.
+Send a photo or sketch of your line — we will point you to grate, bullet, drawer, suspension or NdFeB type with a written quote.
 
         [WhatsApp +60 12-211 2522](https://wa.me/60122112522)
       
@@ -185,7 +184,7 @@ Send a photo or sketch of your line — we will point you to grate, bullet, draw
 ### Arrowmatics Magnets
 
           
-Magnetic separators, NdFeB rare-earth magnets, and lifting magnets for industry in Malaysia.
+Magnetic separators, suspension magnets and NdFeB rare-earth magnets for industry in Malaysia.
 
         
         
@@ -194,7 +193,6 @@ Magnetic separators, NdFeB rare-earth magnets, and lifting magnets for industry 
 
           [Magnetic separators](/magnetic-separators.html)
           [NdFeB magnets](/ndfeb-magnets.html)
-          [Lifting magnets](/lifting-magnets.html)
           [FAQ](/faq.html)
         
         

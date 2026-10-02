@@ -26,7 +26,8 @@
 2. NdFeB (neodymium) grades N35–N52
 2b. SmCo (samarium cobalt) SmCo5 / Sm2Co17 — high temperature & corrosion; page https://magnets.com.my/smco-magnets.html
 2x. NdFeB (neodymium) rare-earth magnets — sintered grades N35–N52; coatings and custom sizes on request.
-3. Lifting magnets — permanent and electro; designed around ~3:1 safety factor; capacities sized to load.
+3. Suspension magnets (overband / self-cleaning and suspended plate) — hung over conveyor belts to remove tramp iron; quoted to belt width, belt speed, burden depth and hanging height. Page: https://magnets.com.my/magnetic-separators.html#suspension-magnets
+3b. Grate magnets with large-diameter magnetic bars and multi-row/drawer assemblies — stainless; bar diameter, spacing and grade confirmed at quotation. Page: https://magnets.com.my/magnetic-separators.html
 
 1b. Plate magnets (food-grade, full weld) - up to ~10,000 Gauss surface field (typical rating; confirm per application/air gap); 100% full-weld SS304/SS316/SS316L with continuous seal welds, no crevices/gaps/exposed fasteners, smooth cleanable finish; hinged, suspended or quick-release; custom sizes. Designed to support customers' HACCP and ISO 22000 food-safety programmes. Page: https://magnets.com.my/plate-magnets.html
    - Honesty: Arrowmatics does NOT claim ISO 22000 or HACCP certification for itself; customers remain responsible for their own certification. Do not state or imply otherwise.
@@ -38,7 +39,7 @@
 Factories in food processing, plastics, recycling, chemicals, bulk materials, steel handling, OEMs and MRO across Malaysia. ASEAN inquiries welcome.
 
 ## Magnet Expert (on-site chat)
-- Visitors may upload a machine photo, hand sketch or drawing, add a short description, and receive sensible, simple, systematic advice toward a custom-fit recommendation from site families (separators / NdFeB / SmCo / lifting).
+- Visitors may upload a machine photo, hand sketch or drawing, add a short description, and receive sensible, simple, systematic advice toward a custom-fit recommendation from site families (separators incl. grate and suspension / NdFeB / SmCo).
 - Chat requires name + WhatsApp or email. Human handoff remains WhatsApp +60 12-211 2522.
 - Do not invent products not listed on magnets.com.my, RM prices, certifications or compliance claims. Food-grade configurations can be discussed; confirm any specific certificate or standard in the quote.
 
@@ -60,7 +61,6 @@ English only on magnets.com.my.
 - https://magnets.com.my/magnetic-separators.html · .md
 - https://magnets.com.my/plate-magnets.html · .md
 - https://magnets.com.my/ndfeb-magnets.html · .md
-- https://magnets.com.my/lifting-magnets.html · .md
 - https://magnets.com.my/faq.html · .md
 
 

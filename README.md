@@ -2,7 +2,7 @@
 
 GEO/SEO-ready static website for **Arrowmatics Magnets** (legal: Arrowmatics AI Sdn Bhd 1305806-W).
 
-Magnetic separators, NdFeB rare-earth magnets, and lifting magnets for industry in Malaysia. Based in Shah Alam; supply Malaysia-wide.
+Magnetic separators (grate, suspension, drawer…), NdFeB rare-earth magnets and SmCo for industry in Malaysia. Based in Shah Alam; supply Malaysia-wide.
 
 ## Structure
 
