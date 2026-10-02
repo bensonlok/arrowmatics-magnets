@@ -136,3 +136,25 @@ console.log('handler ok');
   x = await call({ lead, messages: [{ role: 'user', content: 'plate magnet?' }] }); assert.match(x.j.reply, /full weld/); assert.equal(orCalls.length, 2);
   console.log('photos ok');
 }
+
+// ================= expert prompt (knowledge, honesty, language, next step) =================
+{
+  const { BASE_SYSTEM } = await import('../main-app/functions/api/magnet-chat.js');
+  const fs = await import('node:fs');
+  const root = fs.readFileSync('../functions/api/magnet-chat.js', 'utf8');
+  const app = fs.readFileSync('../main-app/functions/api/magnet-chat.js', 'utf8');
+  for (const src of [root, app]) {
+    for (const re of [/MAGNET KNOWLEDGE/, /SmCo/, /ferrite/i, /alnico/i, /gauss vs pull force/i, /LIQUID LINE/, /overband/i, /316L/, /Chinese/, /Bahasa Malaysia/, /1-3 hours \(Malaysia business hours\)/, /confirm at quotation/, /HOW TO SIZE/, /flow rate/, /NEXT STEP \(hard\)/, /never state any percentage/i, /\[\[photo:KEY\]\]/, /never say Arrowmatics is ISO 22000 or HACCP certified/i])
+      assert.match(src, re, String(re));
+  }
+  assert.doesNotMatch(BASE_SYSTEM, /\b9\d ?%/); // no invented satisfaction statistic
+  assert.doesNotMatch(BASE_SYSTEM, /lifting/i);
+  // both function copies carry the same knowledge block
+  const blk = (s) => s.slice(s.indexOf('MAGNET KNOWLEDGE'), s.indexOf('HONESTY (HARD)'));
+  assert.equal(blk(root), blk(app));
+  // handler still sends the strengthened system prompt upstream
+  mode = (m, b) => { assert.match(b.messages[0].content, /MAGNET KNOWLEDGE/); assert.match(b.messages[0].content, /Visitor lead on file/); return { body: { choices: [{ message: { content: 'Grate magnets suit free-flowing powders; please send a photo or WhatsApp +60 12-211 2522.' }, finish_reason: 'stop' }] } }; };
+  x = await call({ lead, messages: [{ role: 'user', content: 'Which separator for my powder?' }] });
+  assert.match(x.j.reply, /Grate magnets/);
+  console.log('prompt ok');
+}
