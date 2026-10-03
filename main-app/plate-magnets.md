@@ -4,7 +4,7 @@
 
 ## Overview
 
-Plate magnets with a typical surface field of **up to ~10,000 Gauss** (typical rating; confirm per application and air gap), built as **100% full-weld SS304/SS316/SS316L stainless steel** housings with continuous seal welds, no crevices, no gaps and no exposed fasteners on the product side. Weld seams are finished to a smooth, cleanable surface. Designed to **support your HACCP and ISO 22000** food-safety programme.
+Arrowmatics is not itself certified to ISO 22000 or HACCP; these plate magnets are for food plants working to HACCP / ISO 22000. Plate magnets with a typical surface field of **up to ~10,000 Gauss** (typical rating; confirm per application and air gap), built as **100% full-weld SS304/SS316/SS316L stainless steel** housings with continuous seal welds, no crevices, no gaps and no exposed fasteners on the product side. Weld seams are finished to a smooth, cleanable surface. Designed to **support your HACCP and ISO 22000** food-safety programme.
 
 ## Honesty note
 

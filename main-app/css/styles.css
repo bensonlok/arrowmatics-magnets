@@ -1488,3 +1488,8 @@ button.btn.btn-wa {
 .btn-expert-hero { background: var(--cyan); color: #070a12; border: 1px solid var(--cyan); }
 .btn-expert-hero:hover { background: #fff; color: #070a12; border-color: #fff; }
 @media (prefers-reduced-motion: reduce) { .btn, .expert-chips button { transition: none; } }
+
+/* Short bullet chips */
+.chip-list { list-style: none; margin: 0.9rem 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.45rem; }
+.chip-list li { font-size: 0.78rem; font-weight: 700; padding: 0.4rem 0.8rem; border-radius: 999px; background: rgba(21,88,255,0.1); color: #0b2a7a; border: 1px solid rgba(21,88,255,0.25); line-height: 1.2; }
+.section-dark .chip-list li, .page-hero .chip-list li, .hero .chip-list li { background: rgba(255,255,255,0.1); color: #fff; border-color: rgba(255,255,255,0.35); }

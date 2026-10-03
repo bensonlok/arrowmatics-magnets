@@ -46,3 +46,12 @@ http://www.magnets.com.my/* https://magnets.com.my/:splat 301
 /samarium-cobalt.html /smco-magnets.html 301
 /samariumcobalt.html /smco-magnets.html 301
 /SamariumCobalt.html /smco-magnets.html 301
+
+# Liquid-line magnetic trap (old page 404'd) -> dedicated section on the separators page
+/LiquidLineMagneticTrap.html /magnetic-separators.html#liquid-line-trap 301
+/liquidlinemagnetictrap.html /magnetic-separators.html#liquid-line-trap 301
+/LiquidLineMagnetTrap.html /magnetic-separators.html#liquid-line-trap 301
+/liquid-line-magnetic-trap /magnetic-separators.html#liquid-line-trap 301
+/liquid-trap /magnetic-separators.html#liquid-line-trap 301
+/liquid-trap.html /magnetic-separators.html#liquid-line-trap 301
+/LiquidTrap.html /magnetic-separators.html#liquid-line-trap 301
