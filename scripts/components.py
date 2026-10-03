@@ -144,11 +144,18 @@ def chips(items):
     return '<ul class="chip-list ph-chips" aria-label="Key points">' + "".join(
         '<li>%s%s</li>' % (icon(ic), t) for ic, t in items) + '</ul>'
 
-def hero(crumbs, eyebrow, h1, lead, chip_items, img, alt, cap, wh=(1200, 900), card=True, extra=""):
+def hero(crumbs, eyebrow, h1, lead, chip_items, img, alt, cap, wh=(1200, 900), card=True, extra="", persona=None):
+    """persona = dict(cta=..., q=...): one primary CTA (opens Magnet Expert upload) + quiet WhatsApp link."""
     bc = " · ".join('<a href="%s">%s</a>' % (u, n) if u else "<span>%s</span>" % n for n, u in crumbs)
     pc = ''
     if card:
         pc = '''<div class="photo-card"><span class="pc-ico">%s</span><div class="pc-text"><strong>Send a photo – get an answer in 1–3 business hours</strong>We aim to reply within 1–3 hours (Malaysia business hours).</div><button type="button" class="btn btn-expert-hero" data-open-magnet-expert data-expert-upload>Upload a photo</button></div>''' % icon("camera")
+    if persona:
+        actions = '''<button type="button" class="btn btn-expert-hero" data-open-magnet-expert data-expert-upload data-expert-q="%s">%s</button>
+          <a class="btn btn-wa-link" href="%s" target="_blank" rel="noopener">or WhatsApp +60 12-211 2522</a>''' % (e(persona["q"]), persona["cta"], WA)
+    else:
+        actions = '''<a class="btn btn-wa" href="%s" target="_blank" rel="noopener">WhatsApp +60 12-211 2522</a>
+          <button type="button" class="btn btn-expert-hero" data-open-magnet-expert>Ask the Magnet Expert</button>''' % WA
     return '''  <section class="ph">
     <div class="container ph-grid">
       <div class="ph-copy">
@@ -158,8 +165,7 @@ def hero(crumbs, eyebrow, h1, lead, chip_items, img, alt, cap, wh=(1200, 900), c
         <p class="ph-lead">%s</p>
         %s
         <div class="ph-actions">
-          <a class="btn btn-wa" href="%s" target="_blank" rel="noopener">WhatsApp +60 12-211 2522</a>
-          <button type="button" class="btn btn-expert-hero" data-open-magnet-expert>Ask the Magnet Expert</button>
+          %s
         </div>
         %s
       </div>
@@ -170,7 +176,7 @@ def hero(crumbs, eyebrow, h1, lead, chip_items, img, alt, cap, wh=(1200, 900), c
       </figure>
     </div>
   </section>
-''' % (bc, ('<span class="hero-eyebrow">%s</span>' % eyebrow) if eyebrow else "", h1, lead, chips(chip_items), WA, extra, img, e(alt), wh[0], wh[1], cap, pc)
+''' % (bc, ('<span class="hero-eyebrow">%s</span>' % eyebrow) if eyebrow else "", h1, lead, chips(chip_items), actions, extra, img, e(alt), wh[0], wh[1], cap, pc)
 
 HOW = '''  <section class="how" aria-label="How it works">
     <div class="container">

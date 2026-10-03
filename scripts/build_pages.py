@@ -97,7 +97,17 @@ IND = [
        ("Which stainless grade for corrosive duty?","304, 316 and 316L are available. 316 / 316L generally suit more corrosive or washdown-heavy conditions. This is general guidance with no test data; confirm the grade for your chemicals at quotation.")]),
 ]
 
+PERSONA = {
+ "food-industry-magnets": dict(h1='Tell us what is getting into <span class="accent">your product</span>', lead="Food QA? Send a photo of the hopper or chute. We suggest a stainless magnet and quote it in writing.", cta="Send a photo of your line", q="I am in food QA and want a magnet for this hopper or chute. Photo attached."),
+ "pharma-cosmetics-magnets": dict(h1='Keep fine iron out of <span class="accent">your powder blend</span>', lead="Send your outlet size or a photo. We quote a stainless drawer or grate magnet to fit.", cta="Send your outlet photo", q="I need a magnet for a powder outlet in a pharma or cosmetics line."),
+ "plastics-industry-magnets": dict(h1='Protect your <span class="accent">extruder</span> from tramp iron', lead="Send a photo of your hopper inlet. We size a grate, drawer or bullet magnet to fit.", cta="Send a photo of your hopper", q="I want to protect an extruder or mould from tramp iron in pellets or regrind."),
+ "recycling-industry-magnets": dict(h1='Pull iron off <span class="accent">your conveyor</span>', lead="Send a photo of the belt. We quote an overband, suspended plate or pulley magnet to fit.", cta="Send a photo of your conveyor", q="I want to remove tramp iron from a conveyor belt in a recycling or aggregates line."),
+ "chemicals-industry-magnets": dict(h1='Iron out of <span class="accent">powders, pipes and liquids</span>', lead="Send a photo of the pipe or hopper. We quote a stainless bullet, grate or liquid-line magnet.", cta="Send a photo of your line", q="I want a magnet for a chemical powder or liquid line."),
+}
+
 def ind_page(d):
+    pr = PERSONA[d["slug"]]
+    d = dict(d, h1=pr["h1"], lead=pr["lead"])
     path = "/%s.html" % d["slug"]
     ld = [
       {"@context":"https://schema.org","@type":"Service","name":"Magnets for "+d["name"],"url":SITE+path,
@@ -109,7 +119,7 @@ def ind_page(d):
     ]
     h = head(d["title"], d["desc"], path, d["ogimg"], ld)
     body = '<body>\n' + header("/industries.html") + "\n"
-    body += hero([("Home","/"),("Industries","/industries.html"),(d["short"],None)], d["eyebrow"], d["h1"], d["lead"], d["chips"], d["img"], d["alt"], d["cap"], d["wh"],
+    body += hero([("Home","/"),("Industries","/industries.html"),(d["short"],None)], d["eyebrow"], d["h1"], d["lead"], d["chips"], d["img"], d["alt"], d["cap"], d["wh"], persona=pr,
                  extra='<details class="readmore"><summary>Read more</summary><div class="rm-body"><p>%s</p></div></details>' % d["intro"])
     body += HOW + BAND
     body += '''
@@ -129,6 +139,7 @@ def ind_page(d):
       </div>
     </section>
 
+%s
     <section class="section tight">
       <div class="container">
         <div class="section-head compact"><h2>Quick answers</h2></div>
@@ -147,7 +158,7 @@ def ind_page(d):
     </section>
   </main>
 
-''' % (vcards(d["cards"]), "".join("<li>%s</li>" % x for x in d["send"]), accordions(d["faq"]), NOTE_CERT if d["slug"] in ("food-industry-magnets","pharma-cosmetics-magnets") else "Size, grade and build are confirmed at quotation; no certificates are implied.", WA)
+''' % (vcards(d["cards"]), "".join("<li>%s</li>" % x for x in d["send"]), quote_section("q", d["slug"]), accordions(d["faq"]), NOTE_CERT if d["slug"] in ("food-industry-magnets","pharma-cosmetics-magnets") else "Size, grade and build are confirmed at quotation; no certificates are implied.", WA)
     body += FOOTER + "\n" + fabs(WA_SVG) + "</body>\n</html>\n"
     open(os.path.join(OUT, d["slug"] + ".html"), "w").write(h + body)
     md = "# %s — Arrowmatics Magnets\n\n> Agent-readable mirror. Canonical: %s%s · WhatsApp +60 12-211 2522\n\n%s\n\n## Which magnet fits?\n\n%s\n\n## What to send for a quote\n\n%s\n\nSize, grade, gauss and build are confirmed at quotation. No published RM prices or stock levels.\n\n## Quick answers\n\n%s\n\n## Honest note\n\n%s\n" % (
