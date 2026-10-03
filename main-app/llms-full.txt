@@ -61,9 +61,23 @@ Site pages are in English. The Magnet Expert chat can reply in English, Chinese 
 - https://magnets.com.my/magnetic-separators.html · .md
 - https://magnets.com.my/plate-magnets.html · .md
 - https://magnets.com.my/ndfeb-magnets.html · .md
+- https://magnets.com.my/industries.html · .md
+- https://magnets.com.my/food-industry-magnets.html · .md
+- https://magnets.com.my/pharma-cosmetics-magnets.html · .md
+- https://magnets.com.my/plastics-industry-magnets.html · .md
+- https://magnets.com.my/recycling-industry-magnets.html · .md
+- https://magnets.com.my/chemicals-industry-magnets.html · .md
+- https://magnets.com.my/about.html · .md
 - https://magnets.com.my/faq.html · .md
 
 
 ## SmCo (samarium cobalt)
 Page: https://magnets.com.my/smco-magnets.html
 Families: SmCo5, Sm2Co17. Use when heat/corrosion rules out NdFeB. Quote via WhatsApp +60 12-211 2522.
+
+
+## Industries
+Short guide pages for food, pharma/cosmetics, plastics, recycling and chemicals lines: https://magnets.com.my/industries.html . They give generic guidance on which magnet type fits and what to send for a quote. They contain no customer names, case studies or statistics. Food and pharma pages: Arrowmatics supplies hygienic-design magnets to support customers' HACCP / ISO 22000 / GMP programmes and is not itself certified.
+
+## About
+https://magnets.com.my/about.html — Arrowmatics AI Sdn Bhd (1305806-W), No. 64, Jalan Kapar 27/89, Megah Industrial Park, 40400 Shah Alam. Only facts stated elsewhere on the site.
