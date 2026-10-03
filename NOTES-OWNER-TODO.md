@@ -20,7 +20,7 @@ Nothing below is on the live site yet. Items marked **[OWNER]** need a fact or d
 
 ## Identity
 - [OWNER] Domain email (e.g. sales@magnets.com.my) to replace the two Gmail addresses: `__DOMAIN_EMAIL__`
-- [OWNER] Old trading name "Arrowmatics Engineering Trading": add as schema `alternateName` ONLY if you confirm it is the same business. **Not added anywhere.**
+- [RESOLVED 2026-10-03] Old trading name: owner decided the legal/business name is **Arrowmatics AI Sdn Bhd (1305806-W)**. The old name is not used anywhere on the site and is not an `alternateName`. Schema carries `legalName` "Arrowmatics AI Sdn Bhd" and `identifier` "1305806-W".
 
 ## Claims to keep as they are
 - Arrowmatics is **not itself certified** to HACCP / ISO 22000. Pages say "for food plants working to HACCP / ISO 22000". Do not change unless a real certificate exists.
