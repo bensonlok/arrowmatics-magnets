@@ -2,6 +2,28 @@
 
 > Agent-readable mirror. Canonical HTML: same path without `.md`. Contact: WhatsApp +60 12-211 2522.
 
+## Buyer questions first
+
+### How do I get a written quote?
+
+WhatsApp +60 12-211 2522 with a photo, the material, the size and where it fits. Written quote with size, grade and build confirmed.
+
+### Do you publish prices in RM?
+
+No. Quotes are written, per application.
+
+### How fast do you reply?
+
+We aim to reply within 1–3 hours in Malaysia business hours; a target, not a guarantee.
+
+### Is Arrowmatics ISO 22000 or HACCP certified?
+
+No. Arrowmatics is not itself certified to ISO 22000, HACCP or GMP, and we publish no certificates. We supply fit-for-purpose, hygienic-design magnets for food plants working to those standards; your own quality system and certification stay yours. Confirm any document you need at quotation.
+
+### Can I send a photo instead of a drawing?
+
+Yes. Upload a photo, sketch or drawing to the Magnet Expert chat, or send it on WhatsApp +60 12-211 2522. Include the material, the size and where the magnet will go. We aim to reply within 1–3 hours (Malaysia business hours).
+
 FAQ | Magnetic Separators, Suspension Magnets & NdFeB | Arrowmatics
   
   
