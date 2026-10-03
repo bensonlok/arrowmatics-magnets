@@ -3,7 +3,7 @@ import html, json
 
 SITE = "https://magnets.com.my"
 WA = "https://wa.me/60122112522"
-ASSET_V = "ui1"
+ASSET_V = "mk1"
 
 ICONS = {
  "shield": '<path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/>',
@@ -27,7 +27,7 @@ def e(s):
 
 NAV = [("/", "Home"), ("/magnetic-separators.html", "Separators"), ("/plate-magnets.html", "Plate"),
        ("/ndfeb-magnets.html", "NdFeB"), ("/smco-magnets.html", "SmCo"), ("/industries.html", "Industries"),
-       ("/about.html", "About"), ("/faq.html", "FAQ")]
+       ("/resources.html", "Resources"), ("/about.html", "About"), ("/faq.html", "FAQ")]
 
 def header(current):
     links = []
@@ -67,8 +67,10 @@ FOOTER = '''  <footer class="site-footer">
           <a href="/ndfeb-magnets.html">NdFeB magnets</a>
           <a href="/smco-magnets.html">SmCo magnets</a>
           <a href="/industries.html">Industries</a>
+          <a href="/resources.html">Resources</a>
           <a href="/about.html">About Arrowmatics</a>
           <a href="/faq.html">FAQ</a>
+          <a href="/privacy.html">Privacy</a>
         </div>
         <div class="footer-nap">
           <h3>NAP</h3>
@@ -93,7 +95,9 @@ def fabs(wa_svg):
   <link rel="stylesheet" href="/css/magnet-expert-chat.css?v=%s">
   <script src="/js/magnet-expert-chat.js?v=%s" defer></script>
   <script src="/js/ui.js?v=%s" defer></script>
-''' % (wa_svg, ASSET_V, ASSET_V, ASSET_V)
+  <script src="/js/site-config.js?v=%s" defer></script>
+  <script src="/js/leads.js?v=%s" defer></script>
+''' % (wa_svg, ASSET_V, ASSET_V, ASSET_V, ASSET_V, ASSET_V)
 
 def head(title, desc, path, og_image, extra_ld, mdpath=None):
     url = SITE + path
@@ -195,3 +199,77 @@ def vcards(cards):
 
 def accordions(qas):
     return "\n".join('''        <details class="acc"><summary><h3>%s</h3></summary><div class="rm-body"><p>%s</p></div></details>''' % (q, a) for q, a in qas)
+
+
+# ---------------------------------------------------------------- marketing blocks
+CONSENT = ('I agree that Arrowmatics AI Sdn Bhd may use these details to reply to this request. '
+           'No marketing lists, no selling of data. See the <a href="/privacy.html">privacy notice</a>.')
+
+def _field(fid, label, inner, hint=""):
+    return '<div class="field"><label for="%s">%s%s</label>%s</div>' % (fid, label, (' <span class="hint">%s</span>' % hint) if hint else "", inner)
+
+def quote_form(prefix="q", context="", heading="Request a quote", sub="Three short fields. Photo optional. We aim to reply within 1–3 hours (Malaysia business hours)."):
+    P = prefix
+    return '''<div class="leadbox reveal" id="%(P)s-box">
+          <div class="leadbox-head"><h2>%(h)s</h2><p>%(sub)s</p></div>
+          <form class="lead-form" data-lead-form="quote" data-context="%(ctx)s" novalidate>
+            %(f1)s
+            %(f2)s
+            %(f3)s
+            %(f4)s
+            <label class="consent"><input type="checkbox" name="consent" required> <span>%(consent)s</span></label>
+            <div class="hp" aria-hidden="true"><label>Leave this empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+            <button class="btn btn-wa" type="submit">Send request</button>
+            <p class="form-msg" role="status" aria-live="polite"></p>
+            <noscript><p class="form-msg">Please enable JavaScript, or WhatsApp us directly.</p></noscript>
+          </form>
+        </div>''' % dict(P=P, h=heading, sub=sub, ctx=e(context), consent=CONSENT,
+        f1=_field(P+"-name", "Your name", '<input id="%s-name" name="name" autocomplete="name" required maxlength="80">' % P),
+        f2=_field(P+"-contact", "WhatsApp number or email", '<input id="%s-contact" name="contact" autocomplete="off" required maxlength="120" placeholder="+60… or name@company.com">' % P),
+        f3=_field(P+"-msg", "What do you need?", '<textarea id="%s-msg" name="message" rows="3" required maxlength="600" placeholder="Product, size, material, where it fits"></textarea>' % P),
+        f4=_field(P+"-photo", "Photo or sketch", '<input id="%s-photo" name="photo" type="file" accept="image/*">' % P, "optional"))
+
+def checklist_form(prefix="c", context="checklist"):
+    P = prefix
+    return '''<div class="leadbox leadbox-checklist reveal" id="%(P)s-box">
+          <div class="leadbox-head"><h2>Free 1-page selection checklist</h2><p>What to measure, what to send and what to confirm before you order a magnetic separator.</p></div>
+          <form class="lead-form" data-lead-form="checklist" data-context="%(ctx)s" novalidate>
+            %(f1)s
+            %(f2)s
+            %(f3)s
+            <label class="consent"><input type="checkbox" name="consent" required> <span>%(consent)s</span></label>
+            <div class="hp" aria-hidden="true"><label>Leave this empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+            <button class="btn btn-expert-hero" type="submit">Get the checklist</button>
+            <p class="form-msg" role="status" aria-live="polite"></p>
+            <div class="form-done" hidden>
+              <a class="btn btn-wa" href="/downloads/Magnetic-Separator-Selection-Checklist.pdf" download data-track="checklist_download">Download the PDF</a>
+              <a class="btn btn-outline-dark" href="/checklist-print.html" target="_blank" rel="noopener" data-track="checklist_print">Open printable page</a>
+            </div>
+            <noscript><p class="form-msg">Please enable JavaScript, or <a href="https://wa.me/60122112522">WhatsApp us</a> and we will send it.</p></noscript>
+          </form>
+        </div>''' % dict(P=P, ctx=e(context), consent=CONSENT,
+        f1=_field(P+"-name", "Your name", '<input id="%s-name" name="name" autocomplete="name" required maxlength="80">' % P),
+        f2=_field(P+"-email", "Email", '<input id="%s-email" name="email" type="email" autocomplete="email" required maxlength="120">' % P),
+        f3=_field(P+"-phone", "WhatsApp number", '<input id="%s-phone" name="phone" type="tel" autocomplete="tel" maxlength="30">' % P, "optional"))
+
+TRUST = '''    <section class="section tight" id="trust">
+      <div class="container">
+        <div class="section-head compact"><h2>What you can rely on</h2><p>Plain facts about how we work.</p></div>
+        <ul class="icards trust-cards">
+          <li class="reveal"><span class="ic">%(shield)s</span><h3>Registered company</h3><p>Arrowmatics AI Sdn Bhd (1305806-W), No. 64, Jalan Kapar 27/89, Megah Industrial Park, 40400 Shah Alam.</p></li>
+          <li class="reveal"><span class="ic">%(chat)s</span><h3>Written quotes</h3><p>Size, grade and build confirmed in writing on WhatsApp. No online cart, no published list prices.</p></li>
+          <li class="reveal"><span class="ic">%(clock)s</span><h3>Reply target</h3><p>We aim to reply within 1–3 hours in Malaysia business hours. A target, not a guarantee.</p></li>
+          <li class="reveal"><span class="ic">%(check)s</span><h3>Honest about certification</h3><p>We are not ourselves certified to ISO 22000 or HACCP. We supply magnets for plants working to those standards.</p></li>
+        </ul>
+      </div>
+    </section>
+''' % dict(shield=icon("shield"), chat=icon("chat"), clock=icon("clock"), check=icon("check"))
+
+def quote_section(prefix="q", context=""):
+    return '''    <section class="section tight section-alt" id="quote">
+      <div class="container leadgrid">
+        %s
+        %s
+      </div>
+    </section>
+''' % (quote_form(prefix, context), checklist_form(prefix + "c", "checklist-" + context))

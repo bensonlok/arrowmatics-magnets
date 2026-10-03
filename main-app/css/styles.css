@@ -1659,3 +1659,19 @@ details.acc > summary h3 { margin: 0; font-size: 1rem; text-transform: none; let
 .facts dt { font-size: 0.68rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-muted); }
 .facts dd { margin: 0.15rem 0 0; color: var(--ink); font-size: 0.98rem; line-height: 1.45; }
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+/* Contrast fix: chips inside the dark .ph hero (and any dark band) must be light on dark */
+.ph .chip-list li, .ph-chips li, .expert-band .chip-list li, .contact-band .chip-list li, .cta-band .chip-list li, .range .chip-list li {
+  background: rgba(255,255,255,0.12); color: #fff; border: 1px solid rgba(255,255,255,0.5);
+}
+.ph .chip-list li svg, .ph-chips svg { color: #5ff0f2; }
+
+/* Contrast: white text on WhatsApp green was ~2:1; use a deeper green with white text (AA) */
+.btn-wa { background: #0b7a3e; border-color: #0b7a3e; color: #fff; }
+.btn-wa:hover { background: #096333; border-color: #096333; color: #fff; }
+
+/* Contrast: muted index labels and in-box links to AA */
+.section-index { color: #566070; }
+.section-dark .section-index, .page-hero .section-index { color: #b3bbcc; }
+.answer-box a, .faq-item a { color: #0f47d6; }
+.ind-note a, .sec-note a { color: #0f47d6; }
