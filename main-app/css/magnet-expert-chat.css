@@ -228,3 +228,6 @@ body:has(#magnets-expert-root) .call-fab { bottom: 88px !important; right: 20px 
 .mec-photo img { display: block; width: 100%; height: 84px; object-fit: cover; background: #eef2f7; }
 .mec-photo-cap { display: block; padding: 4px 6px; font-size: 10.5px; line-height: 1.25; color: #334155; overflow-wrap: anywhere; }
 .mec-photo-note { flex: 1 0 100%; font-size: 10.5px; color: #64748b; font-style: italic; line-height: 1.3; }
+
+/* On the first screen the hero already has the Expert CTA: keep the pill quiet until the visitor scrolls */
+#magnets-expert-fab.quiet { opacity: 0; pointer-events: none; transform: translateY(10px); }
