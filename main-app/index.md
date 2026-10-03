@@ -81,6 +81,9 @@ A suspension magnet hangs over a conveyor belt and pulls tramp iron out of the m
 
 Full FAQ → [faq.html](https://magnets.com.my/faq.html)
 
+## Resources
+- [Resources hub](https://magnets.com.my/resources.md) · [Selection checklist](https://magnets.com.my/selection-checklist.md) · [Request a quote](https://magnets.com.my/request-quote.md)
+
 ## Industries
 - [Industries hub](https://magnets.com.my/industries.md)
 - [Food](https://magnets.com.my/food-industry-magnets.md) · [Pharma & cosmetics](https://magnets.com.my/pharma-cosmetics-magnets.md) · [Plastics](https://magnets.com.my/plastics-industry-magnets.md) · [Recycling](https://magnets.com.my/recycling-industry-magnets.md) · [Chemicals](https://magnets.com.my/chemicals-industry-magnets.md)
