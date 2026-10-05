@@ -1762,3 +1762,12 @@ details.acc > summary h3 { margin: 0; font-size: 1rem; text-transform: none; let
 .section .breadcrumb, .section .breadcrumb span { color: #3b4252; }
 .section .breadcrumb a { color: #0f47d6; }
 .section .breadcrumb span:last-child { color: #111; font-weight: 700; }
+
+/* Type blocks with a product photo (separators page #types) */
+.type-block.has-photo { display: grid; grid-template-columns: 220px 1fr; column-gap: 1.25rem; align-items: start; }
+.type-block.has-photo .tb-ph { grid-row: 1 / span 3; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; background: #0b1220; }
+.type-block { scroll-margin-top: 84px; }
+@media (max-width: 640px) {
+  .type-block.has-photo { display: block; }
+  .type-block.has-photo .tb-ph { margin: -0.25rem 0 0.9rem; }
+}
