@@ -24,3 +24,12 @@ Note: the overband machine in the Drive set carries a small "MST Magnetic Scienc
 
 Attribution is shown in the figure caption and in the alt text on /magnetic-separators.html#suspension-magnets.
 Other Peter Craven Commons overband photos (e.g. "Overband magnet on feed conveyor") were reviewed and NOT used because the machines carry another manufacturer's logo/URL.
+
+## Owner videos (Google Drive → web encodes in main-app/videos/)
+| Site file | Drive source |
+|---|---|
+| videos/demo-suspension-strength.mp4 (+ images/poster-suspension-strength.jpg) | Suspension Magnet Strength Test.mp4 |
+| videos/demo-suspended-plate-ss.mp4 (+ images/poster-suspended-plate-ss.jpg) | Supended plate magnet (before painting).mp4 |
+| videos/demo-plate-pull.mp4 / demo-plate-magnet.mp4 | Existing plate demos (already on site; also related Drive: SUSPENSION MAGNET VIDEO 2.mp4 ≈ pull demo) |
+
+Restored to home `#demos` (always visible; no longer only inside closed accordion) and to `/magnetic-separators.html#suspension-demos`.
