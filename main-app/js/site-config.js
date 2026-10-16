@@ -21,7 +21,14 @@ window.magnetsTrack = function (name, props) {
     if (navigator.doNotTrack === "1" || window.doNotTrack === "1") return;
     if (window.dataLayer && window.dataLayer.push) window.dataLayer.push(Object.assign({ event: name }, props));
     if (typeof window.plausible === "function") window.plausible(name, { props: props });
-    if (typeof window.gtag === "function") window.gtag("event", name, props);
+    if (typeof window.gtag === "function") {
+      window.gtag("event", name, props);
+      /* Google Ads conversions (AW-1067610456). Beacon transport so wa.me / tel: navigation is never blocked. */
+      var AW = { cta_whatsapp: "AW-1067610456/AEt2CJ73wJ4dENjiif0D", cta_call: "AW-1067610456/_r-nCKH3wJ4dENjiif0D" };
+      var to = AW[name];
+      if (name === "form_submit" && props.form === "quote" && !props.test) to = "AW-1067610456/jusWCJv3wJ4dENjiif0D";
+      if (to) window.gtag("event", "conversion", { send_to: to, transport_type: "beacon" });
+    }
     var ep = window.MAGNETS && window.MAGNETS.eventEndpoint;
     if (ep && navigator.sendBeacon) navigator.sendBeacon(ep, JSON.stringify({ n: name, p: props.page }));
   } catch (e) {}
