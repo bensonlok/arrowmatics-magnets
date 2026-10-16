@@ -222,6 +222,9 @@ def build(p):
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google tag (gtag.js) - Google Ads conversion measurement -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1067610456"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());gtag('config','AW-1067610456');</script>
   <title>{e(p["title"])}</title>
   <meta name="description" content="{e(p["desc"])}">
   <link rel="canonical" href="{url}">
