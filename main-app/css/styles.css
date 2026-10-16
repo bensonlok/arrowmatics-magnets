@@ -1512,7 +1512,7 @@ button.btn.btn-wa {
 .ph-actions { display: flex; flex-wrap: wrap; gap: 0.7rem; }
 .ph-actions .btn { padding: 1.05rem 1.5rem; font-size: 0.8rem; }
 .ph-photo { position: relative; margin: 0; border: 1px solid rgba(255,255,255,0.18); background: #0b1220; box-shadow: 0 24px 60px rgba(0,0,0,0.45); overflow: hidden; }
-.ph-photo > img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; }
+.ph-photo > img, .ph-photo > picture > img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; }
 .ph-photo > figcaption { position: absolute; left: 0; top: 0; background: rgba(7,10,18,0.78); color: #fff; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.4rem 0.7rem; }
 .photo-card { position: absolute; left: 0.9rem; right: 0.9rem; bottom: 0.9rem; background: rgba(7,10,18,0.88); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); border: 1px solid rgba(255,255,255,0.22); border-left: 4px solid var(--cyan); padding: 0.85rem 1rem; display: flex; align-items: center; gap: 0.9rem; flex-wrap: wrap; }
 .photo-card .pc-ico { flex: 0 0 auto; width: 42px; height: 42px; border-radius: 50%; background: var(--cyan); color: #070a12; display: grid; place-items: center; }
@@ -1647,7 +1647,7 @@ details.acc > summary h3 { margin: 0; font-size: 1rem; text-transform: none; let
   .photo-card .pc-ico { width: 34px; height: 34px; }
   .photo-card .pc-text strong { font-size: 0.92rem; }
   .photo-card .btn { width: 100%; justify-content: center; }
-  .ph-photo > img { aspect-ratio: 16 / 10; }
+  .ph-photo > img, .ph-photo > picture > img { aspect-ratio: 16 / 10; }
   .section.tight { padding: 2.25rem 0; }
   .range .hero-tiles { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .sel-opts button { font-size: 0.85rem; padding: 0.7rem 0.9rem; }
@@ -1771,3 +1771,6 @@ details.acc > summary h3 { margin: 0; font-size: 1rem; text-transform: none; let
   .type-block.has-photo { display: block; }
   .type-block.has-photo .tb-ph { margin: -0.25rem 0 0.9rem; }
 }
+
+/* SEO phase 2: <picture> WebP wrappers must not change layout */
+picture { display: contents; }
