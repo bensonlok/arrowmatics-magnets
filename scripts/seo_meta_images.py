@@ -93,12 +93,12 @@ for f in sorted(ROOT.glob("*.html")):
         nt, nd = META[f.name]
         t = re.sub(r"<title>.*?</title>", "<title>" + html.escape(nt, quote=False) + "</title>", t, count=1, flags=re.S)
         if nd: t = re.sub(r'(<meta name="description" content=")[^"]*(")', lambda m: m.group(1)+html.escape(nd)+m.group(2), t, count=1)
-    if f.name in PRODUCT and '"@type": "Product"' not in t:
+    if f.name in PRODUCT and '"@type": "Product"' not in t and '"@type": "ItemPage"' not in t:
         name, img = PRODUCT[f.name]
         d = re.search(r'<meta name="description" content="([^"]*)"', t).group(1)
-        obj = {"@context":"https://schema.org","@type":"Product","name":name,"url":BASE+f.name,"image":BASE+"images/"+img,
-               "description":html.unescape(d),"brand":{"@type":"Brand","name":"Arrowmatics Magnets"},
-               "manufacturer":{"@type":"Organization","name":"Arrowmatics Magnets","legalName":"Arrowmatics AI Sdn Bhd","url":BASE},"category":"Industrial magnets"}
+        obj = {"@context":"https://schema.org","@type":"ItemPage","name":name,"url":BASE+f.name[:-5],"image":[BASE+"images/"+img],
+               "description":html.unescape(d),"inLanguage":"en-MY","about":{"@type":"Thing","name":name},
+               "publisher":{"@type":"Organization","name":"Arrowmatics Magnets","legalName":"Arrowmatics AI Sdn Bhd","url":BASE}}
         t = t.replace("</head>", '  <script type="application/ld+json">\n'+json.dumps(obj, indent=2, ensure_ascii=False)+"\n  </script>\n</head>", 1)
     t = IMG.sub(fix_img, t)
     if t != o: f.write_text(t); print("updated", f.name)

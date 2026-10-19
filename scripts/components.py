@@ -25,9 +25,9 @@ def icon(name, cls=""):
 def e(s):
     return html.escape(s, quote=True)
 
-NAV = [("/", "Home"), ("/magnetic-separators.html", "Separators"), ("/plate-magnets.html", "Plate"),
-       ("/ndfeb-magnets.html", "NdFeB"), ("/smco-magnets.html", "SmCo"), ("/industries.html", "Industries"),
-       ("/resources.html", "Resources"), ("/about.html", "About"), ("/faq.html", "FAQ")]
+NAV = [("/", "Home"), ("/magnetic-separators", "Separators"), ("/plate-magnets", "Plate"),
+       ("/ndfeb-magnets", "NdFeB"), ("/smco-magnets", "SmCo"), ("/industries", "Industries"),
+       ("/resources", "Resources"), ("/about", "About"), ("/faq", "FAQ")]
 
 def header(current):
     links = []
@@ -62,15 +62,15 @@ FOOTER = '''  <footer class="site-footer">
         </div>
         <div>
           <h3>Products</h3>
-          <a href="/magnetic-separators.html">Magnetic separators</a>
-          <a href="/plate-magnets.html">Plate magnets</a>
-          <a href="/ndfeb-magnets.html">NdFeB magnets</a>
-          <a href="/smco-magnets.html">SmCo magnets</a>
-          <a href="/industries.html">Industries</a>
-          <a href="/resources.html">Resources</a>
-          <a href="/about.html">About Arrowmatics</a>
-          <a href="/faq.html">FAQ</a>
-          <a href="/privacy.html">Privacy</a>
+          <a href="/magnetic-separators">Magnetic separators</a>
+          <a href="/plate-magnets">Plate magnets</a>
+          <a href="/ndfeb-magnets">NdFeB magnets</a>
+          <a href="/smco-magnets">SmCo magnets</a>
+          <a href="/industries">Industries</a>
+          <a href="/resources">Resources</a>
+          <a href="/about">About Arrowmatics</a>
+          <a href="/faq">FAQ</a>
+          <a href="/privacy">Privacy</a>
         </div>
         <div class="footer-nap">
           <h3>NAP</h3>
@@ -101,7 +101,7 @@ def fabs(wa_svg):
 
 def head(title, desc, path, og_image, extra_ld, mdpath=None):
     url = SITE + path
-    md = mdpath or path.replace(".html", ".md")
+    md = mdpath or (path[:-5] if path.endswith(".html") else path) + ".md"
     return '''<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -209,7 +209,7 @@ def accordions(qas):
 
 # ---------------------------------------------------------------- marketing blocks
 CONSENT = ('I agree that Arrowmatics AI Sdn Bhd may use these details to reply to this request. '
-           'No marketing lists, no selling of data. See the <a href="/privacy.html">privacy notice</a>.')
+           'No marketing lists, no selling of data. See the <a href="/privacy">privacy notice</a>.')
 
 def _field(fid, label, inner, hint=""):
     return '<div class="field"><label for="%s">%s%s</label>%s</div>' % (fid, label, (' <span class="hint">%s</span>' % hint) if hint else "", inner)
@@ -249,7 +249,7 @@ def checklist_form(prefix="c", context="checklist"):
             <p class="form-msg" role="status" aria-live="polite"></p>
             <div class="form-done" hidden>
               <a class="btn btn-wa" href="/downloads/Magnetic-Separator-Selection-Checklist.pdf" download data-track="checklist_download">Download the PDF</a>
-              <a class="btn btn-outline-dark" href="/checklist-print.html" target="_blank" rel="noopener" data-track="checklist_print">Open printable page</a>
+              <a class="btn btn-outline-dark" href="/checklist-print" target="_blank" rel="noopener" data-track="checklist_print">Open printable page</a>
             </div>
             <noscript><p class="form-msg">Please enable JavaScript, or <a href="https://wa.me/60122112522">WhatsApp us</a> and we will send it.</p></noscript>
           </form>
