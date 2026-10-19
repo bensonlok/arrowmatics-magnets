@@ -14,8 +14,8 @@ CERT = "Arrowmatics is not itself certified to ISO 22000, HACCP or GMP. This is 
 def write(name, html_):
     open(os.path.join(OUT, name), "w").write(html_)
 
-def shell(path, title, desc, ld, main, current="/resources.html", ogimg=OG, robots=None):
-    h = head(title, desc, path, ogimg, ld, mdpath=path.replace(".html", ".md"))
+def shell(path, title, desc, ld, main, current="/resources", ogimg=OG, robots=None):
+    h = head(title, desc, path, ogimg, ld, mdpath=(path.replace(".html", "") + ".md"))
     if robots:
         h = h.replace('<meta name="robots" content="index,follow">', '<meta name="robots" content="%s">' % robots)
     return h + "<body>\n" + header(current) + "\n  <main>\n" + main + "\n  </main>\n\n" + FOOTER + "\n" + fabs(WA_SVG) + "</body>\n</html>\n"
@@ -27,7 +27,7 @@ def article_ld(path, title, desc):
             "publisher": {"@type": "Organization", "name": "Arrowmatics Magnets", "legalName": "Arrowmatics AI Sdn Bhd", "url": SITE + "/"},
             "mainEntityOfPage": SITE + path, "image": SITE + OG}
 
-RELATED = '<p class="related">Related: <a href="/guide-which-magnetic-separator.html">Which magnetic separator?</a> · <a href="/guide-what-to-send-for-a-magnet-quote.html">What to send for a quote</a> · <a href="/guide-plate-magnet-inspection-cleaning.html">Plate magnet inspection &amp; cleaning</a> · <a href="/selection-checklist.html">Free selection checklist</a></p>'
+RELATED = '<p class="related">Related: <a href="/guide-which-magnetic-separator">Which magnetic separator?</a> · <a href="/guide-what-to-send-for-a-magnet-quote">What to send for a quote</a> · <a href="/guide-plate-magnet-inspection-cleaning">Plate magnet inspection &amp; cleaning</a> · <a href="/selection-checklist">Free selection checklist</a></p>'
 CTA = '''<div class="expert-band" style="margin-top:2rem;"><div class="container"><p class="expert-band-text"><strong>Send a photo – get an answer in 1–3 business hours</strong>We aim to reply within 1–3 hours (Malaysia business hours).</p><button type="button" class="btn btn-expert" data-open-magnet-expert data-expert-upload>Ask the Magnet Expert →</button></div></div>'''
 
 def tick(items): return '<ul class="tick">' + "".join("<li>%s</li>" % i for i in items) + "</ul>"
@@ -41,12 +41,12 @@ GUIDES = [
   card="Decision table: hopper, conveyor, pipe or chute.",
   body=lambda: '''<h2>Start with how the product moves</h2>
 <div class="tbl-wrap"><table><thead><tr><th>Your material</th><th>Usual fit</th><th>Where it sits</th></tr></thead><tbody>
-<tr><td>Dry powder or granules falling through a hopper or chute</td><td><a href="/magnetic-separators.html#types">Grate or drawer magnet</a></td><td>Across the opening or outlet</td></tr>
-<tr><td>Material riding on a conveyor belt</td><td><a href="/magnetic-separators.html#suspension-magnets">Overband (self-cleaning) or suspended plate</a>; magnetic pulley at the head end</td><td>Over or at the end of the belt</td></tr>
-<tr><td>Liquid, paste or slurry in a pipe</td><td><a href="/magnetic-separators.html#liquid-line-trap">Liquid-line magnetic trap</a></td><td>In-line on the pipe</td></tr>
-<tr><td>Powder or pellets in a pipe or pneumatic line</td><td><a href="/magnetic-separators.html#types">Bullet magnet</a></td><td>Inside the pipe</td></tr>
-<tr><td>Chute wall, tank, or a spot where hygiene matters</td><td><a href="/plate-magnets.html">Plate magnet</a> (full-weld stainless available)</td><td>Chute wall or above a conveyor</td></tr>
-<tr><td>Small parts, OEM use, or heat and corrosion</td><td><a href="/ndfeb-magnets.html">NdFeB</a> or <a href="/smco-magnets.html">SmCo</a> magnets</td><td>Made to your drawing</td></tr>
+<tr><td>Dry powder or granules falling through a hopper or chute</td><td><a href="/magnetic-separators#types">Grate or drawer magnet</a></td><td>Across the opening or outlet</td></tr>
+<tr><td>Material riding on a conveyor belt</td><td><a href="/magnetic-separators#suspension-magnets">Overband (self-cleaning) or suspended plate</a>; magnetic pulley at the head end</td><td>Over or at the end of the belt</td></tr>
+<tr><td>Liquid, paste or slurry in a pipe</td><td><a href="/magnetic-separators#liquid-line-trap">Liquid-line magnetic trap</a></td><td>In-line on the pipe</td></tr>
+<tr><td>Powder or pellets in a pipe or pneumatic line</td><td><a href="/magnetic-separators#types">Bullet magnet</a></td><td>Inside the pipe</td></tr>
+<tr><td>Chute wall, tank, or a spot where hygiene matters</td><td><a href="/plate-magnets">Plate magnet</a> (full-weld stainless available)</td><td>Chute wall or above a conveyor</td></tr>
+<tr><td>Small parts, OEM use, or heat and corrosion</td><td><a href="/ndfeb-magnets">NdFeB</a> or <a href="/smco-magnets">SmCo</a> magnets</td><td>Made to your drawing</td></tr>
 </tbody></table></div>
 <h2>Then check four things</h2>
 ''' + tick(["<strong>Build:</strong> stainless 304, 316 or 316L; full weld is available, built to order, when you want no screws or crevices.",
@@ -86,14 +86,14 @@ GUIDES = [
 <li><strong>Verify performance.</strong> Do a cling or pull test with a test piece, or take a Gauss-meter reading on the surface if your programme requires it.</li>
 <li><strong>Close, refit and sign off.</strong> Return the plate to position, check the latch and mounting, and sign the log.</li>
 </ol>
-<p>More on the build: <a href="/plate-magnets.html">full-weld plate magnets</a>.</p><p class="sec-note">General guidance only. ''' + CERT + '</p>'),
+<p>More on the build: <a href="/plate-magnets">full-weld plate magnets</a>.</p><p class="sec-note">General guidance only. ''' + CERT + '</p>'),
 ]
 
 def guide_page(g):
-    path = "/%s.html" % g["slug"]
-    ld = [article_ld(path, g["h1"], g["desc"]), breadcrumb_ld([("Home", "/"), ("Resources", "/resources.html"), (g["h1"], path)])]
+    path = "/%s" % g["slug"]
+    ld = [article_ld(path, g["h1"], g["desc"]), breadcrumb_ld([("Home", "/"), ("Resources", "/resources"), (g["h1"], path)])]
     main = '''    <section class="section tight"><div class="container guide">
-      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> · <a href="/resources.html">Resources</a> · <span>%s</span></nav>
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> · <a href="/resources">Resources</a> · <span>%s</span></nav>
       <span class="eyebrow">%s</span>
       <h1>%s</h1>
       <p class="g-lead">%s</p>
@@ -120,7 +120,7 @@ def checklist_inner():
 
 def checklist_pages():
     # printable page (noindex) -> also used to render the PDF
-    pm = '''  <div class="print-bar"><button type="button" class="btn btn-wa" onclick="window.print()">Print or save as PDF</button><a class="btn btn-outline-dark" href="/downloads/Magnetic-Separator-Selection-Checklist.pdf" download>Download PDF</a><a class="btn btn-outline-dark" href="/selection-checklist.html">Back</a></div>
+    pm = '''  <div class="print-bar"><button type="button" class="btn btn-wa" onclick="window.print()">Print or save as PDF</button><a class="btn btn-outline-dark" href="/downloads/Magnetic-Separator-Selection-Checklist.pdf" download>Download PDF</a><a class="btn btn-outline-dark" href="/selection-checklist">Back</a></div>
   <article class="print-sheet">
     <h1>Magnetic separator selection checklist</h1>
     <p>Arrowmatics Magnets · 1 page · tick as you go, then send it with a photo.</p>
@@ -128,18 +128,18 @@ def checklist_pages():
     <p class="p-foot">General guidance only; size, grade, gauss and build are confirmed at quotation. We publish no RM list prices. %s<br>
     Arrowmatics AI Sdn Bhd (1305806-W) · No. 64, Jalan Kapar 27/89, Megah Industrial Park, Taman Alam Megah, Section 27, 40400 Shah Alam, Selangor · Tel +603 5191 0299 · WhatsApp +60 12-211 2522 · magnets.com.my</p>
   </article>''' % (checklist_inner(), "Arrowmatics is not itself certified to ISO 22000, HACCP or GMP.")
-    path = "/checklist-print.html"
+    path = "/checklist-print"
     h = head("Magnetic Separator Selection Checklist (printable) | Arrowmatics Magnets", "Printable one-page magnetic separator selection checklist from Arrowmatics Magnets.", path, OG, [], mdpath="/selection-checklist.md")
     h = h.replace('<meta name="robots" content="index,follow">', '<meta name="robots" content="noindex,follow">')
-    write("checklist-print.html", h + "<body>\n" + header("/resources.html") + pm + "\n" + FOOTER + "\n" + fabs(WA_SVG) + "</body>\n</html>\n")
+    write("checklist-print.html", h + "<body>\n" + header("/resources") + pm + "\n" + FOOTER + "\n" + fabs(WA_SVG) + "</body>\n</html>\n")
     # landing page
-    path = "/selection-checklist.html"
+    path = "/selection-checklist"
     title = "Free Magnetic Separator Selection Checklist (1 page) | Arrowmatics Magnets"
     desc = "Free one-page checklist: how your material moves, what to measure, which build to choose and what to confirm before ordering a magnetic separator in Malaysia."
     ld = [{"@context": "https://schema.org", "@type": "WebPage", "name": "Magnetic separator selection checklist", "url": SITE + path, "description": desc,
-           "isPartOf": {"@type": "WebSite", "url": SITE + "/"}}, breadcrumb_ld([("Home", "/"), ("Resources", "/resources.html"), ("Selection checklist", path)])]
+           "isPartOf": {"@type": "WebSite", "url": SITE + "/"}}, breadcrumb_ld([("Home", "/"), ("Resources", "/resources"), ("Selection checklist", path)])]
     main = '''    <section class="section tight"><div class="container">
-      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> · <a href="/resources.html">Resources</a> · <span>Selection checklist</span></nav>
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> · <a href="/resources">Resources</a> · <span>Selection checklist</span></nav>
       <div class="leadgrid">
         <div>
           <span class="eyebrow">Free · 1 page · PDF</span>
@@ -162,7 +162,7 @@ def checklist_pages():
 
 # ------------------------------------------------------------------ quote page
 def quote_page():
-    path = "/request-quote.html"
+    path = "/request-quote"
     title = "Request a Quote | Custom Magnets & Separators | Arrowmatics Magnets Shah Alam"
     desc = "Request a written quote for magnetic separators, plate, NdFeB or SmCo magnets. Three short fields, photo optional. We aim to reply within 1–3 hours (Malaysia business hours)."
     ld = [{"@context": "https://schema.org", "@type": "ContactPage", "name": "Request a quote", "url": SITE + path, "description": desc,
@@ -185,7 +185,7 @@ def quote_page():
 
 # ------------------------------------------------------------------ privacy
 def privacy():
-    path = "/privacy.html"
+    path = "/privacy"
     title = "Privacy Notice | Arrowmatics Magnets (Arrowmatics AI Sdn Bhd)"
     desc = "How Arrowmatics AI Sdn Bhd handles the details you send through the quote form, checklist form and Magnet Expert chat on magnets.com.my."
     ld = [breadcrumb_ld([("Home", "/"), ("Privacy", path)])]
@@ -210,10 +210,10 @@ def privacy():
 
 # ------------------------------------------------------------------ resources hub
 def resources():
-    path = "/resources.html"
+    path = "/resources"
     title = "Resources | Magnetic Separator Selection Checklist & Guides | Arrowmatics Magnets"
     desc = "Free one-page magnetic separator selection checklist and three short guides: which separator, what to send for a quote, plate magnet inspection and cleaning. Arrowmatics Magnets, Shah Alam."
-    items = [("/selection-checklist.html", "Free download · PDF", "Selection checklist (1 page)", "What to measure, what to choose and what to confirm before you order.", True)] + \
+    items = [("/selection-checklist", "Free download · PDF", "Selection checklist (1 page)", "What to measure, what to choose and what to confirm before you order.", True)] + \
             [("/%s.html" % g["slug"], g["tag"], g["h1"], g["card"], False) for g in GUIDES]
     ld = [{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Resources", "url": SITE + path, "description": desc,
            "isPartOf": {"@type": "WebSite", "url": SITE + "/"},

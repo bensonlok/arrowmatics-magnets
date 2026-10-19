@@ -25,9 +25,9 @@ IND = [
   img="/images/plate-magnet-10000g.jpg", alt="Full-weld stainless steel plate magnet for food plants", cap="Full-weld plate magnet", wh=(1400,1050),
   ogimg="/images/plate-magnet-10000g.jpg",
   intro="Food processors use stainless grate, drawer and plate magnets in hoppers, sifters, chutes and over conveyors to catch fine ferrous fragments from wear and rust before metal detectors or finished goods. Full-weld construction is available built to order, so there are no screws or crevices for deposit to sit in; confirm the build at quotation.",
-  cards=[("/magnetic-separators.html#types","/images/real-hopper-grate-1.jpg","Round stainless hopper grate magnet with handle","Grate / hopper magnet","Dry powders and grains falling through a hopper or chute."),
-         ("/plate-magnets.html","/images/plate-magnet-10000g.jpg","Full-weld stainless plate magnet","Plate magnet","Chute wall or above a conveyor; easy to wipe and inspect."),
-         ("/magnetic-separators.html#liquid-line-trap","/images/real-liquid-trap-1.jpg","Stainless liquid-line magnetic trap","Liquid-line trap","Sauces, pastes and liquids moving through a pipe.")],
+  cards=[("/magnetic-separators#types","/images/real-hopper-grate-1.jpg","Round stainless hopper grate magnet with handle","Grate / hopper magnet","Dry powders and grains falling through a hopper or chute."),
+         ("/plate-magnets","/images/plate-magnet-10000g.jpg","Full-weld stainless plate magnet","Plate magnet","Chute wall or above a conveyor; easy to wipe and inspect."),
+         ("/magnetic-separators#liquid-line-trap","/images/real-liquid-trap-1.jpg","Stainless liquid-line magnetic trap","Liquid-line trap","Sauces, pastes and liquids moving through a pipe.")],
   send=["Product (powder, grain, liquid)","Hopper, chute or pipe size","Food-grade needs and cleaning method","Photo of the spot"],
   faq=[("Which magnet suits a food powder hopper?","A grate or drawer magnet usually suits dry powders falling through a hopper or chute. Stainless 304, 316 and 316L are available; confirm the grade, bar spacing and build at quotation. Send a photo of the hopper opening for a recommendation."),
        ("Are your food-plant magnets certified?","No. "+NOTE_CERT)]),
@@ -41,9 +41,9 @@ IND = [
   img="/images/real-drawer-1.jpg", alt="Double-drawer stainless magnetic separator housing on a pallet", cap="Drawer separator", wh=(1400,1050),
   ogimg="/images/real-drawer-1.jpg",
   intro="Powder blending, sieving and filling steps are where small ferrous fragments from equipment wear tend to show up. Drawer and grate magnets sit under a hopper or in a spout and pull out for cleaning. Full-weld stainless builds are available, built to order. We make no pharma or GMP certification claim for ourselves; tell us which documents your quality system needs and we will confirm what can be supplied at quotation.",
-  cards=[("/magnetic-separators.html#types","/images/real-drawer-1.jpg","Double-drawer stainless magnetic separator","Drawer magnet","Rows of magnetic bars that slide out for cleaning without stripping the line."),
-         ("/magnetic-separators.html#types","/images/real-hopper-grate-1.jpg","Round stainless hopper grate magnet","Grate / hopper magnet","Bars across a hopper or outlet for free-flowing powder."),
-         ("/magnetic-separators.html#bars-full-weld","/images/real-bars-1.jpg","Polished stainless magnetic bar","Magnetic bars (full weld available)","Single bars or frames; full weld is built to order.")],
+  cards=[("/magnetic-separators#types","/images/real-drawer-1.jpg","Double-drawer stainless magnetic separator","Drawer magnet","Rows of magnetic bars that slide out for cleaning without stripping the line."),
+         ("/magnetic-separators#types","/images/real-hopper-grate-1.jpg","Round stainless hopper grate magnet","Grate / hopper magnet","Bars across a hopper or outlet for free-flowing powder."),
+         ("/magnetic-separators#bars-full-weld","/images/real-bars-1.jpg","Polished stainless magnetic bar","Magnetic bars (full weld available)","Single bars or frames; full weld is built to order.")],
   send=["Powder type and particle size","Outlet, hopper or spout size","Cleaning method and finish needed","Any documents your QA requires"],
   faq=[("Can you supply magnets with pharma or GMP certificates?","We make no pharma or GMP certification claim and publish no certificates. Tell us which documents your quality system needs; we will confirm what can be supplied at quotation, with no promises beforehand."),
        ("Drawer or grate magnet for a powder outlet?","Both suit free-flowing powder. A drawer magnet slides out for cleaning in a housing; a grate sits across a hopper or chute. Send the outlet size and a photo and the Magnet Expert will help you choose.")]),
@@ -57,9 +57,9 @@ IND = [
   img="/images/real-hopper-grate-1.jpg", alt="Round hopper grate magnet with drawer handle", cap="Hopper grate magnet", wh=(1000,750),
   ogimg="/images/real-hopper-grate-1.jpg",
   intro="Tramp iron in pellets or regrind can damage screws, dies and moulds, and it is cheaper to catch it at the hopper. Hopper grate and drawer magnets suit gravity feed; bullet magnets suit pipelines and pneumatic conveying. Rare-earth separator designs we commonly quote sit around 10,000–13,000 gauss (typical; confirm per application).",
-  cards=[("/magnetic-separators.html#types","/images/real-hopper-grate-1.jpg","Round hopper grate magnet","Hopper grate","Across the inlet of a hopper for pellets and regrind."),
-         ("/magnetic-separators.html#types","/images/real-drawer-2.jpg","Drawer magnet for a vertical pipe","Drawer magnet","Multi-row capture under hoppers or before extruders."),
-         ("/magnetic-separators.html#types","/images/real-bullet-1.jpg","Bullet magnet front and side views","Bullet magnet","In a pipe for pneumatic or gravity lines.")],
+  cards=[("/magnetic-separators#types","/images/real-hopper-grate-1.jpg","Round hopper grate magnet","Hopper grate","Across the inlet of a hopper for pellets and regrind."),
+         ("/magnetic-separators#types","/images/real-drawer-2.jpg","Drawer magnet for a vertical pipe","Drawer magnet","Multi-row capture under hoppers or before extruders."),
+         ("/magnetic-separators#types","/images/real-bullet-1.jpg","Bullet magnet front and side views","Bullet magnet","In a pipe for pneumatic or gravity lines.")],
   send=["Pellet or regrind size and flow rate","Hopper or pipe size","Photo of the inlet","Temperature, if the material is hot"],
   faq=[("Which magnet for plastic pellets before an extruder?","A hopper grate or drawer magnet suits gravity-fed pellets; a bullet magnet suits a pipe or pneumatic line. Send the inlet size, pellet size and a photo, and we will recommend a type and quote it in writing."),
        ("Can the magnet be made to fit our hopper?","Yes, sizes, housings and drawing-based builds are worth exploring; feasibility, size and grade are confirmed at quotation.")]),
@@ -73,9 +73,9 @@ IND = [
   img="/images/suspension-overband-magnet-yellow-frame-workshop.jpg", alt="Yellow overband suspension magnet frame with hanging lugs and black ribbed belt on a workshop floor", cap="Overband suspension magnet", wh=(1200,900),
   ogimg="/images/suspension-overband-magnet-yellow-frame-workshop.jpg",
   intro="Tramp iron riding on a belt hurts crushers, screens and downstream equipment. A suspension magnet hangs over the conveyor and pulls iron out of the burden: overband (self-cleaning) types carry it off on a running belt, suspended plates are cleaned by hand. A magnetic pulley at the head end splits ferrous from non-magnetic material. Sizes are quoted to belt width, belt speed, burden depth and hanging height.",
-  cards=[("/magnetic-separators.html#suspension-magnets","/images/suspension-overband-magnet-self-cleaning-belt.jpg","Self-cleaning overband magnet seen along its belt","Overband (self-cleaning)","Running belt carries captured iron to a discharge point."),
-         ("/magnetic-separators.html#suspension-magnets","/images/suspension-plate-magnet-yellow-four-eyebolts.jpg","Yellow suspended plate magnet with four eyebolts","Suspended plate","Fixed plate over the belt, cleaned by hand."),
-         ("/magnetic-separators.html#types","/images/real-drum-1.jpg","Magnetic drum separator with motor","Drum / pulley separators","Head-end or drum separation of ferrous material.")],
+  cards=[("/magnetic-separators#suspension-magnets","/images/suspension-overband-magnet-self-cleaning-belt.jpg","Self-cleaning overband magnet seen along its belt","Overband (self-cleaning)","Running belt carries captured iron to a discharge point."),
+         ("/magnetic-separators#suspension-magnets","/images/suspension-plate-magnet-yellow-four-eyebolts.jpg","Yellow suspended plate magnet with four eyebolts","Suspended plate","Fixed plate over the belt, cleaned by hand."),
+         ("/magnetic-separators#types","/images/real-drum-1.jpg","Magnetic drum separator with motor","Drum / pulley separators","Head-end or drum separation of ferrous material.")],
   send=["Belt width and speed","Burden depth and hanging height","What you need to remove","Photo of the conveyor"],
   faq=[("Overband or suspended plate magnet for a conveyor?","Overband magnets have a running belt and suit continuous or heavier tramp-iron loads; suspended plates are fixed and suit lighter loads with easy access for hand cleaning. Send belt width, burden depth and hanging height for a recommendation."),
        ("What do you need to quote a conveyor magnet?","Belt width, belt speed, burden depth, hanging height, the iron you need to remove, and ideally a photo. Size, field strength and finish are confirmed at quotation.")]),
@@ -89,9 +89,9 @@ IND = [
   img="/images/real-bullet-2.jpg", alt="Bullet magnet with its internal magnetic core assembly pulled out", cap="Bullet magnet · core pulled out", wh=(800,800),
   ogimg="/images/real-bullet-2.jpg",
   intro="Chemical and bulk-material lines move powders, liquids and slurries through hoppers, pipes and pneumatic lines. Bullet magnets sit in a pipe, grate and drawer magnets in a hopper or chute, and liquid-line traps in a liquid pipeline. 316 / 316L stainless generally suits more corrosive duty (general guidance; confirm the grade at quotation). Tell us the process temperature, since heat limits the magnet choice.",
-  cards=[("/magnetic-separators.html#types","/images/real-bullet-2.jpg","Bullet magnet with core assembly","Bullet magnet","Pneumatic or gravity pipelines."),
-         ("/magnetic-separators.html#types","/images/real-grate-2.jpg","Heavy-duty grate magnet with conical-tipped bars","Grate / drawer magnet","Hoppers and chutes for dry powders and granules."),
-         ("/magnetic-separators.html#liquid-line-trap","/images/real-liquid-trap-1.jpg","Stainless liquid-line magnetic trap","Liquid-line trap","In-line on liquid and slurry pipes.")],
+  cards=[("/magnetic-separators#types","/images/real-bullet-2.jpg","Bullet magnet with core assembly","Bullet magnet","Pneumatic or gravity pipelines."),
+         ("/magnetic-separators#types","/images/real-grate-2.jpg","Heavy-duty grate magnet with conical-tipped bars","Grate / drawer magnet","Hoppers and chutes for dry powders and granules."),
+         ("/magnetic-separators#liquid-line-trap","/images/real-liquid-trap-1.jpg","Stainless liquid-line magnetic trap","Liquid-line trap","In-line on liquid and slurry pipes.")],
   send=["Material and form (powder, liquid, slurry)","Pipe, hopper or chute size","Process temperature","Corrosion or washdown conditions"],
   faq=[("Which magnet for a chemical powder or liquid line?","Bullet magnets suit pipes and pneumatic lines, grate or drawer magnets suit hoppers and chutes, and liquid-line traps suit liquids and slurries. Send the material, size, temperature and a photo for a recommendation."),
        ("Which stainless grade for corrosive duty?","304, 316 and 316L are available. 316 / 316L generally suit more corrosive or washdown-heavy conditions. This is general guidance with no test data; confirm the grade for your chemicals at quotation.")]),
@@ -108,18 +108,18 @@ PERSONA = {
 def ind_page(d):
     pr = PERSONA[d["slug"]]
     d = dict(d, h1=pr["h1"], lead=pr["lead"])
-    path = "/%s.html" % d["slug"]
+    path = "/%s" % d["slug"]
     ld = [
       {"@context":"https://schema.org","@type":"Service","name":"Magnets for "+d["name"],"url":SITE+path,
        "image":SITE+d["ogimg"],"description":d["desc"],"serviceType":"Magnetic separators and magnets",
        "provider":{"@type":"LocalBusiness","@id":SITE+"/#organization","name":"Arrowmatics Magnets"},
        "areaServed":{"@type":"Country","name":"Malaysia"}},
-      breadcrumb_ld([("Home","/"),("Industries","/industries.html"),(d["short"],path)]),
+      breadcrumb_ld([("Home","/"),("Industries","/industries"),(d["short"],path)]),
       faq_ld(d["faq"]),
     ]
     h = head(d["title"], d["desc"], path, d["ogimg"], ld)
-    body = '<body>\n' + header("/industries.html") + "\n"
-    body += hero([("Home","/"),("Industries","/industries.html"),(d["short"],None)], d["eyebrow"], d["h1"], d["lead"], d["chips"], d["img"], d["alt"], d["cap"], d["wh"], persona=pr,
+    body = '<body>\n' + header("/industries") + "\n"
+    body += hero([("Home","/"),("Industries","/industries"),(d["short"],None)], d["eyebrow"], d["h1"], d["lead"], d["chips"], d["img"], d["alt"], d["cap"], d["wh"], persona=pr,
                  extra='<details class="readmore"><summary>Read more</summary><div class="rm-body"><p>%s</p></div></details>' % d["intro"])
     body += HOW + BAND
     body += '''
@@ -170,15 +170,15 @@ def ind_page(d):
     open(os.path.join(OUT, d["slug"] + ".md"), "w").write(md)
 
 def hub():
-    path = "/industries.html"
+    path = "/industries"
     title = "Magnets by Industry | Food, Pharma, Plastics, Recycling, Chemicals | Arrowmatics Malaysia"
     desc = "Which magnet for your industry? Food, pharma and cosmetics, plastics, recycling and chemicals in Malaysia. Photo-first advice and written quotes from Shah Alam. WhatsApp +60 12-211 2522."
     ld = [{"@context":"https://schema.org","@type":"CollectionPage","name":"Magnets by industry","url":SITE+path,"description":desc,
            "isPartOf":{"@type":"WebSite","url":SITE+"/"},
-           "hasPart":[{"@type":"WebPage","name":"Magnets for "+d["name"],"url":SITE+"/%s.html"%d["slug"]} for d in IND]},
+           "hasPart":[{"@type":"WebPage","name":"Magnets for "+d["name"],"url":SITE+"/%s"%d["slug"]} for d in IND]},
           breadcrumb_ld([("Home","/"),("Industries",path)])]
     h = head(title, desc, path, "/images/grate-magnet-large-bars-stainless-tubes-cross-frame.jpg", ld)
-    cards = [("/%s.html"%d["slug"], d["img"], d["alt"], d["name"], d["lead"]) for d in IND]
+    cards = [("/%s"%d["slug"], d["img"], d["alt"], d["name"], d["lead"]) for d in IND]
     body = '<body>\n' + header(path)
     body += hero([("Home","/"),("Industries",None)], "Industries we serve", "Magnets for <span class=\"accent\">your industry</span>",
                  "Pick your industry for the right magnet type, what to send, and quick answers.",
@@ -190,7 +190,7 @@ def hub():
       <div class="container">
         <div class="section-head compact"><h2>Choose your industry</h2><p>Five short guides. Each links to the product pages and a quote path.</p></div>
         %s
-        <p class="ind-note"><strong>Also served:</strong> OEMs and MRO (see <a href="/ndfeb-magnets.html">NdFeB</a> and <a href="/smco-magnets.html">SmCo</a> magnets). Size, grade and build are confirmed at quotation.</p>
+        <p class="ind-note"><strong>Also served:</strong> OEMs and MRO (see <a href="/ndfeb-magnets">NdFeB</a> and <a href="/smco-magnets">SmCo</a> magnets). Size, grade and build are confirmed at quotation.</p>
       </div>
     </section>
     <section class="cta-band">
@@ -206,11 +206,11 @@ def hub():
     body += FOOTER + "\n" + fabs(WA_SVG) + "</body>\n</html>\n"
     open(os.path.join(OUT, "industries.html"), "w").write(h + body)
     md = "# Magnets by industry — Arrowmatics Magnets\n\n> Agent-readable mirror. Canonical: %s%s · WhatsApp +60 12-211 2522\n\n%s\n\nOEMs and MRO: see NdFeB and SmCo pages.\n" % (
-        SITE, path, "\n".join("- [%s](%s/%s.html): %s" % (d["name"], SITE, d["slug"], d["lead"]) for d in IND))
+        SITE, path, "\n".join("- [%s](%s/%s): %s" % (d["name"], SITE, d["slug"], d["lead"]) for d in IND))
     open(os.path.join(OUT, "industries.md"), "w").write(md)
 
 def about():
-    path = "/about.html"
+    path = "/about"
     title = "About Arrowmatics Magnets | Arrowmatics AI Sdn Bhd, Shah Alam"
     desc = "Arrowmatics Magnets is the trading name of Arrowmatics AI Sdn Bhd (1305806-W), Shah Alam, Selangor. Custom magnetic separators, NdFeB and SmCo magnets. Photo-first advice, written quotes."
     ld = [{"@context":"https://schema.org","@type":"AboutPage","name":"About Arrowmatics Magnets","url":SITE+path,"description":desc,
