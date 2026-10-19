@@ -22,7 +22,7 @@ Note: the overband machine in the Drive set carries a small "MST Magnetic Scienc
 | images/suspension-overband-magnet-tramp-iron-conveyor-cc-by.jpg | Peter Craven (via Flickr "cdeimages") | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Overband_Magnet_(6256989378).jpg — resized to 1200 px, no other changes |
 | images/suspension-overband-magnet-conveyor-aggregate-cc-by-sa.jpg | Fachab | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Magnetic_separator_of_a_conveyor_belt_at_lafarge.jpg — resized to 1200 px (original 4160x3120) |
 
-Attribution is shown in the figure caption and in the alt text on /magnetic-separators.html#suspension-magnets.
+Attribution is shown in the figure caption and in the alt text on /magnetic-separators#suspension-magnets.
 Other Peter Craven Commons overband photos (e.g. "Overband magnet on feed conveyor") were reviewed and NOT used because the machines carry another manufacturer's logo/URL.
 
 ## Owner videos (Google Drive → web encodes in main-app/videos/)
