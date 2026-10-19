@@ -35,4 +35,4 @@ Diameter and length in mm. Gauss is the range offered for that diameter; confirm
 **Is the gauss guaranteed?** The table shows the range per diameter. We confirm the field for your exact build at quotation.
 **Which industries use them?** Recycling, aggregates, food and grain, plastics, ceramics and coal handling.
 
-Quote: WhatsApp +60 12-211 2522 · https://magnets.com.my/magnetic-pulley.html
+Quote: WhatsApp +60 12-211 2522 · https://magnets.com.my/magnetic-pulley
