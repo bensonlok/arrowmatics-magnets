@@ -1,6 +1,6 @@
 # NdFeB magnets — Arrowmatics Magnets
 
-> Agent-readable mirror. Canonical: https://magnets.com.my/ndfeb-magnets.html · WhatsApp +60 12-211 2522
+> Agent-readable mirror. Canonical: https://magnets.com.my/ndfeb-magnets · WhatsApp +60 12-211 2522
 
 ## Overview
 
@@ -24,7 +24,7 @@ Among widely stocked sintered NdFeB grades, **N52** sits at the high end of the 
 | N45–N48 | ~45–48 MGOe | Higher pull for compact volumes |
 | N50–N52 | ~50–52 MGOe | Top common sintered grades |
 
-Coatings (NiCuNi, epoxy, zinc, etc.), shapes and tolerances quoted per RFQ. For high temperature / corrosion, see [SmCo](https://magnets.com.my/smco-magnets.html).
+Coatings (NiCuNi, epoxy, zinc, etc.), shapes and tolerances quoted per RFQ. For high temperature / corrosion, see [SmCo](https://magnets.com.my/smco-magnets).
 
 ## Quote
 
