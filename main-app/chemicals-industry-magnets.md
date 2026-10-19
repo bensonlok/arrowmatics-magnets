@@ -1,14 +1,14 @@
 # Magnets for Chemicals & bulk materials — Arrowmatics Magnets
 
-> Agent-readable mirror. Canonical: https://magnets.com.my/chemicals-industry-magnets.html · WhatsApp +60 12-211 2522
+> Agent-readable mirror. Canonical: https://magnets.com.my/chemicals-industry-magnets · WhatsApp +60 12-211 2522
 
 Chemical and bulk-material lines move powders, liquids and slurries through hoppers, pipes and pneumatic lines. Bullet magnets sit in a pipe, grate and drawer magnets in a hopper or chute, and liquid-line traps in a liquid pipeline. 316 / 316L stainless generally suits more corrosive duty (general guidance; confirm the grade at quotation). Tell us the process temperature, since heat limits the magnet choice.
 
 ## Which magnet fits?
 
-- **Bullet magnet** — Pneumatic or gravity pipelines. (https://magnets.com.my/magnetic-separators.html#types)
-- **Grate / drawer magnet** — Hoppers and chutes for dry powders and granules. (https://magnets.com.my/magnetic-separators.html#types)
-- **Liquid-line trap** — In-line on liquid and slurry pipes. (https://magnets.com.my/magnetic-separators.html#liquid-line-trap)
+- **Bullet magnet** — Pneumatic or gravity pipelines. (https://magnets.com.my/magnetic-separators#types)
+- **Grate / drawer magnet** — Hoppers and chutes for dry powders and granules. (https://magnets.com.my/magnetic-separators#types)
+- **Liquid-line trap** — In-line on liquid and slurry pipes. (https://magnets.com.my/magnetic-separators#liquid-line-trap)
 
 ## What to send for a quote
 
