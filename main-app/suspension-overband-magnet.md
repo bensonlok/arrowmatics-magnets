@@ -20,4 +20,4 @@ Hung above the belt, the magnet lifts nails, bolts and tramp iron out of the bur
 **Do you supply the frame and chains?** Mounting is discussed at quotation. Tell us your structure and space.
 **Is a magnetic pulley better?** A head pulley magnet suits shallow burdens and ferrous splitting; an overband suits deeper burdens. See magnetic pulleys.
 
-Quote: WhatsApp +60 12-211 2522 · https://magnets.com.my/suspension-overband-magnet.html
+Quote: WhatsApp +60 12-211 2522 · https://magnets.com.my/suspension-overband-magnet

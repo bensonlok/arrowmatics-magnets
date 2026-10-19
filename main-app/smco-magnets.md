@@ -6,7 +6,7 @@
 SmCo (samarium cobalt) magnets are rare-earth permanent magnets. Buyers search for them when NdFeB cannot hold strength in heat or harsh / corrosive environments (aerospace, automotive under-hood, sensors, turbos, chemical plant).
 
 ## SmCo vs NdFeB
-- **NdFeB** — highest room-temperature remanence, usually lower cost → [NdFeB page](https://magnets.com.my/ndfeb-magnets.html)
+- **NdFeB** — highest room-temperature remanence, usually lower cost → [NdFeB page](https://magnets.com.my/ndfeb-magnets)
 - **SmCo** — weaker remanence than comparable NdFeB, but wins on temperature stability and corrosion → this page
 
 ## Families
