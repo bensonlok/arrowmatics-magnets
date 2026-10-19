@@ -1,14 +1,14 @@
 # Magnets for Recycling, scrap & aggregates — Arrowmatics Magnets
 
-> Agent-readable mirror. Canonical: https://magnets.com.my/recycling-industry-magnets.html · WhatsApp +60 12-211 2522
+> Agent-readable mirror. Canonical: https://magnets.com.my/recycling-industry-magnets · WhatsApp +60 12-211 2522
 
 Tramp iron riding on a belt hurts crushers, screens and downstream equipment. A suspension magnet hangs over the conveyor and pulls iron out of the burden: overband (self-cleaning) types carry it off on a running belt, suspended plates are cleaned by hand. A magnetic pulley at the head end splits ferrous from non-magnetic material. Sizes are quoted to belt width, belt speed, burden depth and hanging height.
 
 ## Which magnet fits?
 
-- **Overband (self-cleaning)** — Running belt carries captured iron to a discharge point. (https://magnets.com.my/magnetic-separators.html#suspension-magnets)
-- **Suspended plate** — Fixed plate over the belt, cleaned by hand. (https://magnets.com.my/magnetic-separators.html#suspension-magnets)
-- **Drum / pulley separators** — Head-end or drum separation of ferrous material. (https://magnets.com.my/magnetic-separators.html#types)
+- **Overband (self-cleaning)** — Running belt carries captured iron to a discharge point. (https://magnets.com.my/magnetic-separators#suspension-magnets)
+- **Suspended plate** — Fixed plate over the belt, cleaned by hand. (https://magnets.com.my/magnetic-separators#suspension-magnets)
+- **Drum / pulley separators** — Head-end or drum separation of ferrous material. (https://magnets.com.my/magnetic-separators#types)
 
 ## What to send for a quote
 
