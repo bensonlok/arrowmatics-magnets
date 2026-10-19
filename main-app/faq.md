@@ -50,9 +50,9 @@ FAQ | Magnetic Separators, Suspension Magnets & NdFeB | Arrowmatics
         ](/)
       
         [Home](/)
-        [Separators](/magnetic-separators.html)
-        [NdFeB](/ndfeb-magnets.html)
-        [FAQ](/faq.html)
+        [Separators](/magnetic-separators)
+        [NdFeB](/ndfeb-magnets)
+        [FAQ](/faq)
         [Call](tel:+60122112522)
         [WhatsApp Quote](https://wa.me/60122112522)
       
@@ -82,7 +82,7 @@ Answer-first replies for industrial buyers of magnetic separators, suspension ma
 ## What are magnetic separators?
 
           
-Magnetic separators remove ferrous metal contaminants from powders, liquids and bulk solids using permanent magnets. Common industrial types are grate, bullet, drawer, pulley and plate magnets. Arrowmatics Magnets supplies these for Malaysian factories, typically in the 10,000–13,000 gauss range for rare-earth designs. See [magnetic separators](/magnetic-separators.html).
+Magnetic separators remove ferrous metal contaminants from powders, liquids and bulk solids using permanent magnets. Common industrial types are grate, bullet, drawer, pulley and plate magnets. Arrowmatics Magnets supplies these for Malaysian factories, typically in the 10,000–13,000 gauss range for rare-earth designs. See [magnetic separators](/magnetic-separators).
 
         
 
@@ -100,7 +100,7 @@ Yes. We supply food-grade grate and drawer magnets for food processing and packa
 
 ## Full-weld plate magnets for food plants working to HACCP / ISO 22000?
 
-Yes, for food plants — but Arrowmatics is not itself certified. We build 100% full-weld SS304/SS316/SS316L plate magnets with a typical surface field of up to ~10,000 Gauss (confirm per application and air gap), continuous seal welds, no crevices or exposed fasteners, and a smooth, cleanable finish. They are designed to support your HACCP and ISO 22000 food-safety programme. Arrowmatics does not claim its own ISO 22000 or HACCP certification; customers remain responsible for their own certification. See [plate magnets](/plate-magnets.html) or WhatsApp +60 12-211 2522.
+Yes, for food plants — but Arrowmatics is not itself certified. We build 100% full-weld SS304/SS316/SS316L plate magnets with a typical surface field of up to ~10,000 Gauss (confirm per application and air gap), continuous seal welds, no crevices or exposed fasteners, and a smooth, cleanable finish. They are designed to support your HACCP and ISO 22000 food-safety programme. Arrowmatics does not claim its own ISO 22000 or HACCP certification; customers remain responsible for their own certification. See [plate magnets](/plate-magnets) or WhatsApp +60 12-211 2522.
 
 ## Are magnetic bars full-weld?
 
@@ -110,7 +110,7 @@ Why full weld: without full weld, grate and bar magnets can be assembled with sc
 
 Materials: stainless steel grades 304, 316 and 316L are available for construction. 316 and 316L generally suit more corrosive or washdown-heavy environments. Please confirm the grade at quotation.
 
-Designed to support your HACCP and ISO 22000 programme. Arrowmatics does not claim its own ISO 22000 or HACCP certification; customers remain responsible for their own. See [magnetic separators](/magnetic-separators.html#bars-full-weld) or WhatsApp +60 12-211 2522.
+Designed to support your HACCP and ISO 22000 programme. Arrowmatics does not claim its own ISO 22000 or HACCP certification; customers remain responsible for their own. See [magnetic separators](/magnetic-separators#bars-full-weld) or WhatsApp +60 12-211 2522.
 
 ## What gauss rating do your separators use?
 
@@ -124,7 +124,7 @@ Rare-earth separator designs we commonly quote operate around 10,000–13,000 ga
 ## Is NdFeB N52 the strongest commercial magnet grade?
 
           
-Among common sintered NdFeB grades for general industry, N52 sits at the high end of energy product (about 52 MGOe). We supply N35–N52. Temperature rating and coating often matter more than chasing the highest “N” number alone. Details on [NdFeB magnets](/ndfeb-magnets.html).
+Among common sintered NdFeB grades for general industry, N52 sits at the high end of energy product (about 52 MGOe). We supply N35–N52. Temperature rating and coating often matter more than chasing the highest “N” number alone. Details on [NdFeB magnets](/ndfeb-magnets).
 
         
 
@@ -142,7 +142,7 @@ Sintered NdFeB from N35 to N52 in blocks, discs, rings, arcs and custom shapes. 
 ## What is a suspension (overband) magnet and what do you need to quote one?
 
           
-A suspension magnet hangs over a conveyor belt and pulls tramp iron out of the material passing underneath. Overband types clear the iron automatically with a running belt; suspended plate types are cleaned by hand. To quote, send belt width, belt speed, burden depth, hanging height and the iron you need to remove on WhatsApp. See [suspension magnets](/magnetic-separators.html#suspension-magnets).
+A suspension magnet hangs over a conveyor belt and pulls tramp iron out of the material passing underneath. Overband types clear the iron automatically with a running belt; suspended plate types are cleaned by hand. To quote, send belt width, belt speed, burden depth, hanging height and the iron you need to remove on WhatsApp. See [suspension magnets](/magnetic-separators#suspension-magnets).
 
         
 
@@ -225,9 +225,9 @@ Magnetic separators, suspension magnets and NdFeB rare-earth magnets for industr
           
 ### Products
 
-          [Magnetic separators](/magnetic-separators.html)
-          [NdFeB magnets](/ndfeb-magnets.html)
-          [FAQ](/faq.html)
+          [Magnetic separators](/magnetic-separators)
+          [NdFeB magnets](/ndfeb-magnets)
+          [FAQ](/faq)
         
         
           
@@ -261,8 +261,8 @@ Mobile / WhatsApp: [+60 12-211 2522](tel:+60122112522) · Office: [+603 5191 029
 
 ## What are SmCo magnets?
 
-SmCo (samarium cobalt) are high-temperature rare-earth magnets. See [SmCo magnets](/smco-magnets.html). WhatsApp +60 12-211 2522.
+SmCo (samarium cobalt) are high-temperature rare-earth magnets. See [SmCo magnets](/smco-magnets). WhatsApp +60 12-211 2522.
 
 ## SmCo vs NdFeB?
 
-NdFeB for max room-temp strength; SmCo for heat/corrosion. [SmCo page](/smco-magnets.html).
+NdFeB for max room-temp strength; SmCo for heat/corrosion. [SmCo page](/smco-magnets).
