@@ -1,6 +1,6 @@
 # Magnetic separator selection checklist — Arrowmatics Magnets
 
-> Agent-readable mirror. Canonical: https://magnets.com.my/selection-checklist.html · WhatsApp +60 12-211 2522
+> Agent-readable mirror. Canonical: https://magnets.com.my/selection-checklist · WhatsApp +60 12-211 2522
 
 Free one-page checklist: how your material moves, what to measure, which build to choose and what to confirm before ordering a magnetic separator in Malaysia.
 
