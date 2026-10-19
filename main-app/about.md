@@ -1,6 +1,6 @@
 # About Arrowmatics Magnets
 
-> Agent-readable mirror. Canonical: https://magnets.com.my/about.html
+> Agent-readable mirror. Canonical: https://magnets.com.my/about
 
 - **Company:** Arrowmatics AI Sdn Bhd (1305806-W), trading as Arrowmatics Magnets
 - **Address:** No. 64, Jalan Kapar 27/89, Megah Industrial Park, Taman Alam Megah, Section 27, 40400 Shah Alam, Selangor, Malaysia

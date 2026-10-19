@@ -58,7 +58,7 @@ wr("magnetic-separators.html", s)
 # ---------------- plate ----------------
 s = rd("plate-magnets.html")
 i, j = page_hero_block(s)
-h = hero([("Home", "/"), ("Separators", "/magnetic-separators.html"), ("Plate magnets", None)], "Food-grade · Full weld · Made to your drawing",
+h = hero([("Home", "/"), ("Separators", "/magnetic-separators"), ("Plate magnets", None)], "Food-grade · Full weld · Made to your drawing",
          "Full-weld plate magnets. <span class=\"accent\">Up to 10,000 Gauss.</span>",
          "<strong>For food plants working to HACCP / ISO 22000. Arrowmatics is not itself certified</strong> — we supply hygienic-design stainless plate magnets that support your own programme.",
          [("shield", "SS304 / 316 / 316L"), ("check", "100% full weld"), ("magnet", "Up to ~10,000 Gauss (typical)")],

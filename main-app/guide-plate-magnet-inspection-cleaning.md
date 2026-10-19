@@ -1,6 +1,6 @@
 # Plate magnet inspection and cleaning checklist — Arrowmatics Magnets
 
-> Agent-readable mirror. Canonical: https://magnets.com.my/guide-plate-magnet-inspection-cleaning.html · WhatsApp +60 12-211 2522
+> Agent-readable mirror. Canonical: https://magnets.com.my/guide-plate-magnet-inspection-cleaning · WhatsApp +60 12-211 2522
 
 Seven steps to adapt to your own SOP. How often depends on your hazard analysis and how much iron you find.
 

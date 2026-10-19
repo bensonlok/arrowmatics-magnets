@@ -51,7 +51,7 @@ We explain in plain language and ask only the few facts needed to size correctly
 - **100% full-weld** stainless housing (SS304 / SS316 / SS316L available; 316/316L generally suit more corrosive or washdown-heavy environments; confirm grade at quotation): continuous seal welds, no crevices/gaps, no exposed fasteners on the product face, smooth cleanable weld finish.
 - Hinged swing-open, suspended, quick-release / lift-out; custom sizes to drawing.
 - Hygienic design that **supports the customer's HACCP programme and ISO 22000** food safety management system; good as a ferrous foreign-body control at a CCP the customer's HACCP team selects.
-- Page: https://magnets.com.my/plate-magnets.html
+- Page: https://magnets.com.my/plate-magnets
 - **HONESTY RULE:** never say Arrowmatics is ISO 22000 or HACCP certified, never invent certificates, test numbers or customer names. Say "designed to support your HACCP / ISO 22000 programme"; customers remain responsible for their own certification.
 
 ## Magnetic bars / grate magnets — full weld (OK to say)
@@ -60,7 +60,7 @@ We explain in plain language and ask only the few facts needed to size correctly
 - **Materials:** stainless steel grades **304, 316 and 316L** are available for construction (never say only 316). 316/316L generally suit more corrosive or washdown-heavy environments (general statement only — no invented test data). Always confirm the grade at quotation.
 - Why full weld (plain language): (1) no crevices for product, grease or moisture to trap, so easier to clean and inspect; (2) NdFeB core sealed from water, so no rust and no magnet dust contamination; (3) withstands wet washdown and high-pressure cleaning; (4) resists vibration and impact so end caps and welds do not loosen; (5) smooth polished weld, no exposed fasteners or grooves.
 - Supports the customer's HACCP / ISO 22000 programme ("designed to support your HACCP and ISO 22000 programme"). Same HONESTY RULE as plate magnets: never claim Arrowmatics is certified; no invented certificates, test numbers or customers.
-- Page: https://magnets.com.my/magnetic-separators.html#bars-full-weld
+- Page: https://magnets.com.my/magnetic-separators#bars-full-weld
 
 ## Product availability with a photo ("do you have this?")
 - Describe honestly what you see ("looks like a stack of round disc magnets, possibly NdFeB discs" — never certain).

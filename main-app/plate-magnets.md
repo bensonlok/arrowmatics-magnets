@@ -1,6 +1,6 @@
 # Full-weld plate magnets up to 10,000 Gauss — Arrowmatics Magnets
 
-> Agent-readable mirror. Canonical: https://magnets.com.my/plate-magnets.html · WhatsApp +60 12-211 2522
+> Agent-readable mirror. Canonical: https://magnets.com.my/plate-magnets · WhatsApp +60 12-211 2522
 
 ## Overview
 
@@ -31,7 +31,7 @@ Arrowmatics does not hold, and does not claim, ISO 22000 or HACCP certification 
 6. Verify performance: cling/pull test or Gauss-meter reading if required
 7. Close, refit, check latch and mounting, sign the log
 
-**Need bars instead?** Full-weld magnetic bars and grate magnets are available to order too. Without full weld, bar and grate magnets can use screws or nuts that leave crevices and threads where deposit builds up; full weld removes them. Stainless grades 304, 316 and 316L are available; confirm at quotation — see [magnetic separators](https://magnets.com.my/magnetic-separators.html#bars-full-weld).
+**Need bars instead?** Full-weld magnetic bars and grate magnets are available to order too. Without full weld, bar and grate magnets can use screws or nuts that leave crevices and threads where deposit builds up; full weld removes them. Stainless grades 304, 316 and 316L are available; confirm at quotation — see [magnetic separators](https://magnets.com.my/magnetic-separators#bars-full-weld).
 
 ## FAQ
 

@@ -1,32 +1,32 @@
 # Old site product URLs (Google still indexes these) → new pages
-/GrateGridMagnet.html /grate-magnet.html 301
-/GrateMagnetsinHousing.html /grate-magnet.html 301
-/grategridmagnet.html /grate-magnet.html 301
-/gratemagnetsinhousing.html /grate-magnet.html 301
-/Bulletmagnet.html /bullet-magnet.html 301
-/bulletmagnet.html /bullet-magnet.html 301
-/MagneticHeadPulley.html /magnetic-pulley.html 301
-/magneticheadpulley.html /magnetic-pulley.html 301
-/magneticseparator.htm /magnetic-separators.html 301
-/MagneticSeparator.htm /magnetic-separators.html 301
-/bar.html /magnetic-bar.html 301
-/Bar.html /magnetic-bar.html 301
-/DrawerMagnet.html /drawer-magnet.html 301
-/drawermagnet.html /drawer-magnet.html 301
-/PlateMagnet.html /magnetic-separators.html 301
-/platemagnet.html /magnetic-separators.html 301
-/DrumSeparator.html /magnetic-separators.html 301
-/drumseparator.html /magnetic-separators.html 301
+/GrateGridMagnet.html /grate-magnet 301
+/GrateMagnetsinHousing.html /grate-magnet 301
+/grategridmagnet.html /grate-magnet 301
+/gratemagnetsinhousing.html /grate-magnet 301
+/Bulletmagnet.html /bullet-magnet 301
+/bulletmagnet.html /bullet-magnet 301
+/MagneticHeadPulley.html /magnetic-pulley 301
+/magneticheadpulley.html /magnetic-pulley 301
+/magneticseparator.htm /magnetic-separators 301
+/MagneticSeparator.htm /magnetic-separators 301
+/bar.html /magnetic-bar 301
+/Bar.html /magnetic-bar 301
+/DrawerMagnet.html /drawer-magnet 301
+/drawermagnet.html /drawer-magnet 301
+/PlateMagnet.html /magnetic-separators 301
+/platemagnet.html /magnetic-separators 301
+/DrumSeparator.html /magnetic-separators 301
+/drumseparator.html /magnetic-separators 301
 
 # Removed product: lifting magnets → closest remaining page (suspension magnets section)
-/lifting-magnets.html /magnetic-separators.html#suspension-magnets 301
-/lifting-magnets /magnetic-separators.html#suspension-magnets 301
+/lifting-magnets.html /magnetic-separators#suspension-magnets 301
+/lifting-magnets /magnetic-separators#suspension-magnets 301
 /lifting-magnets.md /magnetic-separators.md 301
-/liftingmagnets.html /magnetic-separators.html#suspension-magnets 301
-/lifting.html /magnetic-separators.html#suspension-magnets 301
+/liftingmagnets.html /magnetic-separators#suspension-magnets 301
+/lifting.html /magnetic-separators#suspension-magnets 301
 
 # Holding / specialty → home or NdFeB
-/AlnicoHorseshoeButtonMagnets.html /ndfeb-magnets.html 301
+/AlnicoHorseshoeButtonMagnets.html /ndfeb-magnets 301
 /CeramicCupAssembies.html / 301
 /Ceramictoolbar.html / 301
 /about.htm / 301
@@ -36,42 +36,42 @@
 /index.html / 301
 
 # SmCo search aliases
-/smco /smco-magnets.html 301
-/smco.html /smco-magnets.html 301
-/SmCo.html /smco-magnets.html 301
-/samarium-cobalt.html /smco-magnets.html 301
-/samariumcobalt.html /smco-magnets.html 301
-/SamariumCobalt.html /smco-magnets.html 301
+/smco /smco-magnets 301
+/smco.html /smco-magnets 301
+/SmCo.html /smco-magnets 301
+/samarium-cobalt.html /smco-magnets 301
+/samariumcobalt.html /smco-magnets 301
+/SamariumCobalt.html /smco-magnets 301
 
 # Liquid-line magnetic trap (old page 404'd) -> dedicated section on the separators page
-/LiquidLineMagneticTrap.html /liquid-trap-magnet.html 301
-/liquidlinemagnetictrap.html /liquid-trap-magnet.html 301
-/LiquidLineMagnetTrap.html /liquid-trap-magnet.html 301
-/liquid-line-magnetic-trap /liquid-trap-magnet.html 301
-/liquid-trap /liquid-trap-magnet.html 301
-/liquid-trap.html /liquid-trap-magnet.html 301
-/LiquidTrap.html /liquid-trap-magnet.html 301
+/LiquidLineMagneticTrap.html /liquid-trap-magnet 301
+/liquidlinemagnetictrap.html /liquid-trap-magnet 301
+/LiquidLineMagnetTrap.html /liquid-trap-magnet 301
+/liquid-line-magnetic-trap /liquid-trap-magnet 301
+/liquid-trap /liquid-trap-magnet 301
+/liquid-trap.html /liquid-trap-magnet 301
+/LiquidTrap.html /liquid-trap-magnet 301
 
 # SEO phase 2 (2026-10-16): old catalogue URLs still indexed -> matching new pages
-/DrawerMagnetforPlaticProcessing.html /drawer-magnet.html 301
-/drawermagnetforplaticprocessing.html /drawer-magnet.html 301
-/OverbeltMagnet.html /suspension-overband-magnet.html 301
-/overbeltmagnet.html /suspension-overband-magnet.html 301
-/nbfeb.html /neodymium-magnets.html 301
-/NdFeB.html /neodymium-magnets.html 301
-/ndfeb.html /neodymium-magnets.html 301
-/NdFeBPotMagnets.html /neodymium-magnets.html 301
-/ndfebpotmagnets.html /neodymium-magnets.html 301
-/probe.html /magnetic-bar.html 301
-/contact.htm /request-quote.html 301
-/Contact.htm /request-quote.html 301
-/contact.html /request-quote.html 301
+/DrawerMagnetforPlaticProcessing.html /drawer-magnet 301
+/drawermagnetforplaticprocessing.html /drawer-magnet 301
+/OverbeltMagnet.html /suspension-overband-magnet 301
+/overbeltmagnet.html /suspension-overband-magnet 301
+/nbfeb.html /neodymium-magnets 301
+/NdFeB.html /neodymium-magnets 301
+/ndfeb.html /neodymium-magnets 301
+/NdFeBPotMagnets.html /neodymium-magnets 301
+/ndfebpotmagnets.html /neodymium-magnets 301
+/probe.html /magnetic-bar 301
+/contact.htm /request-quote 301
+/Contact.htm /request-quote 301
+/contact.html /request-quote 301
 /OtherMagnetic.html / 301
 /CustomerHoldingAssemblies.html / 301
 /Weldingmagnet.html / 301
-/PermanentLiftingMagnet.html /magnetic-separators.html#suspension-magnets 301
-/ElectroLiftingMagnet.html /magnetic-separators.html#suspension-magnets 301
-/ElectroPermanentLiftingMagnets.html /magnetic-separators.html#suspension-magnets 301
+/PermanentLiftingMagnet.html /magnetic-separators#suspension-magnets 301
+/ElectroLiftingMagnet.html /magnetic-separators#suspension-magnets 301
+/ElectroPermanentLiftingMagnets.html /magnetic-separators#suspension-magnets 301
 /PermanentMagneticChuck.html / 301
 /ElectroMagneticChuck.html / 301
-/MagneticSeparator.html /magnetic-separators.html 301
+/MagneticSeparator.html /magnetic-separators 301

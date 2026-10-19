@@ -77,4 +77,4 @@ All dimensions in mm.
 **Is a full-weld grate available?** Yes, built to order for food and pharma lines. Not every model is full weld, so confirm the build at quotation.
 **How do I clean it?** Loose grates are lifted and wiped. In a housing, pull the drawer out by its handles and wipe the tubes into a catch box. Easy-clean versions slide the tubes out of sleeves.
 
-Quote: WhatsApp +60 12-211 2522 · https://magnets.com.my/grate-magnet.html
+Quote: WhatsApp +60 12-211 2522 · https://magnets.com.my/grate-magnet

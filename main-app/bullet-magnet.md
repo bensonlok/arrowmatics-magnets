@@ -35,4 +35,4 @@ Dimensions in mm (A–D as on our drawing). Capacity is processing capacity in m
 **Can it be food grade?** Stainless housings are standard. Tell us your product and cleaning method and we will confirm the stainless grade and finish at quotation.
 **Bullet, grate or drawer magnet?** Bullet magnets suit closed pipelines. Grate and drawer magnets suit hoppers and chutes. See the separator guide if you are unsure.
 
-Quote: WhatsApp +60 12-211 2522 · https://magnets.com.my/bullet-magnet.html
+Quote: WhatsApp +60 12-211 2522 · https://magnets.com.my/bullet-magnet

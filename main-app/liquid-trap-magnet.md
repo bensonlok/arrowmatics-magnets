@@ -53,4 +53,4 @@ Dimensions in mm.
 **Can it be 316 stainless?** Yes, 316 is available on request for corrosive products or heavy washdown.
 **How many bars do I need?** Standard traps carry 5, 7 or 9 bars depending on size. Finer contamination may need more contact; we advise per product.
 
-Quote: WhatsApp +60 12-211 2522 · https://magnets.com.my/liquid-trap-magnet.html
+Quote: WhatsApp +60 12-211 2522 · https://magnets.com.my/liquid-trap-magnet
