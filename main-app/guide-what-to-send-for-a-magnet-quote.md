@@ -1,6 +1,6 @@
 # What to send for a magnet quote — Arrowmatics Magnets
 
-> Agent-readable mirror. Canonical: https://magnets.com.my/guide-what-to-send-for-a-magnet-quote.html · WhatsApp +60 12-211 2522
+> Agent-readable mirror. Canonical: https://magnets.com.my/guide-what-to-send-for-a-magnet-quote · WhatsApp +60 12-211 2522
 
 A photo plus six facts is usually enough for a first written quote.
 
