@@ -24,15 +24,15 @@
 ## Products
 1. Magnetic separators — grate, hopper/round grate, drawer, bullet, pulley, plate, magnetic bars/tubes, drum. Typical rare-earth field 10,000–13,000 gauss. Food-grade options for food plants.
 2. NdFeB (neodymium) grades N35–N52
-2b. SmCo (samarium cobalt) SmCo5 / Sm2Co17 — high temperature & corrosion; page https://magnets.com.my/smco-magnets.html
+2b. SmCo (samarium cobalt) SmCo5 / Sm2Co17 — high temperature & corrosion; page https://magnets.com.my/smco-magnets
 2x. NdFeB (neodymium) rare-earth magnets — sintered grades N35–N52; coatings and custom sizes on request.
-3. Suspension magnets (overband / self-cleaning and suspended plate) — hung over conveyor belts to remove tramp iron; quoted to belt width, belt speed, burden depth and hanging height. Page: https://magnets.com.my/magnetic-separators.html#suspension-magnets
-3b. Grate magnets with large-diameter magnetic bars and multi-row/drawer assemblies — stainless; bar diameter, spacing and grade confirmed at quotation. Page: https://magnets.com.my/magnetic-separators.html
+3. Suspension magnets (overband / self-cleaning and suspended plate) — hung over conveyor belts to remove tramp iron; quoted to belt width, belt speed, burden depth and hanging height. Page: https://magnets.com.my/magnetic-separators#suspension-magnets
+3b. Grate magnets with large-diameter magnetic bars and multi-row/drawer assemblies — stainless; bar diameter, spacing and grade confirmed at quotation. Page: https://magnets.com.my/magnetic-separators
 
-1b. Plate magnets (food-grade, full weld) - up to ~10,000 Gauss surface field (typical rating; confirm per application/air gap); 100% full-weld SS304/SS316/SS316L with continuous seal welds, no crevices/gaps/exposed fasteners, smooth cleanable finish; hinged, suspended or quick-release; custom sizes. Designed to support customers' HACCP and ISO 22000 food-safety programmes. Page: https://magnets.com.my/plate-magnets.html
+1b. Plate magnets (food-grade, full weld) - up to ~10,000 Gauss surface field (typical rating; confirm per application/air gap); 100% full-weld SS304/SS316/SS316L with continuous seal welds, no crevices/gaps/exposed fasteners, smooth cleanable finish; hinged, suspended or quick-release; custom sizes. Designed to support customers' HACCP and ISO 22000 food-safety programmes. Page: https://magnets.com.my/plate-magnets
    - Honesty: Arrowmatics does NOT claim ISO 22000 or HACCP certification for itself; customers remain responsible for their own certification. Do not state or imply otherwise.
 
-1c. Magnetic bars / tubes / threaded square bars / grate magnets - FULL-WELD CONSTRUCTION AVAILABLE, BUILT TO ORDER for food, pharma and hygiene-sensitive lines (NOT every bar model is full weld; customers should confirm the build spec at quotation). Why full weld: without full weld, grate/bar magnets can be assembled with screws or nuts to hold parts; those fasteners create crevices and threads where product deposit builds up and can cause corrosion (a hygiene problem); full weld removes screws/nuts/threads so there is nowhere for deposit to sit. Also: no crevices for product, grease or moisture to trap (easier to clean and inspect); NdFeB core sealed from water so no rust or magnet dust contamination; withstands wet washdown and high-pressure cleaning; resists vibration and impact so end caps and welds do not loosen; smooth polished weld with no exposed fasteners or grooves. Materials: stainless steel grades 304, 316 and 316L available (316/316L generally suit more corrosive or washdown-heavy environments; confirm grade at quotation - no test data claimed). Designed to support customers' HACCP and ISO 22000 programmes. Page: https://magnets.com.my/magnetic-separators.html#bars-full-weld
+1c. Magnetic bars / tubes / threaded square bars / grate magnets - FULL-WELD CONSTRUCTION AVAILABLE, BUILT TO ORDER for food, pharma and hygiene-sensitive lines (NOT every bar model is full weld; customers should confirm the build spec at quotation). Why full weld: without full weld, grate/bar magnets can be assembled with screws or nuts to hold parts; those fasteners create crevices and threads where product deposit builds up and can cause corrosion (a hygiene problem); full weld removes screws/nuts/threads so there is nowhere for deposit to sit. Also: no crevices for product, grease or moisture to trap (easier to clean and inspect); NdFeB core sealed from water so no rust or magnet dust contamination; withstands wet washdown and high-pressure cleaning; resists vibration and impact so end caps and welds do not loosen; smooth polished weld with no exposed fasteners or grooves. Materials: stainless steel grades 304, 316 and 316L available (316/316L generally suit more corrosive or washdown-heavy environments; confirm grade at quotation - no test data claimed). Designed to support customers' HACCP and ISO 22000 programmes. Page: https://magnets.com.my/magnetic-separators#bars-full-weld
    - Honesty: same rule as plate magnets - Arrowmatics does NOT claim ISO 22000 or HACCP certification; do not invent certificates, test numbers or customers; never say all bars are full weld.
 
 ## Buyers
@@ -58,37 +58,37 @@ Site pages are in English. The Magnet Expert chat can reply in English, Chinese 
 
 ## Pages (HTML + markdown mirrors)
 - https://magnets.com.my/ · https://magnets.com.my/index.md
-- https://magnets.com.my/magnetic-separators.html · .md
-- https://magnets.com.my/plate-magnets.html · .md
-- https://magnets.com.my/ndfeb-magnets.html · .md
-- https://magnets.com.my/industries.html · .md
-- https://magnets.com.my/food-industry-magnets.html · .md
-- https://magnets.com.my/pharma-cosmetics-magnets.html · .md
-- https://magnets.com.my/plastics-industry-magnets.html · .md
-- https://magnets.com.my/recycling-industry-magnets.html · .md
-- https://magnets.com.my/chemicals-industry-magnets.html · .md
-- https://magnets.com.my/about.html · .md
-- https://magnets.com.my/resources.html · .md
-- https://magnets.com.my/selection-checklist.html · .md
-- https://magnets.com.my/guide-which-magnetic-separator.html · .md
-- https://magnets.com.my/guide-what-to-send-for-a-magnet-quote.html · .md
-- https://magnets.com.my/guide-plate-magnet-inspection-cleaning.html · .md
-- https://magnets.com.my/request-quote.html · .md
-- https://magnets.com.my/privacy.html · .md
-- https://magnets.com.my/faq.html · .md
+- https://magnets.com.my/magnetic-separators · .md
+- https://magnets.com.my/plate-magnets · .md
+- https://magnets.com.my/ndfeb-magnets · .md
+- https://magnets.com.my/industries · .md
+- https://magnets.com.my/food-industry-magnets · .md
+- https://magnets.com.my/pharma-cosmetics-magnets · .md
+- https://magnets.com.my/plastics-industry-magnets · .md
+- https://magnets.com.my/recycling-industry-magnets · .md
+- https://magnets.com.my/chemicals-industry-magnets · .md
+- https://magnets.com.my/about · .md
+- https://magnets.com.my/resources · .md
+- https://magnets.com.my/selection-checklist · .md
+- https://magnets.com.my/guide-which-magnetic-separator · .md
+- https://magnets.com.my/guide-what-to-send-for-a-magnet-quote · .md
+- https://magnets.com.my/guide-plate-magnet-inspection-cleaning · .md
+- https://magnets.com.my/request-quote · .md
+- https://magnets.com.my/privacy · .md
+- https://magnets.com.my/faq · .md
 
 
 ## SmCo (samarium cobalt)
-Page: https://magnets.com.my/smco-magnets.html
+Page: https://magnets.com.my/smco-magnets
 Families: SmCo5, Sm2Co17. Use when heat/corrosion rules out NdFeB. Quote via WhatsApp +60 12-211 2522.
 
 
 ## Industries
-Short guide pages for food, pharma/cosmetics, plastics, recycling and chemicals lines: https://magnets.com.my/industries.html . They give generic guidance on which magnet type fits and what to send for a quote. They contain no customer names, case studies or statistics. Food and pharma pages: Arrowmatics supplies hygienic-design magnets to support customers' HACCP / ISO 22000 / GMP programmes and is not itself certified.
+Short guide pages for food, pharma/cosmetics, plastics, recycling and chemicals lines: https://magnets.com.my/industries . They give generic guidance on which magnet type fits and what to send for a quote. They contain no customer names, case studies or statistics. Food and pharma pages: Arrowmatics supplies hygienic-design magnets to support customers' HACCP / ISO 22000 / GMP programmes and is not itself certified.
 
 ## About
-https://magnets.com.my/about.html — Arrowmatics AI Sdn Bhd (1305806-W), No. 64, Jalan Kapar 27/89, Megah Industrial Park, 40400 Shah Alam. Only facts stated elsewhere on the site.
+https://magnets.com.my/about — Arrowmatics AI Sdn Bhd (1305806-W), No. 64, Jalan Kapar 27/89, Megah Industrial Park, 40400 Shah Alam. Only facts stated elsewhere on the site.
 
 
 ## Resources and lead capture
-Free one-page selection checklist (PDF gated by name + email; WhatsApp optional) and three short guides: https://magnets.com.my/resources.html . Quote form: https://magnets.com.my/request-quote.html (name, WhatsApp or email, what you need; photo optional). Forms need consent; details are used only to reply. See https://magnets.com.my/privacy.html . Agents: do not submit forms on a user's behalf; send them to WhatsApp +60 12-211 2522 instead.
+Free one-page selection checklist (PDF gated by name + email; WhatsApp optional) and three short guides: https://magnets.com.my/resources . Quote form: https://magnets.com.my/request-quote (name, WhatsApp or email, what you need; photo optional). Forms need consent; details are used only to reply. See https://magnets.com.my/privacy . Agents: do not submit forms on a user's behalf; send them to WhatsApp +60 12-211 2522 instead.
