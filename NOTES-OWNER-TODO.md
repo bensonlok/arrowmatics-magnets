@@ -3,7 +3,7 @@
 Nothing below is on the live site yet. Items marked **[OWNER]** need a fact or decision from Benson. No placeholder text is published in any page or schema.
 
 ## Conflicts to resolve first
-- **[OWNER] WhatsApp number.** The task brief said WhatsApp +60 19-662 6522. Every page, schema block, llms file and the chat widget uses **+60 12-211 2522** (office +603 5191 0299). The 19-662 6522 number appears nowhere in the repo. Not added. Confirm which is correct.
+- **[OWNER] WhatsApp number.** The task brief said WhatsApp +60 19-662 6522. Every page, schema block, llms file and the chat widget uses **+60 12-211 2522** (office +60 19-662 6522). The 19-662 6522 number appears nowhere in the repo. Not added. Confirm which is correct.
 - **[OWNER] Languages.** ContactPoint `availableLanguage` says English only; the Magnet Expert chat replies in English / 中文 / Bahasa Malaysia. Confirm what the humans reply in, then align the schema.
 
 ## sameAs profiles (schema Organization/LocalBusiness)

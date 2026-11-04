@@ -4,7 +4,7 @@
 
 - **Company:** Arrowmatics AI Sdn Bhd (1305806-W), trading as Arrowmatics Magnets
 - **Address:** No. 64, Jalan Kapar 27/89, Megah Industrial Park, Taman Alam Megah, Section 27, 40400 Shah Alam, Selangor, Malaysia
-- **Office tel:** +603 5191 0299
+- **Office tel:** +60 19-662 6522
 - **Mobile / WhatsApp:** +60 12-211 2522
 - **Email:** bensonlok@gmail.com · arrowmatics@gmail.com
 - **Reply target:** We aim to reply within 1–3 hours (Malaysia business hours); a target, not a guarantee

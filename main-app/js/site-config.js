@@ -4,7 +4,7 @@
 window.MAGNETS = {
   wa: "60122112522",
   waDisplay: "+60 12-211 2522",
-  office: "+60351910299",
+  office: "+60196626522",
   email: "arrowmatics@gmail.com",
   leadEndpoint: "/api/lead",
   /* Optional first-party event endpoint. Leave empty: no network call is made. */

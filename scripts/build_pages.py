@@ -219,7 +219,7 @@ def about():
     h = head(title, desc, path, "/images/grate-magnet-large-bars-stainless-full-length.jpg", ld)
     facts = [("Company","Arrowmatics AI Sdn Bhd (1305806-W), trading as Arrowmatics Magnets"),
              ("Address","No. 64, Jalan Kapar 27/89, Megah Industrial Park, Taman Alam Megah, Section 27, 40400 Shah Alam, Selangor, Malaysia"),
-             ("Office tel",'<a href="tel:+60351910299">+603 5191 0299</a>'),
+             ("Office tel",'<a href="tel:+60196626522">+60 19-662 6522</a>'),
              ("Mobile / WhatsApp",'<a href="https://wa.me/60122112522">+60 12-211 2522</a>'),
              ("Email",'<a href="mailto:bensonlok@gmail.com">bensonlok@gmail.com</a> · <a href="mailto:arrowmatics@gmail.com">arrowmatics@gmail.com</a>'),
              ("Reply target","We aim to reply within 1–3 hours (Malaysia business hours); a target, not a guarantee")]

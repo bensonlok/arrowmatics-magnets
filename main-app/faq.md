@@ -190,7 +190,7 @@ Legal entity Arrowmatics AI Sdn Bhd (1305806-W) (1305806-W) at No. 64, Jalan Kap
 ## How do I get a written quote?
 
           
-Call [+60 12-211 2522](tel:+60122112522), WhatsApp [+60 12-211 2522](https://wa.me/60122112522), office [+603 5191 0299](tel:+60351910299), or email [bensonlok@gmail.com](mailto:bensonlok@gmail.com) · [arrowmatics@gmail.com](mailto:arrowmatics@gmail.com). Include product line, sizes, quantity and industry.
+Call [+60 12-211 2522](tel:+60122112522), WhatsApp [+60 12-211 2522](https://wa.me/60122112522), office [+60 19-662 6522](tel:+60196626522), or email [bensonlok@gmail.com](mailto:bensonlok@gmail.com) · [arrowmatics@gmail.com](mailto:arrowmatics@gmail.com). Include product line, sizes, quantity and industry.
 
         
 
@@ -240,7 +240,7 @@ Arrowmatics AI Sdn Bhd (1305806-W)
 No. 64, Jalan Kapar 27/89, Megah Industrial Park, Taman Alam Megah, Section 27, 40400 Shah Alam, Selangor, Malaysia
 
           
-Mobile / WhatsApp: [+60 12-211 2522](tel:+60122112522) · Office: [+603 5191 0299](tel:+60351910299)
+Mobile / WhatsApp: [+60 12-211 2522](tel:+60122112522) · Office: [+60 19-662 6522](tel:+60196626522)
 
           
 [bensonlok@gmail.com](mailto:bensonlok@gmail.com) · [arrowmatics@gmail.com](mailto:arrowmatics@gmail.com)

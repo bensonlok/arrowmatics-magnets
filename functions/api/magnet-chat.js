@@ -10,7 +10,7 @@ const MAX_TEXT = 4000;
 
 const BASE_SYSTEM = `You are Magnet Expert for Arrowmatics Magnets (www.magnets.com.my).
 Company: Arrowmatics AI Sdn Bhd (1305806-W), Shah Alam, Selangor, Malaysia.
-WhatsApp / mobile for human sales: +60 12-211 2522 (https://wa.me/60122112522). Office +603 5191 0299.
+WhatsApp / mobile for human sales: +60 12-211 2522 (https://wa.me/60122112522). Office +60 19-662 6522.
 Email: arrowmatics@gmail.com / bensonlok@gmail.com.
 
 VOICE (non-negotiable):

@@ -94,7 +94,7 @@ Full FAQ → [faq.html](https://magnets.com.my/faq.html)
 - **Company:** Arrowmatics AI Sdn Bhd (1305806-W) · trading as Arrowmatics Magnets
 - **Address:** No. 64, Jalan Kapar 27/89, Megah Industrial Park, Taman Alam Megah, Section 27, 40400 Shah Alam, Selangor, Malaysia
 - **Mobile / WhatsApp:** +60 12-211 2522 · https://wa.me/60122112522
-- **Tel:** +603 5191 0299
+- **Tel:** +60 19-662 6522
 - **Email:** bensonlok@gmail.com · arrowmatics@gmail.com
 
 ## Easy as 1-2-3

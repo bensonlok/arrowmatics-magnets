@@ -64,7 +64,7 @@ HTML canonical tags and `sitemap.xml` use **apex only** (`https://magnets.com.my
 1. **Google Search Console** — property `https://magnets.com.my/` → submit `https://magnets.com.my/sitemap.xml`.
 2. **Bing Webmaster Tools** — submit the same sitemap.
 3. **Google Business Profile** — set website to `https://magnets.com.my/` (apex).
-4. Spot-check NAP on every page footer: Shah Alam address, +60 12-211 2522, +603 5191 0299, arrowmatics@gmail.com.
+4. Spot-check NAP on every page footer: Shah Alam address, +60 12-211 2522, +60 19-662 6522, arrowmatics@gmail.com.
 5. WhatsApp FAB → `https://wa.me/60122112522`.
 
 ## Optional CLI deploy

@@ -126,7 +126,7 @@ def checklist_pages():
     <p>Arrowmatics Magnets · 1 page · tick as you go, then send it with a photo.</p>
     %s
     <p class="p-foot">General guidance only; size, grade, gauss and build are confirmed at quotation. We publish no RM list prices. %s<br>
-    Arrowmatics AI Sdn Bhd (1305806-W) · No. 64, Jalan Kapar 27/89, Megah Industrial Park, Taman Alam Megah, Section 27, 40400 Shah Alam, Selangor · Tel +603 5191 0299 · WhatsApp +60 12-211 2522 · magnets.com.my</p>
+    Arrowmatics AI Sdn Bhd (1305806-W) · No. 64, Jalan Kapar 27/89, Megah Industrial Park, Taman Alam Megah, Section 27, 40400 Shah Alam, Selangor · Tel +60 19-662 6522 · WhatsApp +60 12-211 2522 · magnets.com.my</p>
   </article>''' % (checklist_inner(), "Arrowmatics is not itself certified to ISO 22000, HACCP or GMP.")
     path = "/checklist-print.html"
     h = head("Magnetic Separator Selection Checklist (printable) | Arrowmatics Magnets", "Printable one-page magnetic separator selection checklist from Arrowmatics Magnets.", path, OG, [], mdpath="/selection-checklist.md")
@@ -175,13 +175,13 @@ def quote_page():
           <h1 style="font-size:clamp(1.8rem,4vw,2.6rem);margin:0.4rem 0 0.6rem;">Request a quote</h1>
           <p style="font-size:1.1rem;color:#5d6270;line-height:1.5;">Tell us what you need. Add a photo if you can. We aim to reply within 1–3 hours (Malaysia business hours).</p>
           <p style="margin-top:1rem;"><a class="btn btn-wa" href="%s" target="_blank" rel="noopener">WhatsApp +60 12-211 2522</a></p>
-          <p class="sec-note">Prefer to talk? Office <a href="tel:+60351910299">+603 5191 0299</a>. No RM list prices are published; quotes are written.</p>
+          <p class="sec-note">Prefer to talk? Office <a href="tel:+60196626522">+60 19-662 6522</a>. No RM list prices are published; quotes are written.</p>
         </div>
         %s
       </div>
     </div></section>''' % (WA, quote_form("rq", "request-quote"))
     write("request-quote.html", shell(path, title, desc, ld, main, current="/"))
-    write("request-quote.md", "# Request a quote — Arrowmatics Magnets\n\n> Canonical: %s%s\n\nSend name, WhatsApp or email, and what you need (photo optional). Reply target: within 1–3 hours in Malaysia business hours (not a guarantee). WhatsApp +60 12-211 2522 · Tel +603 5191 0299.\n" % (SITE, path))
+    write("request-quote.md", "# Request a quote — Arrowmatics Magnets\n\n> Canonical: %s%s\n\nSend name, WhatsApp or email, and what you need (photo optional). Reply target: within 1–3 hours in Malaysia business hours (not a guarantee). WhatsApp +60 12-211 2522 · Tel +60 19-662 6522.\n" % (SITE, path))
 
 # ------------------------------------------------------------------ privacy
 def privacy():
@@ -194,7 +194,7 @@ def privacy():
       <h1>Privacy notice</h1>
       <p class="g-lead">Short and plain. Updated %s.</p>
       <h2>Who we are</h2>
-      <p>Arrowmatics AI Sdn Bhd (1305806-W), trading as Arrowmatics Magnets, No. 64, Jalan Kapar 27/89, Megah Industrial Park, Taman Alam Megah, Section 27, 40400 Shah Alam, Selangor. Contact: <a href="mailto:arrowmatics@gmail.com">arrowmatics@gmail.com</a> or +603 5191 0299.</p>
+      <p>Arrowmatics AI Sdn Bhd (1305806-W), trading as Arrowmatics Magnets, No. 64, Jalan Kapar 27/89, Megah Industrial Park, Taman Alam Megah, Section 27, 40400 Shah Alam, Selangor. Contact: <a href="mailto:arrowmatics@gmail.com">arrowmatics@gmail.com</a> or +60 19-662 6522.</p>
       <h2>What we collect, and why</h2>
       %s
       <h2>Who sees it</h2>

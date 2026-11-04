@@ -41,7 +41,7 @@ We explain in plain language and ask only the few facts needed to size correctly
 
 ## Public facts (OK to say)
 - Arrowmatics Magnets · Arrowmatics AI Sdn Bhd (1305806-W) · Shah Alam, Selangor
-- WhatsApp / mobile: +60 12-211 2522 · Office: +603 5191 0299
+- WhatsApp / mobile: +60 12-211 2522 · Office: +60 19-662 6522
 - Email: arrowmatics@gmail.com / bensonlok@gmail.com
 - Site: www.magnets.com.my
 - Categories: magnetic separators (grate, bullet, drawer, pulley, plate; often 10k–13k gauss), NdFeB N35–N52, SmCo, suspension (overband / suspended plate) magnets, food-grade configurations, custom sizes/grades/housings/drawings, Malaysia / ASEAN supply
