@@ -3,7 +3,7 @@ import html, json
 
 SITE = "https://magnets.com.my"
 WA = "https://wa.me/60122112522"
-ASSET_V = "mk1"
+ASSET_V = "aw2"
 
 ICONS = {
  "shield": '<path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/>',
@@ -107,6 +107,10 @@ def head(title, desc, path, og_image, extra_ld, mdpath=None):
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google tag (gtag.js) - Google Ads conversion measurement -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1067610456"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-1067610456');</script>
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
   <title>%(title)s</title>
   <meta name="description" content="%(desc)s">
   <link rel="canonical" href="%(url)s">
