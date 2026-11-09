@@ -228,6 +228,7 @@ def build(p):
   <!-- Google tag (gtag.js) - Google Ads conversion measurement -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1067610456"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());gtag('config','AW-1067610456');</script>
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
   <title>{e(p["title"])}</title>
   <meta name="description" content="{e(p["desc"])}">
   <link rel="canonical" href="{url}">

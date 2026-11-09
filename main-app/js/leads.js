@@ -13,7 +13,22 @@
     var href = el.getAttribute("href") || "";
     if (el.hasAttribute("data-track")) return T(el.getAttribute("data-track"), { label: (el.textContent || "").trim().slice(0, 40) });
     if (/wa\.me\//.test(href)) return T("cta_whatsapp", { label: (el.textContent || "").trim().slice(0, 40) });
-    if (/^tel:/.test(href)) return T("cta_call", {});
+    /* tel: unloads the page (dialer). Hold navigation until the Ads conversion beacon
+       fires (or 1s max). WhatsApp uses target=_blank so it does not need this. */
+    if (/^tel:/.test(href)) {
+      if (ev.defaultPrevented) return T("cta_call", {});
+      ev.preventDefault();
+      var gone = false;
+      var go = function () {
+        if (gone) return;
+        gone = true;
+        window.location.href = href;
+      };
+      if (window.magnetsTrack) window.magnetsTrack("cta_call", {}, { callback: go });
+      else go();
+      setTimeout(go, 1000);
+      return;
+    }
     if (/^mailto:/.test(href)) return T("cta_email", {});
     if (el.hasAttribute("data-open-magnet-expert")) return T("cta_expert", { label: (el.textContent || "").trim().slice(0, 40) });
     if (el.hasAttribute("data-pick")) return T("selector_use", { pick: (el.getAttribute("data-pick") || "").slice(0, 40) });
