@@ -29,8 +29,8 @@ def kv(items):
 P = []
 # 1 Bullet
 P.append(dict(slug="bullet-magnet", name="Bullet Magnet", short="Bullet magnets",
- title="Bullet Magnet Malaysia | Pipeline Separator | Arrowmatics",
- desc="Stainless bullet magnets for gravity and pneumatic pipelines. CMBullet 110–420 sizes, 1–29 m³/h. Made in Shah Alam to your pipe. WhatsApp quote.",
+ title="Bullet Magnet Malaysia | Gravity & Pneumatic Pipeline Separator | Arrowmatics",
+ desc="Bullet magnets for gravity and pneumatic pipelines. CMBullet 110–420, 1–29 m³/h. Stainless, made in Shah Alam to your pipe size. WhatsApp for a quote.",
  h1="Bullet magnets for pipelines", eyebrow="Pipeline · Gravity or pneumatic · Stainless",
  lead="A bullet-shaped magnet core inside a stainless pipe housing. Dry powder or granules flow around it, and iron sticks to the core instead of reaching your mill, extruder or pack.",
  imgs=[("real-bullet-1.jpg","Stainless bullet magnet housing with flanged ends",600,580),("real-bullet-2.jpg","Bullet magnet core pulled out of its housing for cleaning",600,580),("real-bullet-3.jpg","Bullet magnet separator ready for pipeline fitting",800,800)],
@@ -146,8 +146,8 @@ P.append(dict(slug="liquid-trap-magnet", name="Liquid Line Magnetic Trap", short
  industries=[("food-industry-magnets","Food plants"),("chemicals-industry-magnets","Chemicals"),("pharma-cosmetics-magnets","Pharma & cosmetics")]))
 # 7 Bar
 P.append(dict(slug="magnetic-bar", name="Magnetic Filter Bar", short="Magnetic bars",
- title="Magnetic Bar Malaysia | Magnetic Filter Rods | Arrowmatics",
- desc="Stainless magnetic filter bars, round or square, 100–1500 mm. Ceramic (3,000+ G) or rare-earth (12,000+ G) cores. Fully seal welded. WhatsApp quote.",
+ title="Magnet Bar Malaysia | Magnetic Filter Bars & Rods | Arrowmatics",
+ desc="Magnet bars (filter rods) made in Shah Alam. Round or square, 100–1500 mm, ceramic or rare-earth cores, fully seal welded. WhatsApp for a quote.",
  h1="Magnetic filter bars and rods", eyebrow="Round · Square · Fully seal welded",
  lead="The building block of grate, drawer and liquid-trap separators — or install it on its own in any solid, powder or liquid flow to catch fine iron.",
  imgs=[("real-bars-1.jpg","Stainless magnetic filter bars",600,580),("grate-magnet-four-bar-units-and-single-bar.jpg","Magnetic bars as single bars and four-bar units",1200,900),("magnet-bar-support.jpg","Magnetic bar with support",1200,900)],
