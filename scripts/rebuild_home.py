@@ -45,14 +45,14 @@ hero_html = hero_html.replace('<nav class="breadcrumb" aria-label="Breadcrumb"><
 
 # --- selector ----------------------------------------------------------
 SEL = [
- ("grate", "/magnetic-separators.html#types", "/images/grate-magnet-large-bars-stainless-tubes-cross-frame.jpg", "Grate magnet with large stainless bars in a cross frame", "Grate magnet", "Dry powders and granules falling through a hopper or chute. Larger bars suit bigger openings and heavier tramp metal."),
- ("drawer", "/magnetic-separators.html#types", "/images/real-drawer-1.jpg", "Double-drawer stainless magnetic separator housing", "Drawer magnet", "The same duty in a housing: rows of bars slide out for cleaning without stripping the line."),
- ("plate", "/plate-magnets.html", "/images/plate-magnet-10000g.jpg", "Full-weld stainless plate magnet", "Plate magnet", "Chute walls or hung over a falling stream or belt, with an easy-wipe face. Full-weld SS304/316/316L builds available."),
- ("suspension", "/magnetic-separators.html#suspension-magnets", "/images/suspension-overband-magnet-yellow-frame-workshop.jpg", "Yellow overband suspension magnet frame", "Suspension / overband magnet", "Pulls tramp iron off bulk material on a conveyor. Overband clears the iron on a running belt; suspended plates are cleaned by hand."),
- ("liquid", "/magnetic-separators.html#liquid-line-trap", "/images/real-liquid-trap-1.jpg", "Stainless liquid-line magnetic trap", "Liquid-line / filter trap", "Liquids, sauces, pastes and slurries moving through a pipe, where fine iron must be caught in-line."),
- ("bullet", "/magnetic-separators.html#types", "/images/real-bullet-1.jpg", "Bullet magnet front and side views", "Bullet magnet", "Pipelines and pneumatic or gravity product lines."),
- ("bar", "/magnetic-separators.html#bars-full-weld", "/images/real-bars-1.jpg", "Polished stainless magnetic bar", "Magnetic bar", "Tanks, hoppers and chutes, or as the bars inside a custom grid. Full weld is built to order."),
- ("rare", "/ndfeb-magnets.html", "/images/real-ndfeb-1.jpg", "NdFeB rare-earth magnet blocks", "NdFeB / SmCo magnets", "Small parts, OEM fixtures and assemblies; SmCo when heat or corrosion rules out NdFeB."),
+ ("grate", "/magnetic-separators#types", "/images/grate-magnet-large-bars-stainless-tubes-cross-frame.jpg", "Grate magnet with large stainless bars in a cross frame", "Grate magnet", "Dry powders and granules falling through a hopper or chute. Larger bars suit bigger openings and heavier tramp metal."),
+ ("drawer", "/magnetic-separators#types", "/images/real-drawer-1.jpg", "Double-drawer stainless magnetic separator housing", "Drawer magnet", "The same duty in a housing: rows of bars slide out for cleaning without stripping the line."),
+ ("plate", "/plate-magnets", "/images/plate-magnet-10000g.jpg", "Full-weld stainless plate magnet", "Plate magnet", "Chute walls or hung over a falling stream or belt, with an easy-wipe face. Full-weld SS304/316/316L builds available."),
+ ("suspension", "/magnetic-separators#suspension-magnets", "/images/suspension-overband-magnet-yellow-frame-workshop.jpg", "Yellow overband suspension magnet frame", "Suspension / overband magnet", "Pulls tramp iron off bulk material on a conveyor. Overband clears the iron on a running belt; suspended plates are cleaned by hand."),
+ ("liquid", "/magnetic-separators#liquid-line-trap", "/images/real-liquid-trap-1.jpg", "Stainless liquid-line magnetic trap", "Liquid-line / filter trap", "Liquids, sauces, pastes and slurries moving through a pipe, where fine iron must be caught in-line."),
+ ("bullet", "/magnetic-separators#types", "/images/real-bullet-1.jpg", "Bullet magnet front and side views", "Bullet magnet", "Pipelines and pneumatic or gravity product lines."),
+ ("bar", "/magnetic-separators#bars-full-weld", "/images/real-bars-1.jpg", "Polished stainless magnetic bar", "Magnetic bar", "Tanks, hoppers and chutes, or as the bars inside a custom grid. Full weld is built to order."),
+ ("rare", "/ndfeb-magnets", "/images/real-ndfeb-1.jpg", "NdFeB rare-earth magnet blocks", "NdFeB / SmCo magnets", "Small parts, OEM fixtures and assemblies; SmCo when heat or corrosion rules out NdFeB."),
 ]
 OPTS = [
  ("Powder or granules in a hopper / chute", "grate drawer", "Free-flowing dry material is usually caught with a grate or drawer magnet across the opening."),
@@ -142,7 +142,7 @@ plate = '''    <section class="section section-dark tight" id="plate-magnets">
             <ul class="chip-list"><li>SS304 / 316 / 316L</li><li>No crevices or exposed fasteners</li><li>Easy to clean &amp; inspect</li></ul>
             <details class="readmore"><summary>Read more</summary><div class="rm-body"><p>Continuous seal welds in SS304/SS316/SS316L, no crevices, no exposed fasteners and a smooth, cleanable finish. Designed to support your HACCP and ISO 22000 programme as a ferrous foreign-body control. Typical rating of up to ~10,000 Gauss; confirm per application and air gap. Customers remain responsible for their own certification.</p></div></details>
             <div class="hero-actions" style="margin-top:1rem;">
-              <a class="btn btn-wa" href="/plate-magnets.html">See full-weld plate magnets</a>
+              <a class="btn btn-wa" href="/plate-magnets">See full-weld plate magnets</a>
               <a class="btn btn-outline" href="https://wa.me/60122112522" target="_blank" rel="noopener">WhatsApp +60 12-211 2522</a>
             </div>
           </div>
@@ -181,7 +181,7 @@ import build_pages as bp
 ind_cards = [("/%s.html" % d["slug"], d["img"], d["alt"], d["name"], d["lead"]) for d in bp.IND]
 industries = '''    <section class="section tight section-alt" id="industries">
       <div class="container">
-        <div class="section-head compact"><span class="eyebrow">Industries served</span><h2>Built for Malaysian plants</h2><p>Pick your industry for the right magnet type and what to send. <a href="/industries.html">All industries →</a></p></div>
+        <div class="section-head compact"><span class="eyebrow">Industries served</span><h2>Built for Malaysian plants</h2><p>Pick your industry for the right magnet type and what to send. <a href="/industries">All industries →</a></p></div>
         %s
         <p class="ind-note"><strong>Also served:</strong> OEMs and MRO — NdFeB blanks and assemblies; aggregates and conveyors — suspension (overband) and plate magnets.</p>
       </div>
@@ -196,7 +196,7 @@ why = '''    <section class="section tight" id="why">
           <div class="icard reveal"><span class="ic">%s</span><h3>Photo first</h3><p>Send a photo or sketch. We explain the options in plain words.</p></div>
           <div class="icard reveal"><span class="ic">%s</span><h3>Customise to fit</h3><p>Sizes, grades, housings and drawing-based builds are worth exploring.</p></div>
           <div class="icard reveal"><span class="ic">%s</span><h3>Easy to clean</h3><p>Stainless 304 / 316 / 316L available; full weld built to order.</p></div>
-          <div class="icard reveal"><span class="ic">%s</span><h3>Honest quotes</h3><p>Written quotes on WhatsApp. No invented prices, stock or certificates. <a href="/about.html">About us</a></p></div>
+          <div class="icard reveal"><span class="ic">%s</span><h3>Honest quotes</h3><p>Written quotes on WhatsApp. No invented prices, stock or certificates. <a href="/about">About us</a></p></div>
         </div>
       </div>
     </section>
@@ -212,7 +212,7 @@ faq = '''    <section class="section tight section-alt" id="faq-teaser">
       <div class="container">
         <div class="section-head compact"><span class="eyebrow">Buyer questions</span><h2>Quick technical answers</h2></div>
 %s
-        <p style="margin-top:1rem;"><a href="/faq.html" class="card-link">Read all FAQs →</a></p>
+        <p style="margin-top:1rem;"><a href="/faq" class="card-link">Read all FAQs →</a></p>
       </div>
     </section>
 ''' % accordions(faq_qas)

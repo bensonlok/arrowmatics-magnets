@@ -49,4 +49,4 @@ Typical values. Br remanence, Hcb coercivity, Hcj intrinsic coercivity, (BH)max 
 **What coating do you use?** Coating depends on the job. Tell us the environment and we will confirm the coating at quotation.
 **Are they safe to handle?** Large neodymium magnets snap together hard and can pinch fingers or crack. Handle with care and keep them away from pacemakers and electronics.
 
-Quote: WhatsApp +60 12-211 2522 · https://magnets.com.my/neodymium-magnets.html
+Quote: WhatsApp +60 12-211 2522 · https://magnets.com.my/neodymium-magnets

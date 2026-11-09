@@ -29,8 +29,8 @@ def kv(items):
 P = []
 # 1 Bullet
 P.append(dict(slug="bullet-magnet", name="Bullet Magnet", short="Bullet magnets",
- title="Bullet Magnet Malaysia | Pipeline Separator | Arrowmatics",
- desc="Stainless bullet magnets for gravity and pneumatic pipelines. CMBullet 110–420 sizes, 1–29 m³/h. Made in Shah Alam to your pipe. WhatsApp quote.",
+ title="Bullet Magnet Malaysia | Gravity & Pneumatic Pipeline Separator | Arrowmatics",
+ desc="Bullet magnets for gravity and pneumatic pipelines. CMBullet 110–420, 1–29 m³/h. Stainless, made in Shah Alam to your pipe size. WhatsApp for a quote.",
  h1="Bullet magnets for pipelines", eyebrow="Pipeline · Gravity or pneumatic · Stainless",
  lead="A bullet-shaped magnet core inside a stainless pipe housing. Dry powder or granules flow around it, and iron sticks to the core instead of reaching your mill, extruder or pack.",
  imgs=[("real-bullet-1.jpg","Stainless bullet magnet housing with flanged ends",600,580),("real-bullet-2.jpg","Bullet magnet core pulled out of its housing for cleaning",600,580),("real-bullet-3.jpg","Bullet magnet separator ready for pipeline fitting",800,800)],
@@ -105,7 +105,7 @@ P.append(dict(slug="suspension-overband-magnet", name="Suspension / Overband Mag
       ("Is a magnetic pulley better?","A head pulley magnet suits shallow burdens and ferrous splitting; an overband suits deeper burdens. See magnetic pulleys.")],
  related=["magnetic-pulley","grate-magnet","magnetic-bar","bullet-magnet"],
  industries=[("recycling-industry-magnets","Recycling & aggregates"),("chemicals-industry-magnets","Chemicals & bulk"),("food-industry-magnets","Food plants")],
- extra='<p style="font-size:0.85rem;color:var(--text-muted);">Some photos show the product type; size, field and drive are confirmed per application. See <a href="/magnetic-separators.html#suspension-magnets">photo credits and videos</a>.</p>'))
+ extra='<p style="font-size:0.85rem;color:var(--text-muted);">Some photos show the product type; size, field and drive are confirmed per application. See <a href="/magnetic-separators#suspension-magnets">photo credits and videos</a>.</p>'))
 # 5 Pulley
 P.append(dict(slug="magnetic-pulley", name="Magnetic Head Pulley", short="Magnetic pulleys",
  title="Magnetic Pulley Malaysia | Conveyor Head Pulley | Arrowmatics",
@@ -146,8 +146,8 @@ P.append(dict(slug="liquid-trap-magnet", name="Liquid Line Magnetic Trap", short
  industries=[("food-industry-magnets","Food plants"),("chemicals-industry-magnets","Chemicals"),("pharma-cosmetics-magnets","Pharma & cosmetics")]))
 # 7 Bar
 P.append(dict(slug="magnetic-bar", name="Magnetic Filter Bar", short="Magnetic bars",
- title="Magnetic Bar Malaysia | Magnetic Filter Rods | Arrowmatics",
- desc="Stainless magnetic filter bars, round or square, 100–1500 mm. Ceramic (3,000+ G) or rare-earth (12,000+ G) cores. Fully seal welded. WhatsApp quote.",
+ title="Magnet Bar Malaysia | Magnetic Filter Bars & Rods | Arrowmatics",
+ desc="Magnet bars (filter rods) made in Shah Alam. Round or square, 100–1500 mm, ceramic or rare-earth cores, fully seal welded. WhatsApp for a quote.",
  h1="Magnetic filter bars and rods", eyebrow="Round · Square · Fully seal welded",
  lead="The building block of grate, drawer and liquid-trap separators — or install it on its own in any solid, powder or liquid flow to catch fine iron.",
  imgs=[("real-bars-1.jpg","Stainless magnetic filter bars",600,580),("grate-magnet-four-bar-units-and-single-bar.jpg","Magnetic bars as single bars and four-bar units",1200,900),("magnet-bar-support.jpg","Magnetic bar with support",1200,900)],
@@ -188,22 +188,25 @@ P.append(dict(slug="neodymium-magnets", name="Neodymium Magnets", short="Neodymi
       ("Are they safe to handle?","Large neodymium magnets snap together hard and can pinch fingers or crack. Handle with care and keep them away from pacemakers and electronics.")],
  related=["magnetic-bar","grate-magnet","bullet-magnet","drawer-magnet"],
  industries=[("industries","All industries"),("plastics-industry-magnets","Plastics"),("food-industry-magnets","Food plants")],
- extra='<p>Also see the <a href="/ndfeb-magnets.html">NdFeB magnets overview</a> and <a href="/smco-magnets.html">SmCo magnets</a> for high-temperature work.</p>'))
+ extra='<p>Also see the <a href="/ndfeb-magnets">NdFeB magnets overview</a> and <a href="/smco-magnets">SmCo magnets</a> for high-temperature work.</p>'))
 
 NAMES = {p["slug"]: p["short"] for p in P}
 
 def ld(o): return '  <script type="application/ld+json">\n' + json.dumps(o, indent=2, ensure_ascii=False) + "\n  </script>\n"
 
 def build(p):
-    url = f"{BASE}{p['slug']}.html"
+    url = f"{BASE}{p['slug']}"
     img0 = p["imgs"][0]
-    product = {"@context":"https://schema.org","@type":"Product","name":p["name"],"url":url,
-       "image":[BASE+"images/"+i[0] for i in p["imgs"]],"description":p["desc"],
-       "brand":{"@type":"Brand","name":"Arrowmatics Magnets"},"manufacturer":PROVIDER,"category":"Industrial magnets",
-       "additionalProperty":[{"@type":"PropertyValue","name":k,"value":v} for k,v in p["kv"]]}
+    # No published prices or real reviews, so no schema.org Product (Google flags a Product
+    # without offers/review/aggregateRating as an invalid item). Describe the page instead.
+    imgs = [BASE+"images/"+i[0] for i in p["imgs"]]
+    product = {"@context":"https://schema.org","@type":"ItemPage","name":p["name"],"url":url,"description":p["desc"],
+       "inLanguage":"en-MY","primaryImageOfPage":{"@type":"ImageObject","url":imgs[0]},"image":imgs,
+       "about":{"@type":"Thing","name":p["name"]},
+       "isPartOf":{"@type":"WebSite","name":"Arrowmatics Magnets","url":"https://magnets.com.my/"},"publisher":PROVIDER}
     crumbs = {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
        {"@type":"ListItem","position":1,"name":"Home","item":BASE},
-       {"@type":"ListItem","position":2,"name":"Magnetic Separators" if p["slug"]!="neodymium-magnets" else "Magnets","item":BASE+("magnetic-separators.html" if p["slug"]!="neodymium-magnets" else "ndfeb-magnets.html")},
+       {"@type":"ListItem","position":2,"name":"Magnetic Separators" if p["slug"]!="neodymium-magnets" else "Magnets","item":BASE+("magnetic-separators" if p["slug"]!="neodymium-magnets" else "ndfeb-magnets")},
        {"@type":"ListItem","position":3,"name":p["name"],"item":url}]}
     faq = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in p["faq"]]}
     e = html.escape
@@ -212,11 +215,11 @@ def build(p):
     if not p["tables"]:
         tbls = '<p><strong>Dimensions and field strength: contact for spec.</strong> Each unit is calculated for your conveyor, so we do not publish a fixed size table.</p>'
     faqs = "".join(f'<details class="acc"><summary><h3>{e(q)}</h3></summary><div class="rm-body"><p>{e(a)}</p></div></details>' for q,a in p["faq"])
-    rel = " · ".join(f'<a href="/{s}.html">{e(NAMES[s])}</a>' for s in p["related"])
-    ind = " · ".join(f'<a href="/{s}.html">{e(n)}</a>' for s,n in p["industries"])
+    rel = " · ".join(f'<a href="/{s}">{e(NAMES[s])}</a>' for s in p["related"])
+    ind = " · ".join(f'<a href="/{s}">{e(n)}</a>' for s,n in p["industries"])
     quote = QUOTE.replace('pq-', p['slug'][:4]+'-q-').replace('data-context="plate-magnets"', f'data-context="{p["slug"]}"').replace('data-context="checklist-plate-magnets"', f'data-context="checklist-{p["slug"]}"').replace('pqc-', p['slug'][:4]+'-c-')
     wa_text = f"Hi%20Arrowmatics%20Magnets%20%E2%80%94%20I%20need%20a%20quote%20for%20a%20{p['name'].replace(' ','%20').replace('/','%2F')}."
-    crumb_mid = ('<a href="/magnetic-separators.html">Separators</a>' if p["slug"]!="neodymium-magnets" else '<a href="/ndfeb-magnets.html">NdFeB</a>')
+    crumb_mid = ('<a href="/magnetic-separators">Separators</a>' if p["slug"]!="neodymium-magnets" else '<a href="/ndfeb-magnets">NdFeB</a>')
     out = f'''<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -285,8 +288,8 @@ def build(p):
       <div class="container">
         <div class="section-head"><span class="section-index">03 / Where it fits</span><h2>Industries and related separators</h2></div>
         <p><strong>Industries:</strong> {ind}</p>
-        <p><strong>Related products:</strong> {rel} · <a href="/plate-magnets.html">Plate magnets</a> · <a href="/magnetic-separators.html">All separators</a></p>
-        <p>Not sure which type? Read <a href="/guide-which-magnetic-separator.html">Which magnetic separator do I need?</a> or <a href="/guide-what-to-send-for-a-magnet-quote.html">what to send for a quote</a>.</p>
+        <p><strong>Related products:</strong> {rel} · <a href="/plate-magnets">Plate magnets</a> · <a href="/magnetic-separators">All separators</a></p>
+        <p>Not sure which type? Read <a href="/guide-which-magnetic-separator">Which magnetic separator do I need?</a> or <a href="/guide-what-to-send-for-a-magnet-quote">what to send for a quote</a>.</p>
       </div>
     </section>
 
@@ -294,7 +297,7 @@ def build(p):
       <div class="container" style="max-width:800px;">
         <div class="section-head"><span class="section-index">04 / FAQ</span><h2>{e(p["short"])}: common questions</h2></div>
         {faqs}
-        <p style="margin-top:1.5rem;"><a href="/faq.html">More questions on the main FAQ →</a></p>
+        <p style="margin-top:1.5rem;"><a href="/faq">More questions on the main FAQ →</a></p>
       </div>
     </section>
 

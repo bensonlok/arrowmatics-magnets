@@ -56,4 +56,4 @@ Length in mm. Other lengths on request.
 **How fast can I get them?** Most standard sizes can be delivered in 1–2 working days, subject to stock. Ask us when you order.
 **Can you make a special length?** Yes. Give us the diameter, length, end type and core type.
 
-Quote: WhatsApp +60 12-211 2522 · https://magnets.com.my/magnetic-bar.html
+Quote: WhatsApp +60 12-211 2522 · https://magnets.com.my/magnetic-bar

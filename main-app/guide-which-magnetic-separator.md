@@ -1,6 +1,6 @@
 # Which magnetic separator do I need? — Arrowmatics Magnets
 
-> Agent-readable mirror. Canonical: https://magnets.com.my/guide-which-magnetic-separator.html · WhatsApp +60 12-211 2522
+> Agent-readable mirror. Canonical: https://magnets.com.my/guide-which-magnetic-separator · WhatsApp +60 12-211 2522
 
 Choose by how the product moves. Then check the build, the cleaning access and the working gap.
 

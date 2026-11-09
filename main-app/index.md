@@ -26,22 +26,22 @@ WhatsApp [+60 12-211 2522](https://wa.me/60122112522) for application fit and a 
 Standard industrial ranges plus custom-to-fit options — sizes, grades, housings, food-grade configurations and drawings are welcome:
 
 ### Magnetic separators
-Grate, bullet, drawer, pulley and plate magnets for food, plastics, recycling and bulk materials. Food-grade options. Typical rare-earth field: 10,000–13,000 gauss. → [magnetic-separators.html](https://magnets.com.my/magnetic-separators.html)
+Grate, bullet, drawer, pulley and plate magnets for food, plastics, recycling and bulk materials. Food-grade options. Typical rare-earth field: 10,000–13,000 gauss. → [magnetic-separators.html](https://magnets.com.my/magnetic-separators)
 
 ### Full-weld plate magnets
-100% full-weld SS304/SS316/SS316L plate magnets, up to ~10,000 Gauss (typical rating; confirm per application/air gap), smooth easy-clean finish, designed to support your HACCP and ISO 22000 food-safety programme. Arrowmatics does not claim its own ISO 22000/HACCP certification. → [plate-magnets.html](https://magnets.com.my/plate-magnets.html)
+100% full-weld SS304/SS316/SS316L plate magnets, up to ~10,000 Gauss (typical rating; confirm per application/air gap), smooth easy-clean finish, designed to support your HACCP and ISO 22000 food-safety programme. Arrowmatics does not claim its own ISO 22000/HACCP certification. → [plate-magnets.html](https://magnets.com.my/plate-magnets)
 
 ### Full-weld magnetic bars (built to order)
-Full-weld construction is available for magnetic bars, tubes, threaded square bars and grate magnets for food, pharma and hygiene-sensitive lines: no screws, nuts or threads for deposit to build up in (fasteners can trap product and cause corrosion), no crevices, sealed NdFeB core, washdown and vibration resistant, smooth polished weld. Stainless grades 304, 316 and 316L available (confirm grade at quotation). Not every bar model is full weld; confirm the build spec at quotation. Designed to support your HACCP and ISO 22000 programme. → [magnetic-separators.html#bars-full-weld](https://magnets.com.my/magnetic-separators.html#bars-full-weld)
+Full-weld construction is available for magnetic bars, tubes, threaded square bars and grate magnets for food, pharma and hygiene-sensitive lines: no screws, nuts or threads for deposit to build up in (fasteners can trap product and cause corrosion), no crevices, sealed NdFeB core, washdown and vibration resistant, smooth polished weld. Stainless grades 304, 316 and 316L available (confirm grade at quotation). Not every bar model is full weld; confirm the build spec at quotation. Designed to support your HACCP and ISO 22000 programme. → [magnetic-separators.html#bars-full-weld](https://magnets.com.my/magnetic-separators#bars-full-weld)
 
 ### NdFeB rare-earth magnets
-Sintered neodymium grades N35–N52 for motors, sensors, fixtures and OEM assemblies. Coatings and sizes quoted to drawing. → [ndfeb-magnets.html](https://magnets.com.my/ndfeb-magnets.html)
+Sintered neodymium grades N35–N52 for motors, sensors, fixtures and OEM assemblies. Coatings and sizes quoted to drawing. → [ndfeb-magnets.html](https://magnets.com.my/ndfeb-magnets)
 
 ### SmCo samarium cobalt magnets
-High-temperature rare-earth magnets (SmCo5 / Sm2Co17) when heat or corrosion rules out NdFeB. Quoted to drawing. → [smco-magnets.html](https://magnets.com.my/smco-magnets.html)
+High-temperature rare-earth magnets (SmCo5 / Sm2Co17) when heat or corrosion rules out NdFeB. Quoted to drawing. → [smco-magnets.html](https://magnets.com.my/smco-magnets)
 
 ### Suspension magnets
-Overband (self-cleaning) and suspended plate magnets hung over conveyor belts to remove tramp iron. Quoted to belt width, speed, burden depth and hanging height. → [magnetic-separators.html#suspension-magnets](https://magnets.com.my/magnetic-separators.html#suspension-magnets)
+Overband (self-cleaning) and suspended plate magnets hung over conveyor belts to remove tramp iron. Quoted to belt width, speed, burden depth and hanging height. → [magnetic-separators.html#suspension-magnets](https://magnets.com.my/magnetic-separators#suspension-magnets)
 
 ## Industries served
 
@@ -79,7 +79,7 @@ Among common sintered grades, N52 is at the top of the energy-product range we s
 ### What is a suspension (overband) magnet?
 A suspension magnet hangs over a conveyor belt and pulls tramp iron out of the material passing underneath. Overband types clear the iron automatically on a running belt; suspended plate types are cleaned by hand. Send belt width, burden depth and hanging height on WhatsApp for a written quote.
 
-Full FAQ → [faq.html](https://magnets.com.my/faq.html)
+Full FAQ → [faq.html](https://magnets.com.my/faq)
 
 ## Resources
 - [Resources hub](https://magnets.com.my/resources.md) · [Selection checklist](https://magnets.com.my/selection-checklist.md) · [Request a quote](https://magnets.com.my/request-quote.md)

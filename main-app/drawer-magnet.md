@@ -31,4 +31,4 @@ Dimensions in mm. Other sizes and multi-row versions made to order.
 **Is it only for plastics?** No. It also works under hoppers for food, powder and granular products.
 **Do you have prices online?** No. We give a written B2B quote by WhatsApp or email.
 
-Quote: WhatsApp +60 12-211 2522 · https://magnets.com.my/drawer-magnet.html
+Quote: WhatsApp +60 12-211 2522 · https://magnets.com.my/drawer-magnet

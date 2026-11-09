@@ -12,8 +12,8 @@ PREFIX = dict(index="h", **{"magnetic-separators": "s", "plate-magnets": "p", "n
 for pg in PAGES:
     s = rd(pg + ".html")
     # nav + footer
-    s = s.replace('<a href="/about.html">About</a>', '<a href="/resources.html">Resources</a>\n        <a href="/about.html">About</a>', 1) if 'href="/resources.html">Resources</a>\n        <a href="/about.html">About</a>' not in s else s
-    s = re.sub(r'(<a href="/about\.html">About Arrowmatics</a>)(\s*)(<a href="/faq\.html">FAQ</a>)', r'<a href="/resources.html">Resources</a>\2\1\2\3\2<a href="/privacy.html">Privacy</a>', s, 1)
+    s = s.replace('<a href="/about">About</a>', '<a href="/resources">Resources</a>\n        <a href="/about">About</a>', 1) if 'href="/resources">Resources</a>\n        <a href="/about">About</a>' not in s else s
+    s = re.sub(r'(<a href="/about\.html">About Arrowmatics</a>)(\s*)(<a href="/faq\.html">FAQ</a>)', r'<a href="/resources">Resources</a>\2\1\2\3\2<a href="/privacy">Privacy</a>', s, 1)
     # assets
     s = s.replace("?v=ui1", "?v=" + ASSET_V)
     if "/js/leads.js" not in s:

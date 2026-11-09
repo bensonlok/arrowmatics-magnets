@@ -1,14 +1,14 @@
 # Magnets for Food & ingredient plants — Arrowmatics Magnets
 
-> Agent-readable mirror. Canonical: https://magnets.com.my/food-industry-magnets.html · WhatsApp +60 12-211 2522
+> Agent-readable mirror. Canonical: https://magnets.com.my/food-industry-magnets · WhatsApp +60 12-211 2522
 
 Food processors use stainless grate, drawer and plate magnets in hoppers, sifters, chutes and over conveyors to catch fine ferrous fragments from wear and rust before metal detectors or finished goods. Full-weld construction is available built to order, so there are no screws or crevices for deposit to sit in; confirm the build at quotation.
 
 ## Which magnet fits?
 
-- **Grate / hopper magnet** — Dry powders and grains falling through a hopper or chute. (https://magnets.com.my/magnetic-separators.html#types)
-- **Plate magnet** — Chute wall or above a conveyor; easy to wipe and inspect. (https://magnets.com.my/plate-magnets.html)
-- **Liquid-line trap** — Sauces, pastes and liquids moving through a pipe. (https://magnets.com.my/magnetic-separators.html#liquid-line-trap)
+- **Grate / hopper magnet** — Dry powders and grains falling through a hopper or chute. (https://magnets.com.my/magnetic-separators#types)
+- **Plate magnet** — Chute wall or above a conveyor; easy to wipe and inspect. (https://magnets.com.my/plate-magnets)
+- **Liquid-line trap** — Sauces, pastes and liquids moving through a pipe. (https://magnets.com.my/magnetic-separators#liquid-line-trap)
 
 ## What to send for a quote
 
