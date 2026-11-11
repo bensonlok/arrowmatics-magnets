@@ -26,7 +26,7 @@ def e(s):
     return html.escape(s, quote=True)
 
 NAV = [("/", "Home"), ("/magnetic-separators", "Separators"), ("/plate-magnets", "Plate"),
-       ("/ndfeb-magnets", "NdFeB"), ("/smco-magnets", "SmCo"), ("/industries", "Industries"),
+       ("/neodymium-magnets", "NdFeB"), ("/smco-magnets", "SmCo"), ("/industries", "Industries"),
        ("/resources", "Resources"), ("/about", "About"), ("/faq", "FAQ")]
 
 def header(current):
@@ -64,7 +64,7 @@ FOOTER = '''  <footer class="site-footer">
           <h3>Products</h3>
           <a href="/magnetic-separators">Magnetic separators</a>
           <a href="/plate-magnets">Plate magnets</a>
-          <a href="/ndfeb-magnets">NdFeB magnets</a>
+          <a href="/neodymium-magnets">NdFeB magnets</a>
           <a href="/smco-magnets">SmCo magnets</a>
           <a href="/industries">Industries</a>
           <a href="/resources">Resources</a>

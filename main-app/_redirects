@@ -26,7 +26,7 @@
 /lifting.html /magnetic-separators#suspension-magnets 301
 
 # Holding / specialty → home or NdFeB
-/AlnicoHorseshoeButtonMagnets.html /ndfeb-magnets 301
+/AlnicoHorseshoeButtonMagnets.html /neodymium-magnets 301
 /CeramicCupAssembies.html / 301
 /Ceramictoolbar.html / 301
 /about.htm / 301
@@ -86,7 +86,10 @@
 /liquid-trap-magnet.html /liquid-trap-magnet 301
 /neodymium-magnets.html /neodymium-magnets 301
 /plate-magnets.html /plate-magnets 301
-/ndfeb-magnets.html /ndfeb-magnets 301
+/ndfeb-magnets /neodymium-magnets 301
+/ndfeb-magnets/ /neodymium-magnets 301
+/ndfeb-magnets.md /neodymium-magnets.md 301
+/ndfeb-magnets.html /neodymium-magnets 301
 /smco-magnets.html /smco-magnets 301
 /magnetic-separators.html /magnetic-separators 301
 /faq.html /faq 301

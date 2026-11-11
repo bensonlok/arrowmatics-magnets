@@ -52,7 +52,7 @@ SEL = [
  ("liquid", "/magnetic-separators#liquid-line-trap", "/images/real-liquid-trap-1.jpg", "Stainless liquid-line magnetic trap", "Liquid-line / filter trap", "Liquids, sauces, pastes and slurries moving through a pipe, where fine iron must be caught in-line."),
  ("bullet", "/magnetic-separators#types", "/images/real-bullet-1.jpg", "Bullet magnet front and side views", "Bullet magnet", "Pipelines and pneumatic or gravity product lines."),
  ("bar", "/magnetic-separators#bars-full-weld", "/images/real-bars-1.jpg", "Polished stainless magnetic bar", "Magnetic bar", "Tanks, hoppers and chutes, or as the bars inside a custom grid. Full weld is built to order."),
- ("rare", "/ndfeb-magnets", "/images/real-ndfeb-1.jpg", "NdFeB rare-earth magnet blocks", "NdFeB / SmCo magnets", "Small parts, OEM fixtures and assemblies; SmCo when heat or corrosion rules out NdFeB."),
+ ("rare", "/neodymium-magnets", "/images/real-ndfeb-1.jpg", "NdFeB rare-earth magnet blocks", "NdFeB / SmCo magnets", "Small parts, OEM fixtures and assemblies; SmCo when heat or corrosion rules out NdFeB."),
 ]
 OPTS = [
  ("Powder or granules in a hopper / chute", "grate drawer", "Free-flowing dry material is usually caught with a grate or drawer magnet across the opening."),

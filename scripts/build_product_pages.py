@@ -188,7 +188,7 @@ P.append(dict(slug="neodymium-magnets", name="Neodymium Magnets", short="Neodymi
       ("Are they safe to handle?","Large neodymium magnets snap together hard and can pinch fingers or crack. Handle with care and keep them away from pacemakers and electronics.")],
  related=["magnetic-bar","grate-magnet","bullet-magnet","drawer-magnet"],
  industries=[("industries","All industries"),("plastics-industry-magnets","Plastics"),("food-industry-magnets","Food plants")],
- extra='<p>Also see the <a href="/ndfeb-magnets">NdFeB magnets overview</a> and <a href="/smco-magnets">SmCo magnets</a> for high-temperature work.</p>'))
+ extra='<p>Also see <a href="/smco-magnets">SmCo magnets</a> for high-temperature work.</p>'))
 
 NAMES = {p["slug"]: p["short"] for p in P}
 
@@ -206,7 +206,7 @@ def build(p):
        "isPartOf":{"@type":"WebSite","name":"Arrowmatics Magnets","url":"https://magnets.com.my/"},"publisher":PROVIDER}
     crumbs = {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
        {"@type":"ListItem","position":1,"name":"Home","item":BASE},
-       {"@type":"ListItem","position":2,"name":"Magnetic Separators" if p["slug"]!="neodymium-magnets" else "Magnets","item":BASE+("magnetic-separators" if p["slug"]!="neodymium-magnets" else "ndfeb-magnets")},
+       {"@type":"ListItem","position":2,"name":"Magnetic Separators" if p["slug"]!="neodymium-magnets" else "Magnets","item":BASE+("magnetic-separators" if p["slug"]!="neodymium-magnets" else "neodymium-magnets")},
        {"@type":"ListItem","position":3,"name":p["name"],"item":url}]}
     faq = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in p["faq"]]}
     e = html.escape
@@ -219,7 +219,7 @@ def build(p):
     ind = " · ".join(f'<a href="/{s}">{e(n)}</a>' for s,n in p["industries"])
     quote = QUOTE.replace('pq-', p['slug'][:4]+'-q-').replace('data-context="plate-magnets"', f'data-context="{p["slug"]}"').replace('data-context="checklist-plate-magnets"', f'data-context="checklist-{p["slug"]}"').replace('pqc-', p['slug'][:4]+'-c-')
     wa_text = f"Hi%20Arrowmatics%20Magnets%20%E2%80%94%20I%20need%20a%20quote%20for%20a%20{p['name'].replace(' ','%20').replace('/','%2F')}."
-    crumb_mid = ('<a href="/magnetic-separators">Separators</a>' if p["slug"]!="neodymium-magnets" else '<a href="/ndfeb-magnets">NdFeB</a>')
+    crumb_mid = ('<a href="/magnetic-separators">Separators</a>' if p["slug"]!="neodymium-magnets" else '')
     out = f'''<!DOCTYPE html>
 <html lang="en">
 <head>

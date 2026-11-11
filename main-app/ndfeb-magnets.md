@@ -1,6 +1,6 @@
 # NdFeB magnets — Arrowmatics Magnets
 
-> Agent-readable mirror. Canonical: https://magnets.com.my/ndfeb-magnets · WhatsApp +60 12-211 2522
+> Agent-readable mirror. Canonical: https://magnets.com.my/neodymium-magnets · WhatsApp +60 12-211 2522
 
 ## Overview
 

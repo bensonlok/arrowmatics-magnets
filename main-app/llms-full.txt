@@ -60,7 +60,7 @@ Site pages are in English. The Magnet Expert chat can reply in English, Chinese 
 - https://magnets.com.my/ · https://magnets.com.my/index.md
 - https://magnets.com.my/magnetic-separators · .md
 - https://magnets.com.my/plate-magnets · .md
-- https://magnets.com.my/ndfeb-magnets · .md
+- https://magnets.com.my/neodymium-magnets · .md
 - https://magnets.com.my/industries · .md
 - https://magnets.com.my/food-industry-magnets · .md
 - https://magnets.com.my/pharma-cosmetics-magnets · .md

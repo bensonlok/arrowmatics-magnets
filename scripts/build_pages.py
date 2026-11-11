@@ -190,7 +190,7 @@ def hub():
       <div class="container">
         <div class="section-head compact"><h2>Choose your industry</h2><p>Five short guides. Each links to the product pages and a quote path.</p></div>
         %s
-        <p class="ind-note"><strong>Also served:</strong> OEMs and MRO (see <a href="/ndfeb-magnets">NdFeB</a> and <a href="/smco-magnets">SmCo</a> magnets). Size, grade and build are confirmed at quotation.</p>
+        <p class="ind-note"><strong>Also served:</strong> OEMs and MRO (see <a href="/neodymium-magnets">NdFeB</a> and <a href="/smco-magnets">SmCo</a> magnets). Size, grade and build are confirmed at quotation.</p>
       </div>
     </section>
     <section class="cta-band">

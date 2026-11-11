@@ -46,7 +46,7 @@ GUIDES = [
 <tr><td>Liquid, paste or slurry in a pipe</td><td><a href="/magnetic-separators#liquid-line-trap">Liquid-line magnetic trap</a></td><td>In-line on the pipe</td></tr>
 <tr><td>Powder or pellets in a pipe or pneumatic line</td><td><a href="/magnetic-separators#types">Bullet magnet</a></td><td>Inside the pipe</td></tr>
 <tr><td>Chute wall, tank, or a spot where hygiene matters</td><td><a href="/plate-magnets">Plate magnet</a> (full-weld stainless available)</td><td>Chute wall or above a conveyor</td></tr>
-<tr><td>Small parts, OEM use, or heat and corrosion</td><td><a href="/ndfeb-magnets">NdFeB</a> or <a href="/smco-magnets">SmCo</a> magnets</td><td>Made to your drawing</td></tr>
+<tr><td>Small parts, OEM use, or heat and corrosion</td><td><a href="/neodymium-magnets">NdFeB</a> or <a href="/smco-magnets">SmCo</a> magnets</td><td>Made to your drawing</td></tr>
 </tbody></table></div>
 <h2>Then check four things</h2>
 ''' + tick(["<strong>Build:</strong> stainless 304, 316 or 316L; full weld is available, built to order, when you want no screws or crevices.",

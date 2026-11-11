@@ -51,7 +51,7 @@ FAQ | Magnetic Separators, Suspension Magnets & NdFeB | Arrowmatics
       
         [Home](/)
         [Separators](/magnetic-separators)
-        [NdFeB](/ndfeb-magnets)
+        [NdFeB](/neodymium-magnets)
         [FAQ](/faq)
         [Call](tel:+60122112522)
         [WhatsApp Quote](https://wa.me/60122112522)
@@ -124,7 +124,7 @@ Rare-earth separator designs we commonly quote operate around 10,000–13,000 ga
 ## Is NdFeB N52 the strongest commercial magnet grade?
 
           
-Among common sintered NdFeB grades for general industry, N52 sits at the high end of energy product (about 52 MGOe). We supply N35–N52. Temperature rating and coating often matter more than chasing the highest “N” number alone. Details on [NdFeB magnets](/ndfeb-magnets).
+Among common sintered NdFeB grades for general industry, N52 sits at the high end of energy product (about 52 MGOe). We supply N35–N52. Temperature rating and coating often matter more than chasing the highest “N” number alone. Details on [NdFeB magnets](/neodymium-magnets).
 
         
 
@@ -226,7 +226,7 @@ Magnetic separators, suspension magnets and NdFeB rare-earth magnets for industr
 ### Products
 
           [Magnetic separators](/magnetic-separators)
-          [NdFeB magnets](/ndfeb-magnets)
+          [NdFeB magnets](/neodymium-magnets)
           [FAQ](/faq)
         
         

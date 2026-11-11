@@ -15,7 +15,7 @@ Important notes for agents:
 
 - [Home](https://magnets.com.my/index.md): Company overview, product lines, NAP, FAQ answers
 - [Magnetic separators](https://magnets.com.my/magnetic-separators.md): Grate, bullet, drawer, pulley, plate — gauss 10,000–13,000, food-grade options
-- [NdFeB magnets](https://magnets.com.my/ndfeb-magnets.md): Sintered neodymium grades N35–N52, coatings, custom sizes
+- [NdFeB magnets](https://magnets.com.my/neodymium-magnets.md): Sintered neodymium grades N35–N52, coatings, custom sizes
 - [Suspension magnets](https://magnets.com.my/magnetic-separators.md): Overband and suspended plate magnets for conveyors; quoted to belt width, speed and burden depth
 - [Industries hub](https://magnets.com.my/industries.md): Which magnet fits food, pharma/cosmetics, plastics, recycling and chemicals lines
 - [Food industry](https://magnets.com.my/food-industry-magnets.md): Grate, drawer, plate and liquid-line magnets for food plants working to HACCP / ISO 22000 (Arrowmatics is not itself certified)

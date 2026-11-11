@@ -1,0 +1,3 @@
+# Markdown mirrors are for AI agents (llms.txt). Do not index them in Google.
+/*.md
+  X-Robots-Tag: noindex, follow

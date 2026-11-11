@@ -35,7 +35,7 @@ Grate, bullet, drawer, pulley and plate magnets for food, plastics, recycling an
 Full-weld construction is available for magnetic bars, tubes, threaded square bars and grate magnets for food, pharma and hygiene-sensitive lines: no screws, nuts or threads for deposit to build up in (fasteners can trap product and cause corrosion), no crevices, sealed NdFeB core, washdown and vibration resistant, smooth polished weld. Stainless grades 304, 316 and 316L available (confirm grade at quotation). Not every bar model is full weld; confirm the build spec at quotation. Designed to support your HACCP and ISO 22000 programme. → [magnetic-separators.html#bars-full-weld](https://magnets.com.my/magnetic-separators#bars-full-weld)
 
 ### NdFeB rare-earth magnets
-Sintered neodymium grades N35–N52 for motors, sensors, fixtures and OEM assemblies. Coatings and sizes quoted to drawing. → [ndfeb-magnets.html](https://magnets.com.my/ndfeb-magnets)
+Sintered neodymium grades N35–N52 for motors, sensors, fixtures and OEM assemblies. Coatings and sizes quoted to drawing. → [neodymium-magnets](https://magnets.com.my/neodymium-magnets)
 
 ### SmCo samarium cobalt magnets
 High-temperature rare-earth magnets (SmCo5 / Sm2Co17) when heat or corrosion rules out NdFeB. Quoted to drawing. → [smco-magnets.html](https://magnets.com.my/smco-magnets)

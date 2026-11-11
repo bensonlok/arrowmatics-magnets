@@ -78,7 +78,7 @@ s = s[:k] + seg + s[k2:]
 wr("plate-magnets.html", s)
 
 # ---------------- ndfeb ----------------
-s = rd("ndfeb-magnets.html"); s = strip_strip(s)
+s = rd("neodymium-magnets"); s = strip_strip(s)
 i, j = page_hero_block(s); old = s[i:j]
 oldp = re.search(r"<h1>.*?</h1>\s*(<p>.*?</p>)", old, re.S).group(1)
 grid = re.search(r'<h3 class="gallery-cat">.*?</div>\n(?=\s*\n?\s*</div>)', old, re.S).group(0)
@@ -90,7 +90,7 @@ h = hero([("Home", "/"), ("NdFeB magnets", None)], "", 'NdFeB magnets, <span cla
 s = s[:i].rstrip() + "\n\n" + h + "\n" + HOW + s[j:]
 m_ = s.index("  <main>") + len("  <main>")
 s = s[:m_] + '\n    <section class="section tight"><div class="container"><details class="readmore"><summary>See more NdFeB photos</summary><div class="rm-body">' + grid + '</div></details></div></section>\n' + s[m_:]
-wr("ndfeb-magnets.html", s)
+wr("neodymium-magnets", s)
 
 # ---------------- smco ----------------
 s = rd("smco-magnets.html"); s = strip_strip(s)
