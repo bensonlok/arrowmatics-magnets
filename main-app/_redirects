@@ -107,3 +107,22 @@
 /guide-which-magnetic-separator.html /guide-which-magnetic-separator 301
 /guide-what-to-send-for-a-magnet-quote.html /guide-what-to-send-for-a-magnet-quote 301
 /guide-plate-magnet-inspection-cleaning.html /guide-plate-magnet-inspection-cleaning 301
+
+# GSC 2026-11-20: browser default + search-query aliases that currently 404
+/favicon.ico /images/favicon.png 301
+/magnet-bar /magnetic-bar 301
+/magnet-bar/ /magnetic-bar 301
+/magnet-bars /magnetic-bar 301
+/magnet-bars/ /magnetic-bar 301
+/magnetic-bars /magnetic-bar 301
+/magnetic-bars/ /magnetic-bar 301
+/magnet-rod /magnetic-bar 301
+/magnet-rod/ /magnetic-bar 301
+/magnet-rods /magnetic-bar 301
+/magnet-rods/ /magnetic-bar 301
+/bullet-magnets /bullet-magnet 301
+/bullet-magnets/ /bullet-magnet 301
+/grate-magnets /grate-magnet 301
+/grate-magnets/ /grate-magnet 301
+/contact /request-quote 301
+/contact/ /request-quote 301
